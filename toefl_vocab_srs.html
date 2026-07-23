@@ -129,12 +129,22 @@ function buildSession(size, qMode, srcMode) {
 }
 
 function pickKoDistractors(word) {
-  let candidates = word.cl !== '\ub2e8\ub3c5' ? WORDS.filter(w => w.cl === word.cl && w.en !== word.en) : [];
-  while (candidates.length < 3) {
-    const r = WORDS[Math.floor(Math.random()*WORDS.length)];
-    if (r.en !== word.en && !candidates.includes(r)) candidates.push(r);
+  const usedKo = new Set([word.ko.trim()]);
+  let pool = word.cl !== '\ub2e8\ub3c5' ? WORDS.filter(w => w.cl === word.cl && w.en !== word.en) : [];
+  pool = pool.sort(() => Math.random()-0.5);
+  const rest = WORDS.filter(w => w.en !== word.en).sort(() => Math.random()-0.5);
+  const candidates = [];
+  function tryAdd(list) {
+    for (const w of list) {
+      if (candidates.length >= 3) break;
+      const koKey = w.ko.trim();
+      if (usedKo.has(koKey)) continue;
+      usedKo.add(koKey);
+      candidates.push(w);
+    }
   }
-  candidates = candidates.sort(() => Math.random()-0.5).slice(0,3);
+  tryAdd(pool);
+  if (candidates.length < 3) tryAdd(rest);
   return [word, ...candidates].sort(() => Math.random()-0.5);
 }
 function pickEnSynonymOptions(word) {
@@ -157,6 +167,15 @@ function rate(qMode, en, tier) {
   ensureNamespace(qMode)[en] = {box, due, mastered: masteredFlag, tier};
   saveState();
   sessionStats[tier]++;
+}
+
+// manual move from list screens (mastered <-> review) - same state shape as rate(), no session stats involved
+function manualSetTier(qMode, en, tier) {
+  let box, due, masteredFlag = false;
+  if (tier === 'sure') { box = 5; masteredFlag = true; due = Date.now() + MASTER_DUE; }
+  else { box = 0; due = Date.now(); }
+  ensureNamespace(qMode)[en] = {box, due, mastered: masteredFlag, tier};
+  saveState();
 }
 
 function el(tag, styleStr, html) {
@@ -289,22 +308,37 @@ function renderCloudSection(wrap) {
 
 function confidenceRow(container, onPick) {
   container.innerHTML = '';
-  const row = el('div', 'display:flex;flex-direction:column;gap:8px');
+  const row = el('div', 'display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px');
   const opts = [
-    ['sure', '\uc644\uc804\ud788 \uc54c\uc558\uc5b4\uc694', '#e8f5ee', '1'],
-    ['vague', '\uc560\ub9e4\ud558\uac8c \uc54c\uc544\uc694', '#eef1fb', '2'],
+    ['sure', '\uc644\uc804\ud788\n\uc54c\uc558\uc5b4\uc694', '#e8f5ee', '1'],
+    ['vague', '\uc560\ub9e4\ud558\uac8c\n\uc54c\uc544\uc694', '#eef1fb', '2'],
     ['guess', '\ucc0d\uc5c8\uc5b4\uc694', '#faeeda', '3']
   ];
   const map = {};
   opts.forEach(([tier, label, bg, key]) => {
-    const b = el('button', `padding:12px;border-radius:8px;border:1px solid #ddd;background:${bg};cursor:pointer;font-size:14px;text-align:left`,
-      `<span class="kbd">${key}</span>${label}`);
+    const b = el('button', `padding:10px 4px;border-radius:8px;border:1px solid #ddd;background:${bg};cursor:pointer;font-size:13px;text-align:center;line-height:1.3`,
+      `<span class="kbd">${key}</span><br>${label.replace(/\n/g,'<br>')}`);
     b.onclick = () => onPick(tier);
     row.appendChild(b);
     map[key] = () => onPick(tier);
   });
   container.appendChild(row);
   keyMap = map;
+}
+
+// used only in master-test mode: simple keep-mastered vs demote choice, no vague tier
+function binaryMasteryRow(container, onKeep, onDemote) {
+  container.innerHTML = '';
+  const row = el('div', 'display:grid;grid-template-columns:1fr 1fr;gap:8px');
+  const keepBtn = el('button', 'padding:12px 4px;border-radius:8px;border:1px solid #ddd;background:#e8f5ee;cursor:pointer;font-size:13px;text-align:center',
+    '<span class="kbd">1</span>\uc5ec\uc804\ud788 \uc54c\uc544\uc694');
+  keepBtn.onclick = onKeep;
+  const demoteBtn = el('button', 'padding:12px 4px;border-radius:8px;border:1px solid #ddd;background:#faeeda;cursor:pointer;font-size:13px;text-align:center',
+    '<span class="kbd">2</span>\ubaa8\ub974\uaca0\uc5b4\uc694');
+  demoteBtn.onclick = onDemote;
+  row.appendChild(keepBtn); row.appendChild(demoteBtn);
+  container.appendChild(row);
+  keyMap = {'1': onKeep, '2': onDemote};
 }
 
 const MODE_LABELS = {
@@ -446,9 +480,18 @@ function renderList(kind) {
   } else {
     const list = el('div', 'display:flex;flex-direction:column;gap:8px');
     items.forEach(w => {
-      const row = el('div', 'padding:10px 12px;border:1px solid #eee;border-radius:8px;display:flex;justify-content:space-between;gap:12px');
-      row.appendChild(el('div', 'font-weight:500;font-size:14px', w.en));
-      row.appendChild(el('div', 'font-size:13px;color:#666;text-align:right', w.ko));
+      const row = el('div', 'padding:10px 12px;border:1px solid #eee;border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:8px');
+      const textCol = el('div', 'flex:1;min-width:0');
+      textCol.appendChild(el('div', 'font-weight:500;font-size:14px', w.en));
+      textCol.appendChild(el('div', 'font-size:13px;color:#666', w.ko));
+      row.appendChild(textCol);
+      const moveBtn = el('button', 'padding:8px 10px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:12px;white-space:nowrap;flex-shrink:0',
+        kind === 'mastered' ? '\u2192 \ubcf5\uc2b5\uc73c\ub85c' : '\u2192 \ub9c8\uc2a4\ud130\ub85c');
+      moveBtn.onclick = () => {
+        manualSetTier(quizMode, w.en, kind === 'mastered' ? 'guess' : 'sure');
+        renderList(kind);
+      };
+      row.appendChild(moveBtn);
       list.appendChild(row);
     });
     wrap.appendChild(list);
@@ -495,14 +538,14 @@ function renderCard() {
   function runMCQuiz(options, correctEn, correctDisplayText) {
     wrap.appendChild(card);
     const feedback = el('div', 'font-size:13px;min-height:20px;margin-bottom:8px;text-align:center');
-    const optWrap = el('div', 'display:flex;flex-direction:column;gap:8px');
+    const optWrap = el('div', 'display:grid;grid-template-columns:1fr 1fr;gap:8px');
     const confZone = el('div', 'margin-top:8px');
     let answered = false;
     const optMap = {};
     options.forEach((opt, i) => {
       const label = quizMode === 'quiz_en' ? opt.en : opt.ko;
       const keyNum = String(i+1);
-      const b = el('button', 'padding:12px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:14px;text-align:left',
+      const b = el('button', 'padding:12px 8px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:13px;text-align:center',
         `<span class="kbd">${keyNum}</span>${label}`);
       const handleClick = () => {
         if (answered) return;
@@ -512,6 +555,20 @@ function renderCard() {
         optWrap.querySelectorAll('button').forEach(btn2 => { btn2.style.opacity = '0.5'; });
         b.style.opacity = '1';
         b.style.background = correct ? '#e8f5ee' : '#fdecec';
+        if (sourceMode === 'master') {
+          // retention check: no confidence prompt, wrong answers are demoted instantly
+          if (correct) {
+            feedback.textContent = '\uc815\ub2f5 \u2014 \uacc4\uc18d \ub9c8\uc2a4\ud130 \uc0c1\ud0dc \uc720\uc9c0';
+            feedback.style.color = '#0F6E56';
+          } else {
+            rate(quizMode, word.en, 'guess');
+            feedback.textContent = `\uc624\ub2f5 \u2014 \ubcf5\uc2b5 \ub2e8\uc5b4\ub85c \uc774\ub3d9 (\uc815\ub2f5: ${correctDisplayText})`;
+            feedback.style.color = '#993C1D';
+          }
+          keyMap = {'Enter': doAdvance};
+          setTimeout(doAdvance, 700);
+          return;
+        }
         if (correct) {
           feedback.textContent = '\uc815\ub2f5 \u2014 \uc5bc\ub9c8\ub098 \ud655\uc2e0\ud588\ub098\uc694?';
           confidenceRow(confZone, (tier) => {
@@ -543,7 +600,14 @@ function renderCard() {
     const confZone = el('div');
     const doReveal = () => {
       meaningEl.style.visibility = 'visible'; revealBtn.style.display='none';
-      confidenceRow(confZone, (tier) => { rate(quizMode, word.en, tier); doAdvance(); });
+      if (sourceMode === 'master') {
+        binaryMasteryRow(confZone,
+          () => { doAdvance(); },
+          () => { rate(quizMode, word.en, 'guess'); doAdvance(); }
+        );
+      } else {
+        confidenceRow(confZone, (tier) => { rate(quizMode, word.en, tier); doAdvance(); });
+      }
     };
     revealBtn.onclick = doReveal;
     keyMap = {'Enter': doReveal};
@@ -579,7 +643,14 @@ function renderCard() {
       resultZone.appendChild(el('div', 'font-size:13px;margin-bottom:8px;color:#666', `\uc815\ub2f5: ${word.ko}` + (autoMatch ? ' \u00b7 \uc790\ub3d9 \ube44\uad50: \ube44\uc2b7\ud574 \ubcf4\uc784' : '')));
       resultZone.appendChild(el('div', 'font-size:12px;color:#888;margin-bottom:8px', '\uc2a4\uc2a4\ub85c \ucc44\uc810\ud574\uc8fc\uc138\uc694'));
       const confZone = el('div');
-      confidenceRow(confZone, (tier) => { rate(quizMode, word.en, tier); doAdvance(); });
+      if (sourceMode === 'master') {
+        binaryMasteryRow(confZone,
+          () => { doAdvance(); },
+          () => { rate(quizMode, word.en, 'guess'); doAdvance(); }
+        );
+      } else {
+        confidenceRow(confZone, (tier) => { rate(quizMode, word.en, tier); doAdvance(); });
+      }
       resultZone.appendChild(confZone);
       submitBtn.style.display = 'none'; input.disabled = true;
     }
