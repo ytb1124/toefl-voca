@@ -190,122 +190,722 @@ function importDataStr(str) {
   try { srsState = JSON.parse(decodeURIComponent(escape(atob(str.trim())))); QUIZ_MODES.forEach(ensureNamespace); saveState(); return true; }
   catch (e) { return false; }
 }
-
-// ---------- cloud sync via jsonbin.io (free tier, no OAuth) ----------
+// ---------- cloud sync via jsonbin.io (compact format) ----------
 const CLOUD_KEY = 'toefl-vocab-cloud-config';
+const CLOUD_FORMAT_VERSION = 1;
+
+/*
+  중요:
+  - localStorage의 srsState 구조는 기존 그대로 유지한다.
+  - JSONBin으로 보낼 때만 압축한다.
+  - 현재 앱에서 상태는 사실상 tier 하나로 복원 가능하다.
+
+  sure  -> box 5 / mastered true
+  vague -> box 1 / mastered false
+  guess -> box 0 / mastered false
+
+  단어명 자체도 저장하지 않고 WORDS 배열의 index를 base36으로 저장한다.
+
+  예:
+  exploit(index 0), sure -> "0s"
+  prominent(index 3), guess -> "3g"
+
+  따라서 기존 JSON보다 매우 작아진다.
+*/
+
+const TIER_TO_CODE = {
+  sure: 's',
+  vague: 'v',
+  guess: 'g'
+};
+
+const CODE_TO_TIER = {
+  s: 'sure',
+  v: 'vague',
+  g: 'guess'
+};
+
 function loadCloudConfig() {
-  try { return JSON.parse(localStorage.getItem(CLOUD_KEY)) || {apiKey:'', binId:''}; }
-  catch (e) { return {apiKey:'', binId:''}; }
+  try {
+    return JSON.parse(localStorage.getItem(CLOUD_KEY)) || {
+      apiKey: '',
+      binId: ''
+    };
+  } catch (e) {
+    return {
+      apiKey: '',
+      binId: ''
+    };
+  }
 }
+
 function saveCloudConfig(cfg) {
-  try { localStorage.setItem(CLOUD_KEY, JSON.stringify(cfg)); } catch(e) {}
+  try {
+    localStorage.setItem(CLOUD_KEY, JSON.stringify(cfg));
+  } catch (e) {}
 }
-async function createBin(apiKey) {
-  const res = await fetch('https://api.jsonbin.io/v3/b', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json', 'X-Master-Key': apiKey, 'X-Bin-Private': 'true', 'X-Bin-Name': 'toefl-vocab-srs'},
-    body: JSON.stringify(srsState)
+
+
+// ----------------------------------------------------
+// 클라우드용 압축
+// ----------------------------------------------------
+
+function packCloudState(state = srsState) {
+  const packedModes = QUIZ_MODES.map(qMode => {
+    const namespace = state[qMode] || {};
+    const packed = [];
+
+    WORDS.forEach((word, index) => {
+      const s = namespace[word.en];
+      if (!s) return;
+
+      let tier = s.tier;
+
+      // 예전 데이터에서 tier가 없더라도 최대한 복구
+      if (!tier) {
+        if (s.mastered || s.box >= 5) {
+          tier = 'sure';
+        } else if (s.box === 1) {
+          tier = 'vague';
+        } else {
+          tier = 'guess';
+        }
+      }
+
+      const code = TIER_TO_CODE[tier];
+      if (!code) return;
+
+      // index를 base36으로 바꿔 크기를 더 줄임
+      packed.push(index.toString(36) + code);
+    });
+
+    return packed.join('.');
   });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
+
+  return {
+    v: CLOUD_FORMAT_VERSION,
+    q: packedModes
+  };
+}
+
+
+// ----------------------------------------------------
+// 압축된 클라우드 데이터 → 기존 srsState 복원
+// ----------------------------------------------------
+
+function unpackCloudState(record) {
+
+  // 새 압축 포맷
+  if (
+    record &&
+    record.v === CLOUD_FORMAT_VERSION &&
+    Array.isArray(record.q)
+  ) {
+    const restored = {};
+
+    QUIZ_MODES.forEach((qMode, modeIndex) => {
+      restored[qMode] = {};
+
+      const packedString = record.q[modeIndex] || '';
+      if (!packedString) return;
+
+      const entries = packedString.split('.');
+
+      entries.forEach(token => {
+        if (!token || token.length < 2) return;
+
+        const tierCode = token.slice(-1);
+        const indexPart = token.slice(0, -1);
+
+        const wordIndex = parseInt(indexPart, 36);
+        const tier = CODE_TO_TIER[tierCode];
+
+        if (
+          !Number.isInteger(wordIndex) ||
+          !WORDS[wordIndex] ||
+          !tier
+        ) {
+          return;
+        }
+
+        const word = WORDS[wordIndex];
+
+        let box;
+        let due;
+        let mastered = false;
+
+        if (tier === 'sure') {
+          box = 5;
+          mastered = true;
+          due = Date.now() + MASTER_DUE;
+        } else if (tier === 'vague') {
+          box = 1;
+          due = Date.now();
+        } else {
+          box = 0;
+          due = Date.now();
+        }
+
+        restored[qMode][word.en] = {
+          box,
+          due,
+          mastered,
+          tier
+        };
+      });
+    });
+
+    return restored;
+  }
+
+
+  /*
+    구버전 호환
+
+    지금까지 JSONBin에 저장했던 데이터는
+    srsState 자체가 그대로 들어가 있으므로
+    새 포맷이 아니면 그냥 기존 데이터로 취급한다.
+
+    즉 예전에 성공적으로 업로드한 Bin도 다운로드 가능.
+  */
+  return record || {};
+}
+
+
+// ----------------------------------------------------
+// 실제 전송 크기
+// ----------------------------------------------------
+
+function getCloudPayload() {
+  return packCloudState(srsState);
+}
+
+function getCloudPayloadSize() {
+  const json = JSON.stringify(getCloudPayload());
+  return new Blob([json]).size;
+}
+
+function formatBytes(bytes) {
+  if (bytes < 1024) {
+    return bytes + ' B';
+  }
+
+  return (bytes / 1024).toFixed(1) + ' KB';
+}
+
+
+// ----------------------------------------------------
+// JSONBin 오류 내용 표시
+// ----------------------------------------------------
+
+async function makeJsonBinError(res) {
+  let detail = '';
+
+  try {
+    const text = await res.text();
+
+    if (text) {
+      try {
+        const parsed = JSON.parse(text);
+        detail =
+          parsed.message ||
+          parsed.error ||
+          text;
+      } catch (e) {
+        detail = text;
+      }
+    }
+  } catch (e) {}
+
+  if (detail) {
+    return new Error(
+      'HTTP ' + res.status + ' — ' + detail
+    );
+  }
+
+  return new Error(
+    'HTTP ' + res.status
+  );
+}
+
+
+// ----------------------------------------------------
+// 새 Bin 생성
+// ----------------------------------------------------
+
+async function createBin(apiKey) {
+
+  const payload = getCloudPayload();
+
+  const res = await fetch(
+    'https://api.jsonbin.io/v3/b',
+    {
+      method: 'POST',
+
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Master-Key': apiKey,
+        'X-Bin-Private': 'true',
+        'X-Bin-Name': 'toefl-vocab-srs'
+      },
+
+      body: JSON.stringify(payload)
+    }
+  );
+
+  if (!res.ok) {
+    throw await makeJsonBinError(res);
+  }
+
   const data = await res.json();
+
   return data.metadata.id;
 }
+
+
+// ----------------------------------------------------
+// 업로드
+// ----------------------------------------------------
+
 async function uploadToBin(apiKey, binId) {
-  const res = await fetch('https://api.jsonbin.io/v3/b/' + binId, {
-    method: 'PUT',
-    headers: {'Content-Type':'application/json', 'X-Master-Key': apiKey},
-    body: JSON.stringify(srsState)
-  });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
+
+  const payload = getCloudPayload();
+
+  const res = await fetch(
+    'https://api.jsonbin.io/v3/b/' + binId,
+    {
+      method: 'PUT',
+
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Master-Key': apiKey
+      },
+
+      body: JSON.stringify(payload)
+    }
+  );
+
+  if (!res.ok) {
+    throw await makeJsonBinError(res);
+  }
+
+  return await res.json();
 }
+
+
+// ----------------------------------------------------
+// 다운로드
+// ----------------------------------------------------
+
 async function downloadFromBin(apiKey, binId) {
-  const res = await fetch('https://api.jsonbin.io/v3/b/' + binId + '/latest', {
-    headers: {'X-Master-Key': apiKey}
-  });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
+
+  const res = await fetch(
+    'https://api.jsonbin.io/v3/b/' +
+      binId +
+      '/latest',
+    {
+      headers: {
+        'X-Master-Key': apiKey
+      }
+    }
+  );
+
+  if (!res.ok) {
+    throw await makeJsonBinError(res);
+  }
+
   const data = await res.json();
-  return data.record;
+
+  // 새 압축 포맷이든 기존 포맷이든 자동 처리
+  return unpackCloudState(data.record);
 }
+
+
+// ----------------------------------------------------
+// UI
+// ----------------------------------------------------
 
 function renderCloudSection(wrap) {
+
   const cfg = loadCloudConfig();
-  wrap.appendChild(el('div', 'font-size:13px;color:#666;margin-bottom:6px;margin-top:4px', '\uad6c\ub984 \ub3d9\uae30\ud654 (jsonbin.io, \uc120\ud0dd\uc0ac\ud56d)'));
-  const keyCol = el('div', 'display:flex;flex-direction:column;gap:6px;margin-bottom:8px');
+
+  wrap.appendChild(
+    el(
+      'div',
+      'font-size:13px;color:#666;margin-bottom:6px;margin-top:4px',
+      '구름 동기화 (jsonbin.io, 선택사항)'
+    )
+  );
+
+
+  const keyCol = el(
+    'div',
+    'display:flex;flex-direction:column;gap:6px;margin-bottom:8px'
+  );
+
+
   const apiKeyInput = document.createElement('input');
+
   apiKeyInput.type = 'password';
-  apiKeyInput.placeholder = 'X-Master-Key (jsonbin.io API \ud0a4)';
-  apiKeyInput.value = cfg.apiKey || '';
-  apiKeyInput.style.cssText = 'padding:10px;border-radius:8px;border:1px solid #ddd;font-size:13px';
-  const binIdInput = document.createElement('input');
-  binIdInput.placeholder = 'Bin ID (\ub2e4\ub978 \uae30\uae30\uc5d0\uc11c \ub9cc\ub4e0 ID \ubd99\uc5ec\ub123\uae30)';
-  binIdInput.value = cfg.binId || '';
-  binIdInput.style.cssText = 'padding:10px;border-radius:8px;border:1px solid #ddd;font-size:13px';
-  keyCol.appendChild(apiKeyInput); keyCol.appendChild(binIdInput);
+  apiKeyInput.placeholder =
+    'X-Master-Key (jsonbin.io API 키)';
+
+  apiKeyInput.value =
+    cfg.apiKey || '';
+
+  apiKeyInput.style.cssText =
+    'padding:10px;border-radius:8px;border:1px solid #ddd;font-size:13px';
+
+
+  const binIdInput =
+    document.createElement('input');
+
+  binIdInput.placeholder =
+    'Bin ID (다른 기기에서 만든 ID 붙여넣기)';
+
+  binIdInput.value =
+    cfg.binId || '';
+
+  binIdInput.style.cssText =
+    'padding:10px;border-radius:8px;border:1px solid #ddd;font-size:13px';
+
+
+  keyCol.appendChild(apiKeyInput);
+  keyCol.appendChild(binIdInput);
+
   wrap.appendChild(keyCol);
 
-  const statusEl = el('div', 'font-size:12px;color:#888;margin-bottom:8px;min-height:16px',
-    cfg.binId ? ('\uc5f0\uacb0\ub428 \u00b7 Bin ID: ' + cfg.binId) : '\uc544\uc9c1 \uc800\uc7a5\uc18c\uac00 \uc5c6\uc5b4\uc694');
 
-  const row1 = el('div', 'display:flex;gap:8px;margin-bottom:8px');
-  const saveBtn = el('button', 'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:13px', '\uc124\uc815 \uc800\uc7a5');
+  // 현재 클라우드 전송 크기
+  const currentSize =
+    getCloudPayloadSize();
+
+
+  const sizeEl = el(
+    'div',
+    'font-size:11px;color:#888;margin-bottom:6px',
+    '현재 클라우드 백업 크기: ' +
+      formatBytes(currentSize)
+  );
+
+  wrap.appendChild(sizeEl);
+
+
+  const statusEl = el(
+    'div',
+    'font-size:12px;color:#888;margin-bottom:8px;min-height:16px',
+
+    cfg.binId
+      ? ('연결됨 · Bin ID: ' + cfg.binId)
+      : '아직 저장소가 없어요'
+  );
+
+
+  // --------------------------
+  // 설정 / 새 저장소
+  // --------------------------
+
+  const row1 = el(
+    'div',
+    'display:flex;gap:8px;margin-bottom:8px'
+  );
+
+
+  const saveBtn = el(
+    'button',
+    'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:13px',
+    '설정 저장'
+  );
+
+
   saveBtn.onclick = () => {
-    saveCloudConfig({apiKey: apiKeyInput.value.trim(), binId: binIdInput.value.trim()});
-    statusEl.textContent = '\uc124\uc815 \uc800\uc7a5\ub428';
+
+    saveCloudConfig({
+      apiKey:
+        apiKeyInput.value.trim(),
+
+      binId:
+        binIdInput.value.trim()
+    });
+
+    statusEl.textContent =
+      '설정 저장됨';
   };
-  const createBtn = el('button', 'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:13px', '\uc0c8 \uc800\uc7a5\uc18c \ub9cc\ub4e4\uae30');
+
+
+  const createBtn = el(
+    'button',
+    'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#f5f5f5;cursor:pointer;font-size:13px',
+    '새 저장소 만들기'
+  );
+
+
   createBtn.onclick = async () => {
-    const key = apiKeyInput.value.trim();
-    if (!key) { alert('API \ud0a4\ub97c \uba3c\uc800 \uc785\ub825\ud558\uc138\uc694'); return; }
-    createBtn.textContent = '\uc0dd\uc131 \uc911...'; createBtn.disabled = true;
-    try {
-      const binId = await createBin(key);
-      binIdInput.value = binId;
-      saveCloudConfig({apiKey: key, binId});
-      statusEl.textContent = '\uc0dd\uc131 \uc644\ub8cc \u00b7 Bin ID: ' + binId + ' (\ub2e4\ub978 \uae30\uae30\uc5d0 \uc774 ID\ub97c \uc785\ub825\ud558\uc138\uc694)';
-    } catch (e) {
-      statusEl.textContent = '\uc0dd\uc131 \uc2e4\ud328: ' + e.message;
+
+    const key =
+      apiKeyInput.value.trim();
+
+
+    if (!key) {
+      alert(
+        'API 키를 먼저 입력하세요'
+      );
+
+      return;
     }
-    createBtn.textContent = '\uc0c8 \uc800\uc7a5\uc18c \ub9cc\ub4e4\uae30'; createBtn.disabled = false;
+
+
+    createBtn.textContent =
+      '생성 중...';
+
+    createBtn.disabled =
+      true;
+
+
+    try {
+
+      const size =
+        getCloudPayloadSize();
+
+
+      statusEl.textContent =
+        '업로드 데이터 ' +
+        formatBytes(size) +
+        ' · 저장소 생성 중...';
+
+
+      const binId =
+        await createBin(key);
+
+
+      binIdInput.value =
+        binId;
+
+
+      saveCloudConfig({
+        apiKey: key,
+        binId
+      });
+
+
+      statusEl.textContent =
+        '생성 완료 · Bin ID: ' +
+        binId +
+        ' · 데이터 ' +
+        formatBytes(size);
+
+    } catch (e) {
+
+      statusEl.textContent =
+        '생성 실패: ' +
+        e.message;
+    }
+
+
+    createBtn.textContent =
+      '새 저장소 만들기';
+
+    createBtn.disabled =
+      false;
   };
-  row1.appendChild(saveBtn); row1.appendChild(createBtn);
+
+
+  row1.appendChild(saveBtn);
+  row1.appendChild(createBtn);
+
   wrap.appendChild(row1);
 
-  const row2 = el('div', 'display:flex;gap:8px;margin-bottom:8px');
-  const uploadBtn = el('button', 'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#eef1fb;cursor:pointer;font-size:13px', '\u2191 \uc5c5\ub85c\ub4dc');
-  uploadBtn.onclick = async () => {
-    const c = loadCloudConfig();
-    if (!c.apiKey || !c.binId) { alert('API \ud0a4\uc640 Bin ID\ub97c \uba3c\uc800 \uc124\uc815\ud558\uc138\uc694'); return; }
-    uploadBtn.textContent = '\uc5c5\ub85c\ub4dc \uc911...'; uploadBtn.disabled = true;
-    try {
-      await uploadToBin(c.apiKey, c.binId);
-      statusEl.textContent = '\uc5c5\ub85c\ub4dc \uc644\ub8cc (' + new Date().toLocaleTimeString() + ')';
-    } catch (e) { statusEl.textContent = '\uc5c5\ub85c\ub4dc \uc2e4\ud328: ' + e.message; }
-    uploadBtn.textContent = '\u2191 \uc5c5\ub85c\ub4dc'; uploadBtn.disabled = false;
-  };
-  const downloadBtn = el('button', 'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#eef1fb;cursor:pointer;font-size:13px', '\u2193 \ub2e4\uc6b4\ub85c\ub4dc');
-  downloadBtn.onclick = async () => {
-    const c = loadCloudConfig();
-    if (!c.apiKey || !c.binId) { alert('API \ud0a4\uc640 Bin ID\ub97c \uba3c\uc800 \uc124\uc815\ud558\uc138\uc694'); return; }
-    if (!confirm('\ud074\ub77c\uc6b0\ub4dc\uc758 \ub370\uc774\ud130\ub85c \uc774 \uae30\uae30\uc758 \ud559\uc2b5 \uae30\ub85d\uc744 \ub36e\uc5b4\uc501\ub2c8\ub2e4. \uacc4\uc18d\ud560\uae4c\uc694?')) return;
-    downloadBtn.textContent = '\ub2e4\uc6b4\ub85c\ub4dc \uc911...'; downloadBtn.disabled = true;
-    try {
-      const remote = await downloadFromBin(c.apiKey, c.binId);
-      srsState = remote || {};
-      QUIZ_MODES.forEach(ensureNamespace);
-      saveState();
-      statusEl.textContent = '\ub2e4\uc6b4\ub85c\ub4dc \uc644\ub8cc (' + new Date().toLocaleTimeString() + ')';
-      renderHome();
-      return;
-    } catch (e) { statusEl.textContent = '\ub2e4\uc6b4\ub85c\ub4dc \uc2e4\ud328: ' + e.message; }
-    downloadBtn.textContent = '\u2193 \ub2e4\uc6b4\ub85c\ub4dc'; downloadBtn.disabled = false;
-  };
-  row2.appendChild(uploadBtn); row2.appendChild(downloadBtn);
-  wrap.appendChild(row2);
-  wrap.appendChild(statusEl);
-  wrap.appendChild(el('div', 'font-size:11px;color:#999;margin-bottom:20px',
-    'jsonbin.io \ubb34\ub8cc \uac00\uc785 \ud6c4 API \ud0a4\ub97c \ubc1c\uae09\ubc1b\uc73c\uc138\uc694. \ucc98\uc74c \ud55c \uae30\uae30\uc5d0\uc11c "\uc0c8 \uc800\uc7a5\uc18c \ub9cc\ub4e4\uae30"\ub85c Bin ID\ub97c \ub9cc\ub4e4\uace0, \ub2e4\ub978 \uae30\uae30\uc5d0\ub294 \uac19\uc740 API \ud0a4 + \uadf8 Bin ID\ub97c \uc785\ub825\ud558\uba74 \ub429\ub2c8\ub2e4. \ub2e8\uc5b4\ubcc4 \ud559\uc2b5 \uc9c4\ub3c4\ub9cc \uc800\uc7a5\ub418\uba70 \uac1c\uc778\uc815\ubcf4\ub294 \ud3ec\ud568\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.'));
-}
 
+  // --------------------------
+  // 업로드 / 다운로드
+  // --------------------------
+
+  const row2 = el(
+    'div',
+    'display:flex;gap:8px;margin-bottom:8px'
+  );
+
+
+  const uploadBtn = el(
+    'button',
+    'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#eef1fb;cursor:pointer;font-size:13px',
+    '↑ 업로드'
+  );
+
+
+  uploadBtn.onclick = async () => {
+
+    const c =
+      loadCloudConfig();
+
+
+    if (
+      !c.apiKey ||
+      !c.binId
+    ) {
+      alert(
+        'API 키와 Bin ID를 먼저 설정하세요'
+      );
+
+      return;
+    }
+
+
+    uploadBtn.textContent =
+      '업로드 중...';
+
+    uploadBtn.disabled =
+      true;
+
+
+    try {
+
+      const size =
+        getCloudPayloadSize();
+
+
+      sizeEl.textContent =
+        '현재 클라우드 백업 크기: ' +
+        formatBytes(size);
+
+
+      statusEl.textContent =
+        '업로드 중 · ' +
+        formatBytes(size);
+
+
+      await uploadToBin(
+        c.apiKey,
+        c.binId
+      );
+
+
+      statusEl.textContent =
+        '업로드 완료 (' +
+        new Date().toLocaleTimeString() +
+        ') · ' +
+        formatBytes(size);
+
+    } catch (e) {
+
+      statusEl.textContent =
+        '업로드 실패: ' +
+        e.message;
+    }
+
+
+    uploadBtn.textContent =
+      '↑ 업로드';
+
+    uploadBtn.disabled =
+      false;
+  };
+
+
+  const downloadBtn = el(
+    'button',
+    'flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;background:#eef1fb;cursor:pointer;font-size:13px',
+    '↓ 다운로드'
+  );
+
+
+  downloadBtn.onclick = async () => {
+
+    const c =
+      loadCloudConfig();
+
+
+    if (
+      !c.apiKey ||
+      !c.binId
+    ) {
+      alert(
+        'API 키와 Bin ID를 먼저 설정하세요'
+      );
+
+      return;
+    }
+
+
+    if (
+      !confirm(
+        '클라우드의 데이터로 이 기기의 학습 기록을 덮어씁니다. 계속할까요?'
+      )
+    ) {
+      return;
+    }
+
+
+    downloadBtn.textContent =
+      '다운로드 중...';
+
+    downloadBtn.disabled =
+      true;
+
+
+    try {
+
+      const remote =
+        await downloadFromBin(
+          c.apiKey,
+          c.binId
+        );
+
+
+      srsState =
+        remote || {};
+
+
+      QUIZ_MODES.forEach(
+        ensureNamespace
+      );
+
+
+      saveState();
+
+
+      statusEl.textContent =
+        '다운로드 완료 (' +
+        new Date().toLocaleTimeString() +
+        ')';
+
+
+      renderHome();
+
+      return;
+
+    } catch (e) {
+
+      statusEl.textContent =
+        '다운로드 실패: ' +
+        e.message;
+    }
+
+
+    downloadBtn.textContent =
+      '↓ 다운로드';
+
+    downloadBtn.disabled =
+      false;
+  };
+
+
+  row2.appendChild(uploadBtn);
+  row2.appendChild(downloadBtn);
+
+  wrap.appendChild(row2);
+
+  wrap.appendChild(statusEl);
+
+
+  wrap.appendChild(
+    el(
+      'div',
+      'font-size:11px;color:#999;margin-bottom:20px',
+      '클라우드에는 압축된 학습 상태만 저장됩니다. 이 기기의 기존 학습 기록과 수동 백업 형식은 변경되지 않습니다. 기존 방식으로 저장된 JSONBin 데이터도 다운로드할 수 있습니다.'
+    )
+  );
+}
 function confidenceRow(container, onPick) {
   container.innerHTML = '';
   const row = el('div', 'display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px');
