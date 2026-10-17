@@ -10,7 +10,7 @@ for name in ['RAW_TASKS','TITLES','NOTES']:
  assert get(before)==get(after),name
 assert len(json.loads((ROOT/'study/transfer-data.json').read_text()))==28
 for target,full in [('TOEFL_통합학습사이트_v5.zip',True),('GitHub_반영파일_v5.zip',False)]:
- files=[p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.relative_to(ROOT).parts and '__pycache__' not in p.parts and p.name!='.DS_Store'] if full else [ROOT/'index.html',ROOT/'fillintheblank.html',ROOT/'검증_결과.json',ROOT/'가이드_구현대조.txt',ROOT/'사용안내.txt',ROOT/'구현전_점검.txt',ROOT/'개인화훈련_구현보고서.txt',ROOT/'단어암기_통합_사용안내.txt',*list((ROOT/'study').rglob('*')),*list((ROOT/'tests').rglob('*')),*list((ROOT/'scripts').rglob('*'))]
+ files=[p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.relative_to(ROOT).parts and '__pycache__' not in p.parts and p.name!='.DS_Store'] if full else [ROOT/'index.html',ROOT/'fillintheblank.html',ROOT/'toefl_vocab_srs_textbook_8.html',ROOT/'검증_결과.json',ROOT/'가이드_구현대조.txt',ROOT/'사용안내.txt',ROOT/'구현전_점검.txt',ROOT/'개인화훈련_구현보고서.txt',ROOT/'단어암기_통합_사용안내.txt',*list((ROOT/'study').rglob('*')),*list((ROOT/'tests').rglob('*')),*list((ROOT/'scripts').rglob('*'))]
  with zipfile.ZipFile(ROOT.parent/target,'w',zipfile.ZIP_DEFLATED) as z:
   for p in files:
    if p.is_file():
