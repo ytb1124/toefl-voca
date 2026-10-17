@@ -13,7 +13,7 @@
     "TPO3-L10"
   ],
   "source_images_sha256_verified": 51,
-  "progress_tests_passed": 30,
+  "progress_tests_passed": 54,
   "browser_checks": [
     "문장 안 C-Test 빈칸 입력·채점",
     "미완성 입력 새로고침 후 복원",
@@ -38,17 +38,41 @@
     "TPO3 전체 정확도 미산출 유지",
     "14일 완료 표시 저장",
     "전체 진단·어휘·계획 포함 백업 다운로드·중복 없는 가져오기",
-    "모바일 학습 홈·진단 화면 가로 넘침 없음"
+    "모바일 학습 홈·진단 화면 가로 넘침 없음",
+    "홈 1클릭 세션 시작",
+    "6단계 세션 및 회상 입력 새로고침 복원",
+    "A 판단/B 매핑/C 처리/D Guided·Exam/E 어휘 전용 UI",
+    "자료 숨긴 90초 매핑",
+    "시험일 D-day 및 3일 압축 계획",
+    "v4 백업: 14풀이/5세션/34단계 기록 내보내기·중복0개 가져오기"
   ],
   "limitations": [
     "원본 음성파일 없음: 합성음성·스크립트만 제공",
     "기존 C-Test 사진 경로는 공개 사이트에서도 404"
   ],
-  "version": 3,
+  "version": 4,
   "vocabulary_candidates": 65,
   "authored_transfer_questions": 28,
   "confirmed_diagnostic_seed_count": 0,
   "diagnostic_suggestions": 63,
   "ctest_task_count": 49,
-  "entry_route_tests_passed": 3
+  "entry_route_tests_passed": 3,
+  "authored_personalized_training_items": 43,
+  "reviewed_unseen_transfer_items": 21,
+  "training_modules": 5,
+  "storage_key_preserved": true,
+  "source_record_counts": {
+    "TPO2": {
+      "Reading": 13,
+      "Listening": 8
+    },
+    "TPO3": {
+      "Reading": 10,
+      "Listening": 10
+    },
+    "TPO4": {
+      "Reading": 8,
+      "Listening": 14
+    }
+  }
 }

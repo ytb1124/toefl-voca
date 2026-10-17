@@ -1,0 +1,1657 @@
+[
+  {
+    "id": "TRAIN-A-01",
+    "module": "A",
+    "title": "도서관 이용",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The library installed brighter lamps to improve reading comfort. It also added evening hours so working students could visit after their shifts.",
+    "prompt": "What change made the library more accessible to working students?",
+    "target": "방문 가능한 시간",
+    "targetOptions": [
+      "방문 가능한 시간",
+      "다른 세부 사실",
+      "글에 없는 일반 평가"
+    ],
+    "options": {
+      "A": "Evening opening hours",
+      "B": "A new branch near offices",
+      "C": "Brighter lamps"
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "C": {
+        "support": true,
+        "relevant": false
+      },
+      "A": {
+        "support": true,
+        "relevant": true
+      },
+      "B": {
+        "support": false,
+        "relevant": true
+      }
+    },
+    "evidence": "so working students could visit after their shifts",
+    "explanation": "질문은 방문 가능성을 묻는다. 조명 개선은 실제 사실이지만 시간 접근성에 답하지 않는다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-A-02",
+    "module": "A",
+    "title": "연구 표본",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Researchers cooled the samples to prevent decay during transport. They labeled each container so that its collection site could be identified later.",
+    "prompt": "Why were the containers labeled?",
+    "target": "표시를 붙인 목적",
+    "targetOptions": [
+      "다른 세부 사실",
+      "글에 없는 일반 평가",
+      "표시를 붙인 목적"
+    ],
+    "options": {
+      "A": "To identify the collection site",
+      "B": "To prevent decay",
+      "C": "To identify the collection site and increase sample size"
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "B": {
+        "support": true,
+        "relevant": false
+      },
+      "C": {
+        "support": false,
+        "relevant": true
+      },
+      "A": {
+        "support": true,
+        "relevant": true
+      }
+    },
+    "evidence": "so that its collection site could be identified later",
+    "explanation": "B의 표본 수 증가라는 추가 주장은 근거가 없다. 목적에 맞더라도 모든 주장을 검증해야 한다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-A-03",
+    "module": "A",
+    "title": "버스 노선",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The city bought quieter buses to reduce street noise. It extended the last service to midnight so hospital staff could get home after late shifts.",
+    "prompt": "How did the city help staff travel home after late shifts?",
+    "target": "늦은 귀가 지원",
+    "targetOptions": [
+      "글에 없는 일반 평가",
+      "늦은 귀가 지원",
+      "다른 세부 사실"
+    ],
+    "options": {
+      "A": "It extended the last service to midnight.",
+      "B": "It reduced street noise.",
+      "C": "It made hospital shifts shorter."
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "A": {
+        "support": true,
+        "relevant": true
+      },
+      "B": {
+        "support": true,
+        "relevant": false
+      },
+      "C": {
+        "support": false,
+        "relevant": true
+      }
+    },
+    "evidence": "extended the last service to midnight so hospital staff could get home",
+    "explanation": "조용한 버스는 참이지만 귀가 시간 문제의 해결책은 운행 연장이다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-A-04",
+    "module": "A",
+    "title": "담화 연결",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The first trial used only one greenhouse. The second included greenhouses in five regions. This wider sampling revealed patterns that the first trial had missed.",
+    "prompt": "What does “This wider sampling” refer to?",
+    "target": "지시어의 선행 내용",
+    "targetOptions": [
+      "지시어의 선행 내용",
+      "다른 세부 사실",
+      "글에 없는 일반 평가"
+    ],
+    "options": {
+      "A": "Greenhouses in five regions in the second trial",
+      "B": "Patterns missed by the first trial",
+      "C": "The single greenhouse in the first trial"
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "C": {
+        "support": true,
+        "relevant": false
+      },
+      "A": {
+        "support": true,
+        "relevant": true
+      },
+      "B": {
+        "support": true,
+        "relevant": false
+      }
+    },
+    "evidence": "The second included greenhouses in five regions. This wider sampling",
+    "explanation": "지시어 뒤의 결과와 앞의 원인을 연결한다. 단지 지문에 나온 명사라고 선행 내용이 되는 것은 아니다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-A-05",
+    "module": "A",
+    "title": "의약품 배송",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "A clinic added insulated boxes to keep vaccines cool. It arranged bicycle deliveries to reach households on narrow lanes that vans could not enter. The bicycles also cost less to maintain.",
+    "prompt": "How did the clinic reach previously inaccessible households?",
+    "target": "가구에 접근한 방법",
+    "targetOptions": [
+      "다른 세부 사실",
+      "글에 없는 일반 평가",
+      "가구에 접근한 방법"
+    ],
+    "options": {
+      "A": "By using bicycles on narrow lanes",
+      "B": "By reducing maintenance costs",
+      "C": "By keeping vaccines cool"
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "B": {
+        "support": true,
+        "relevant": false
+      },
+      "C": {
+        "support": true,
+        "relevant": false
+      },
+      "A": {
+        "support": true,
+        "relevant": true
+      }
+    },
+    "evidence": "bicycle deliveries to reach households on narrow lanes that vans could not enter",
+    "explanation": "비용과 온도는 사실이다. 질문에 대한 직접 근거는 좁은 길의 자전거 배송이다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-A-06",
+    "module": "A",
+    "title": "박물관 안내",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The museum offers free entry on Tuesdays. It provides large-print labels so visitors with low vision can read descriptions. Audio guides are available in three languages.",
+    "prompt": "Which feature helps visitors read descriptions when their vision is limited?",
+    "target": "설명을 읽도록 돕는 기능",
+    "targetOptions": [
+      "글에 없는 일반 평가",
+      "설명을 읽도록 돕는 기능",
+      "다른 세부 사실"
+    ],
+    "options": {
+      "A": "Large-print labels",
+      "B": "Free Tuesday entry",
+      "C": "Audio guides in ten languages"
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "A": {
+        "support": true,
+        "relevant": true
+      },
+      "B": {
+        "support": true,
+        "relevant": false
+      },
+      "C": {
+        "support": false,
+        "relevant": false
+      }
+    },
+    "evidence": "large-print labels so visitors with low vision can read descriptions",
+    "explanation": "무료 입장은 다른 목적이다. 오디오 안내의 언어 수를 열 개로 늘리는 것은 근거 없는 변화다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-A-07",
+    "module": "A",
+    "title": "모니터링 범위",
+    "targetSkillId": "ANSWER_JUDGMENT",
+    "sourceQuestionId": "TPO2-R5",
+    "source_error_ids": [
+      "TPO2-R5"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "judgment",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Sensors were placed in both dry and wet valleys. Earlier studies had measured only wet valleys. The new study could therefore compare plant growth under contrasting moisture conditions.",
+    "prompt": "What made the comparison of moisture conditions possible?",
+    "target": "비교가 가능해진 이유",
+    "targetOptions": [
+      "비교가 가능해진 이유",
+      "다른 세부 사실",
+      "글에 없는 일반 평가"
+    ],
+    "options": {
+      "A": "Measuring both dry and wet valleys",
+      "B": "Finding that all plants grow equally fast",
+      "C": "Repeating measurements only in wet valleys"
+    },
+    "correctAnswer": "A",
+    "judgments": {
+      "C": {
+        "support": false,
+        "relevant": false
+      },
+      "A": {
+        "support": true,
+        "relevant": true
+      },
+      "B": {
+        "support": false,
+        "relevant": false
+      }
+    },
+    "evidence": "Sensors were placed in both dry and wet valleys",
+    "explanation": "이전/새 연구를 구분하고 비교의 원인을 찾는다. 결과로 제시되지 않은 보편 결론은 제외한다.",
+    "hint": "질문의 핵심 대상과 목적을 먼저 정하세요. 본문에 있다는 사실과 질문에 대한 답인지는 별개입니다."
+  },
+  {
+    "id": "TRAIN-B-01",
+    "module": "B",
+    "title": "리더십 특징 비교",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Transformational leaders inspire a shared vision and encourage innovation. Transactional leaders use rewards for completed work and correct mistakes. Servant leaders put employee needs first and support personal development.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Transformational",
+      "Transactional",
+      "Servant"
+    ],
+    "attributes": [
+      {
+        "text": "공유 비전과 혁신",
+        "entity": "Transformational"
+      },
+      {
+        "text": "보상과 실수 교정",
+        "entity": "Transactional"
+      },
+      {
+        "text": "직원 필요와 성장",
+        "entity": "Servant"
+      }
+    ],
+    "correctAnswer": {
+      "공유 비전과 혁신": "Transformational",
+      "보상과 실수 교정": "Transactional",
+      "직원 필요와 성장": "Servant"
+    },
+    "evidence": "Transformational leaders inspire a shared vision and encourage innovation. Transactional leaders use rewards for completed work and correct mistakes. Servant leaders put employee needs first and support personal development.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-B-02",
+    "module": "B",
+    "title": "기억 체계",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Working memory holds information briefly for an ongoing task. Episodic memory stores personally experienced events. Semantic memory stores general facts and word meanings.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Working",
+      "Episodic",
+      "Semantic"
+    ],
+    "attributes": [
+      {
+        "text": "진행 중인 과제의 짧은 보관",
+        "entity": "Working"
+      },
+      {
+        "text": "개인적으로 겪은 사건",
+        "entity": "Episodic"
+      },
+      {
+        "text": "일반 지식과 단어 의미",
+        "entity": "Semantic"
+      }
+    ],
+    "correctAnswer": {
+      "진행 중인 과제의 짧은 보관": "Working",
+      "개인적으로 겪은 사건": "Episodic",
+      "일반 지식과 단어 의미": "Semantic"
+    },
+    "evidence": "Working memory holds information briefly for an ongoing task. Episodic memory stores personally experienced events. Semantic memory stores general facts and word meanings.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-B-03",
+    "module": "B",
+    "title": "수분 운반 구조",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Xylem moves water from roots toward leaves. Phloem distributes sugars produced by photosynthesis. Stomata are pores that regulate gas exchange and water loss.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Xylem",
+      "Phloem",
+      "Stomata"
+    ],
+    "attributes": [
+      {
+        "text": "당 분배",
+        "entity": "Phloem"
+      },
+      {
+        "text": "기공을 통한 기체 교환",
+        "entity": "Stomata"
+      },
+      {
+        "text": "뿌리에서 잎으로 물 이동",
+        "entity": "Xylem"
+      }
+    ],
+    "correctAnswer": {
+      "당 분배": "Phloem",
+      "기공을 통한 기체 교환": "Stomata",
+      "뿌리에서 잎으로 물 이동": "Xylem"
+    },
+    "evidence": "Xylem moves water from roots toward leaves. Phloem distributes sugars produced by photosynthesis. Stomata are pores that regulate gas exchange and water loss.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-B-04",
+    "module": "B",
+    "title": "미술 보존 검사",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Infrared imaging can reveal underdrawings beneath paint. X-ray imaging reveals dense materials and internal damage. Ultraviolet light can help identify later surface varnish repairs.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Infrared",
+      "X-ray",
+      "Ultraviolet"
+    ],
+    "attributes": [
+      {
+        "text": "안료 밑의 밑그림",
+        "entity": "Infrared"
+      },
+      {
+        "text": "표면 바니시의 후대 보수",
+        "entity": "Ultraviolet"
+      },
+      {
+        "text": "밀도가 높은 내부 재료",
+        "entity": "X-ray"
+      }
+    ],
+    "correctAnswer": {
+      "안료 밑의 밑그림": "Infrared",
+      "표면 바니시의 후대 보수": "Ultraviolet",
+      "밀도가 높은 내부 재료": "X-ray"
+    },
+    "evidence": "Infrared imaging can reveal underdrawings beneath paint. X-ray imaging reveals dense materials and internal damage. Ultraviolet light can help identify later surface varnish repairs.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-B-05",
+    "module": "B",
+    "title": "기상 관측 도구",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "A ceilometer uses a light beam to estimate cloud-base height. A disdrometer records raindrop size and speed. A pyranometer measures solar radiation reaching a surface. Each instrument answers a different weather question.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Ceilometer",
+      "Disdrometer",
+      "Pyranometer"
+    ],
+    "attributes": [
+      {
+        "text": "강수 입자의 크기와 속도",
+        "entity": "Disdrometer"
+      },
+      {
+        "text": "지표에 도달한 태양 복사",
+        "entity": "Pyranometer"
+      },
+      {
+        "text": "구름 밑면의 높이",
+        "entity": "Ceilometer"
+      }
+    ],
+    "correctAnswer": {
+      "강수 입자의 크기와 속도": "Disdrometer",
+      "지표에 도달한 태양 복사": "Pyranometer",
+      "구름 밑면의 높이": "Ceilometer"
+    },
+    "evidence": "A ceilometer uses a light beam to estimate cloud-base height. A disdrometer records raindrop size and speed. A pyranometer measures solar radiation reaching a surface. Each instrument answers a different weather question.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-B-06",
+    "module": "B",
+    "title": "도시 생태 측정",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Camera traps photograph passing animals. Acoustic sensors record animal calls. Environmental DNA sampling detects traces of genetic material in water or soil. Researchers combine them because an animal may leave a genetic trace without appearing in a photograph.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Camera trap",
+      "Acoustic sensor",
+      "Environmental DNA"
+    ],
+    "attributes": [
+      {
+        "text": "울음소리 기록",
+        "entity": "Acoustic sensor"
+      },
+      {
+        "text": "물과 흙의 유전 물질 흔적",
+        "entity": "Environmental DNA"
+      },
+      {
+        "text": "지나가는 동물의 사진",
+        "entity": "Camera trap"
+      }
+    ],
+    "correctAnswer": {
+      "울음소리 기록": "Acoustic sensor",
+      "물과 흙의 유전 물질 흔적": "Environmental DNA",
+      "지나가는 동물의 사진": "Camera trap"
+    },
+    "evidence": "Camera traps photograph passing animals. Acoustic sensors record animal calls. Environmental DNA sampling detects traces of genetic material in water or soil. Researchers combine them because an animal may leave a genetic trace without appearing in a photograph.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-B-07",
+    "module": "B",
+    "title": "열 저장 방식",
+    "targetSkillId": "ENTITY_ATTRIBUTE_MAPPING",
+    "sourceQuestionId": "TPO4-L5",
+    "source_error_ids": [
+      "TPO4-L5"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "mapping",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Sensible heat storage changes a material’s temperature without changing its phase. Latent heat storage uses a phase change, such as melting. Thermochemical storage uses a reversible chemical reaction.",
+    "prompt": "각 특징을 설명한 대상과 연결하세요.",
+    "entities": [
+      "Sensible",
+      "Latent",
+      "Thermochemical"
+    ],
+    "attributes": [
+      {
+        "text": "가역 화학 반응",
+        "entity": "Thermochemical"
+      },
+      {
+        "text": "상태 변화 없이 온도 변화",
+        "entity": "Sensible"
+      },
+      {
+        "text": "녹는 것과 같은 상변화",
+        "entity": "Latent"
+      }
+    ],
+    "correctAnswer": {
+      "가역 화학 반응": "Thermochemical",
+      "상태 변화 없이 온도 변화": "Sensible",
+      "녹는 것과 같은 상변화": "Latent"
+    },
+    "evidence": "Sensible heat storage changes a material’s temperature without changing its phase. Latent heat storage uses a phase change, such as melting. Thermochemical storage uses a reversible chemical reaction.",
+    "explanation": "특징의 주어를 확인하면 각 대상에 하나씩 대응합니다. 다른 대상의 정확한 특징도 질문의 대상이 다르면 오답입니다.",
+    "hint": "대상마다 동사와 목적어를 한 묶음으로 적고, 특징을 다른 대상으로 옮기지 마세요."
+  },
+  {
+    "id": "TRAIN-C-01",
+    "module": "C",
+    "title": "실험실 예약 변경",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Mina: I booked Lab A for Friday. Leo: Lab A will be repaired that day. Please cancel that booking, reserve Lab C, and then email our group the new location. Mina: I have already canceled Lab A. I will reserve Lab C next.",
+    "prompt": "What will Mina do next?",
+    "options": {
+      "A": "Cancel Lab A",
+      "B": "Reserve Lab C",
+      "C": "Start repairing Lab A"
+    },
+    "correctAnswer": "B",
+    "evidence": "I have already canceled Lab A. I will reserve Lab C next.",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": [
+      {
+        "text": "Lab A 예약 취소",
+        "order": 1
+      },
+      {
+        "text": "Lab C 예약",
+        "order": 2
+      },
+      {
+        "text": "팀에 새 장소 전달",
+        "order": 3
+      }
+    ],
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "ACTION_SEQUENCE"
+  },
+  {
+    "id": "TRAIN-C-02",
+    "module": "C",
+    "title": "제안의 기능",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Nora: The hall is too noisy for the interview. Ravi: Why don’t we use the small room upstairs? Nora: Good idea. I will check whether it is free.",
+    "prompt": "What is Ravi doing?",
+    "options": {
+      "A": "Asking why an interview was canceled",
+      "B": "Reporting that the small room is occupied",
+      "C": "Suggesting a quieter location"
+    },
+    "correctAnswer": "C",
+    "evidence": "Why don’t we use the small room upstairs?",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": null,
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "SPEECH_ACT"
+  },
+  {
+    "id": "TRAIN-C-03",
+    "module": "C",
+    "title": "강의 주제 회상",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Today we will examine how wetlands reduce flood damage. Their soils absorb water, vegetation slows its movement, and channels spread it over a wider area. A single reed species is only one example. These processes together explain why removing wetlands can increase flood risk.",
+    "prompt": "What is the main topic?",
+    "options": {
+      "A": "Several ways wetlands reduce flood damage",
+      "B": "The classification of a single reed species",
+      "C": "The cost of constructing channels"
+    },
+    "correctAnswer": "A",
+    "evidence": "Their soils absorb water, vegetation slows its movement, and channels spread it",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": null,
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "MAIN_IDEA"
+  },
+  {
+    "id": "TRAIN-C-04",
+    "module": "C",
+    "title": "버스 탑승 순서",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The station moved the airport bus stop from Gate 2 to Gate 6. Passengers must first collect a boarding ticket at the indoor desk, then wait at Gate 6. You can buy a ticket online, but you still need to collect the boarding slip at the desk.",
+    "prompt": "Where should passengers wait after collecting the slip?",
+    "options": {
+      "A": "Gate 6",
+      "B": "Gate 2",
+      "C": "At the airport desk"
+    },
+    "correctAnswer": "A",
+    "evidence": "then wait at Gate 6",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": null,
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "ACTION_SEQUENCE"
+  },
+  {
+    "id": "TRAIN-C-05",
+    "module": "C",
+    "title": "시료 분석 순서",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The water samples have already been filtered. Before we can run the chemical test, the bottles must be labeled. After testing, enter the results into the shared table. Please label the bottles now; the technician will handle the test.",
+    "prompt": "What should the listener do now?",
+    "options": {
+      "A": "Enter results before testing",
+      "B": "Label the bottles",
+      "C": "Filter the samples again"
+    },
+    "correctAnswer": "B",
+    "evidence": "Please label the bottles now",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": [
+      {
+        "text": "병에 라벨 붙이기",
+        "order": 1
+      },
+      {
+        "text": "화학 검사",
+        "order": 2
+      },
+      {
+        "text": "결과 표 입력",
+        "order": 3
+      }
+    ],
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "ACTION_SEQUENCE"
+  },
+  {
+    "id": "TRAIN-C-06",
+    "module": "C",
+    "title": "회의 요청",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Elena: The draft budget is ready, but I am not sure about the equipment estimates. Could you review those figures before tomorrow’s meeting? Sam: Certainly. I will send you my comments tonight.",
+    "prompt": "What does Elena ask Sam to do?",
+    "options": {
+      "A": "Write the entire budget from scratch",
+      "B": "Postpone the meeting",
+      "C": "Check the equipment estimates"
+    },
+    "correctAnswer": "C",
+    "evidence": "Could you review those figures before tomorrow’s meeting?",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": null,
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "SPEECH_ACT"
+  },
+  {
+    "id": "TRAIN-C-07",
+    "module": "C",
+    "title": "학술 강의 구조",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Early radio telescopes used a single large dish. Later arrays combined signals from many smaller dishes. Today we will compare how those two designs balance sensitivity and image detail. The famous mountain observatory is one example of an array, but our focus is the design trade-off.",
+    "prompt": "What will the speaker mainly discuss?",
+    "options": {
+      "A": "The location of a mountain observatory",
+      "B": "The career of a radio astronomer",
+      "C": "Trade-offs between two radio telescope designs"
+    },
+    "correctAnswer": "C",
+    "evidence": "compare how those two designs balance sensitivity and image detail",
+    "explanation": "질문이 묻는 기능·주제·현재 행동을 원문 표현과 연결한다. 이미 한 일이나 한 세부 사례를 정답으로 확대하지 않는다.",
+    "timeline": null,
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "이미 끝난 일, 지금 요청하는 일, 다음 단계를 나눠 보세요. 강의는 예시보다 공통 주제를 회상하세요.",
+    "subSkillId": "MAIN_IDEA"
+  },
+  {
+    "id": "TRAIN-C-08",
+    "module": "C",
+    "title": "강의의 공통 주제",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Today we will compare two ways deserts conserve water. Some plants open their pores at night; others store water in thick stems. These are two different adaptations to dry conditions, rather than a history of one plant species.",
+    "prompt": "What is the talk mainly about?",
+    "options": {
+      "A": "Two plant adaptations that conserve water",
+      "B": "How deserts become oceans",
+      "C": "The history of one plant species"
+    },
+    "correctAnswer": "A",
+    "evidence": "two different adaptations to dry conditions",
+    "explanation": "두 사례의 공통 주제는 수분을 보존하는 적응이다.",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "도입과 두 사례를 하나로 묶는 주제를 고르세요.",
+    "subSkillId": "MAIN_IDEA"
+  },
+  {
+    "id": "TRAIN-C-09",
+    "module": "C",
+    "title": "연구실 출입 요청",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Ari: I left my access card at home. Could you let me into the lab? Bo: Of course. I am standing beside the door now.",
+    "prompt": "What does Ari want Bo to do?",
+    "options": {
+      "A": "Open the lab door",
+      "B": "Make a new access card",
+      "C": "Go to Ari’s home"
+    },
+    "correctAnswer": "A",
+    "evidence": "Could you let me into the lab?",
+    "explanation": "출입을 도와 달라는 요청이다. 카드 발급이나 귀가는 요청하지 않았다.",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "문장이 정보를 묻는지, 행동을 요청하는지 구분하세요.",
+    "subSkillId": "SPEECH_ACT"
+  },
+  {
+    "id": "TRAIN-C-10",
+    "module": "C",
+    "title": "도서 반납 순서",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The student has already renewed the loan online. To collect the reserved book, she must first return the overdue volume at the desk. The librarian says: Please bring back the overdue volume now; then I can release your reservation.",
+    "prompt": "What should the student do next?",
+    "options": {
+      "A": "Renew the loan again",
+      "B": "Return the overdue volume",
+      "C": "Collect a book without visiting the desk"
+    },
+    "correctAnswer": "B",
+    "evidence": "Please bring back the overdue volume now",
+    "explanation": "질문이 묻는 현재 행동·발화 기능·전체 주제를 해당 근거와 연결한다. 다른 단계나 한 사례를 정답으로 확대하지 않는다.",
+    "subSkillId": "ACTION_SEQUENCE",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "핵심 대상과 현재 요청을 구분하고, 강의의 사례들은 공통 주제로 묶으세요."
+  },
+  {
+    "id": "TRAIN-C-11",
+    "module": "C",
+    "title": "관측 준비",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "We have chosen the observation site and charged the batteries. Next, level the tripod. Only after the tripod is level should you attach the camera. Once it is attached, focus the lens.",
+    "prompt": "What must happen before the camera is attached?",
+    "options": {
+      "A": "The lens must be focused.",
+      "B": "The site must be chosen again.",
+      "C": "The tripod must be leveled."
+    },
+    "correctAnswer": "C",
+    "evidence": "Only after the tripod is level should you attach the camera",
+    "explanation": "질문이 묻는 현재 행동·발화 기능·전체 주제를 해당 근거와 연결한다. 다른 단계나 한 사례를 정답으로 확대하지 않는다.",
+    "subSkillId": "ACTION_SEQUENCE",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "핵심 대상과 현재 요청을 구분하고, 강의의 사례들은 공통 주제로 묶으세요."
+  },
+  {
+    "id": "TRAIN-C-12",
+    "module": "C",
+    "title": "발표 자료 검토",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Woman: I have finished my slides, but the chart on page four may be confusing. Would you mind looking at that chart before I present it? Man: Sure. I will check it after lunch.",
+    "prompt": "What is the woman asking for?",
+    "options": {
+      "A": "An invitation to lunch",
+      "B": "A new presentation date",
+      "C": "Help checking a chart"
+    },
+    "correctAnswer": "C",
+    "evidence": "Would you mind looking at that chart before I present it?",
+    "explanation": "질문이 묻는 현재 행동·발화 기능·전체 주제를 해당 근거와 연결한다. 다른 단계나 한 사례를 정답으로 확대하지 않는다.",
+    "subSkillId": "SPEECH_ACT",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "핵심 대상과 현재 요청을 구분하고, 강의의 사례들은 공통 주제로 묶으세요."
+  },
+  {
+    "id": "TRAIN-C-13",
+    "module": "C",
+    "title": "의도와 장소 변경",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The entrance is crowded, and our group cannot hear the instructions. Let’s move to the courtyard before we begin the tour. That way everyone can listen comfortably.",
+    "prompt": "What is the speaker doing?",
+    "options": {
+      "A": "Explaining why the tour has ended",
+      "B": "Asking about admission prices",
+      "C": "Suggesting a different place to gather"
+    },
+    "correctAnswer": "C",
+    "evidence": "Let’s move to the courtyard before we begin the tour",
+    "explanation": "질문이 묻는 현재 행동·발화 기능·전체 주제를 해당 근거와 연결한다. 다른 단계나 한 사례를 정답으로 확대하지 않는다.",
+    "subSkillId": "SPEECH_ACT",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "WHO / WHAT / WHERE / WHY / NEXT ACTION",
+    "hint": "핵심 대상과 현재 요청을 구분하고, 강의의 사례들은 공통 주제로 묶으세요."
+  },
+  {
+    "id": "TRAIN-C-14",
+    "module": "C",
+    "title": "산호 연구",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Today’s talk examines how scientists monitor reef health. Underwater photographs show changes in coral cover, temperature sensors track heat stress, and water samples reveal nutrient levels. These methods complement one another; none alone gives a complete picture.",
+    "prompt": "What is the main topic?",
+    "options": {
+      "A": "The history of underwater cameras",
+      "B": "A comparison of ticket prices for reef tours",
+      "C": "Several methods of monitoring reef health"
+    },
+    "correctAnswer": "C",
+    "evidence": "how scientists monitor reef health",
+    "explanation": "질문이 묻는 현재 행동·발화 기능·전체 주제를 해당 근거와 연결한다. 다른 단계나 한 사례를 정답으로 확대하지 않는다.",
+    "subSkillId": "MAIN_IDEA",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "핵심 대상과 현재 요청을 구분하고, 강의의 사례들은 공통 주제로 묶으세요."
+  },
+  {
+    "id": "TRAIN-C-15",
+    "module": "C",
+    "title": "철새의 이동 단서",
+    "targetSkillId": "LISTENING_PROCESSING",
+    "sourceQuestionId": "TPO4-L11",
+    "source_error_ids": [
+      "TPO4-L11"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "listening",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Migrating birds can use the sun’s position during the day, star patterns at night, and Earth’s magnetic field when visual cues are weak. We will compare these navigation cues and discuss when each is useful. One species is an example, not the entire subject.",
+    "prompt": "What will the talk mainly compare?",
+    "options": {
+      "A": "Why all birds travel only at night",
+      "B": "The breeding schedule of one species",
+      "C": "Different navigation cues used by migrating birds"
+    },
+    "correctAnswer": "C",
+    "evidence": "compare these navigation cues and discuss when each is useful",
+    "explanation": "질문이 묻는 현재 행동·발화 기능·전체 주제를 해당 근거와 연결한다. 다른 단계나 한 사례를 정답으로 확대하지 않는다.",
+    "subSkillId": "MAIN_IDEA",
+    "audioType": "synthetic",
+    "audioLabel": "Synthetic Practice Audio · 직접 제작 연습",
+    "recallMode": "TOPIC / KEY POINTS / CONCLUSION",
+    "hint": "핵심 대상과 현재 요청을 구분하고, 강의의 사례들은 공통 주제로 묶으세요."
+  },
+  {
+    "id": "TRAIN-D-01",
+    "module": "D",
+    "title": "수 일치",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The revised plan invol___ three new safety checks.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "involves",
+    "expectedPOS": "동사",
+    "expectedForm": "3인칭 단수 현재",
+    "formOptions": [
+      "과거형",
+      "형용사 형태",
+      "명사 복수형",
+      "3인칭 단수 현재"
+    ],
+    "wordFamily": "involve / involvement",
+    "evidence": "The revised plan이 단수 주어이며 목적어를 갖는 현재 동사가 필요하다.",
+    "explanation": "The revised plan이 단수 주어이며 목적어를 갖는 현재 동사가 필요하다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "invol",
+    "missingCount": 3
+  },
+  {
+    "id": "TRAIN-D-02",
+    "module": "D",
+    "title": "전치사 뒤 병렬",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The workshop develops skills by analyzing reports and comprehen____ complex instructions.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "comprehending",
+    "expectedPOS": "동명사",
+    "expectedForm": "-ing 병렬",
+    "formOptions": [
+      "형용사 형태",
+      "명사 복수형",
+      "-ing 병렬",
+      "과거형"
+    ],
+    "wordFamily": "comprehend / comprehension",
+    "evidence": "by 뒤의 analyzing과 같은 동명사 형태로 연결한다.",
+    "explanation": "by 뒤의 analyzing과 같은 동명사 형태로 연결한다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "comprehen",
+    "missingCount": 4
+  },
+  {
+    "id": "TRAIN-D-03",
+    "module": "D",
+    "title": "부사 형태",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The device records temperature continu_____ throughout the night.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "continuously",
+    "expectedPOS": "부사",
+    "expectedForm": "-ly 부사",
+    "formOptions": [
+      "명사 복수형",
+      "-ly 부사",
+      "과거형",
+      "형용사 형태"
+    ],
+    "wordFamily": "continuous / continuity",
+    "evidence": "records를 꾸미며 지속적인 측정을 뜻하는 부사가 필요하다.",
+    "explanation": "records를 꾸미며 지속적인 측정을 뜻하는 부사가 필요하다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "continu",
+    "missingCount": 5
+  },
+  {
+    "id": "TRAIN-D-04",
+    "module": "D",
+    "title": "명사 자리",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Scientists were surprised by the rich____ of plant life in the valley.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "richness",
+    "expectedPOS": "명사",
+    "expectedForm": "추상 명사",
+    "formOptions": [
+      "추상 명사",
+      "과거형",
+      "형용사 형태",
+      "명사 복수형"
+    ],
+    "wordFamily": "rich / enrich",
+    "evidence": "the와 of 사이에서 풍부함을 뜻하는 명사가 필요하다.",
+    "explanation": "the와 of 사이에서 풍부함을 뜻하는 명사가 필요하다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "rich",
+    "missingCount": 4
+  },
+  {
+    "id": "TRAIN-D-05",
+    "module": "D",
+    "title": "보고서의 범위",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The new review examines local conditions while incorpor_____ studies from several continents.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "incorporating",
+    "expectedPOS": "분사",
+    "expectedForm": "-ing 분사",
+    "formOptions": [
+      "과거형",
+      "형용사 형태",
+      "명사 복수형",
+      "-ing 분사"
+    ],
+    "wordFamily": "incorporate / incorporation",
+    "evidence": "while 뒤에서 주절 주어가 수행하는 동시 행동을 나타내는 -ing 형태다.",
+    "explanation": "while 뒤에서 주절 주어가 수행하는 동시 행동을 나타내는 -ing 형태다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "incorpor",
+    "missingCount": 5
+  },
+  {
+    "id": "TRAIN-D-06",
+    "module": "D",
+    "title": "연구의 기여",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The two laboratories improved the method by sharing tools and contrib_____ new measurements.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "contributing",
+    "expectedPOS": "동명사",
+    "expectedForm": "-ing 병렬",
+    "formOptions": [
+      "형용사 형태",
+      "명사 복수형",
+      "-ing 병렬",
+      "과거형"
+    ],
+    "wordFamily": "contribute / contribution",
+    "evidence": "by sharing과 병렬인 동명사 contributing이 필요하다.",
+    "explanation": "by sharing과 병렬인 동명사 contributing이 필요하다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "contrib",
+    "missingCount": 5
+  },
+  {
+    "id": "TRAIN-D-07",
+    "module": "D",
+    "title": "기원 표현",
+    "targetSkillId": "CTEST_RECONSTRUCTION",
+    "sourceQuestionId": "TPO3-R1",
+    "source_error_ids": [
+      "TPO3-R1"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "ctest",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The oldest records of the festival da__ back to the seventeenth century.",
+    "prompt": "주어진 철자와 빈칸 수를 확인하고 단어 전체를 완성하세요.",
+    "correctAnswer": "date",
+    "expectedPOS": "동사",
+    "expectedForm": "복수 주어 현재",
+    "formOptions": [
+      "명사 복수형",
+      "복수 주어 현재",
+      "과거형",
+      "형용사 형태"
+    ],
+    "wordFamily": "date / dated",
+    "evidence": "복수 주어 records와 date back to의 결합을 함께 확인한다.",
+    "explanation": "복수 주어 records와 date back to의 결합을 함께 확인한다.",
+    "hint": "빈칸 앞뒤의 주어·전치사·병렬 구조를 확인하고 품사와 형태를 결정하세요.",
+    "prefix": "da",
+    "missingCount": 2
+  },
+  {
+    "id": "TRAIN-E-01",
+    "module": "E",
+    "title": "완화와 제거",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Filters reduced the concentration of the pollutant by half; a measurable amount remained. The filters ___ the pollution.",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "mitigate / eliminate",
+    "options": {
+      "A": "mitigated",
+      "B": "created",
+      "C": "eliminated"
+    },
+    "correctAnswer": "A",
+    "evidence": "a measurable amount remained",
+    "explanation": "남아 있는 오염을 줄였으므로 mitigated다. eliminated는 완전 제거라 문맥과 모순된다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  },
+  {
+    "id": "TRAIN-E-02",
+    "module": "E",
+    "title": "잔여물과 거주자",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "repair",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "After the solvent evaporated, a thin solid ___ remained at the bottom of the dish.",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "residue / resident",
+    "options": {
+      "A": "residue",
+      "B": "resident",
+      "C": "residence"
+    },
+    "correctAnswer": "A",
+    "evidence": "a thin solid ... remained at the bottom of the dish",
+    "explanation": "증발 뒤 남은 물질은 residue다. resident는 사람이나 동물의 거주자를 뜻한다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  },
+  {
+    "id": "TRAIN-E-03",
+    "module": "E",
+    "title": "문의와 불만",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "If you have a question about which form to submit, send a ___ to the help desk. No service problem needs to have occurred.",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "query / complaint",
+    "options": {
+      "A": "query",
+      "B": "complaint",
+      "C": "refund"
+    },
+    "correctAnswer": "A",
+    "evidence": "a question ... No service problem needs to have occurred",
+    "explanation": "일반 문의는 query다. 불만이나 환불을 뜻하는 표현은 주어진 상황에 맞지 않는다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  },
+  {
+    "id": "TRAIN-E-04",
+    "module": "E",
+    "title": "구분과 인정",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "practice",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": false,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The experiment allowed researchers to draw a clear ___ between two previously confused species.",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "distinction / recognition",
+    "options": {
+      "A": "distinction",
+      "B": "permission",
+      "C": "recognition"
+    },
+    "correctAnswer": "A",
+    "evidence": "between two previously confused species",
+    "explanation": "두 대상을 구별하는 차이는 distinction이다. 공로 인정이나 허락이 아니다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  },
+  {
+    "id": "TRAIN-E-05",
+    "module": "E",
+    "title": "피해의 강도",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The barriers lessened wave damage, but several buildings were still flooded. Which description is accurate?",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "lessen / prevent completely",
+    "options": {
+      "A": "The barriers alleviated some damage.",
+      "B": "The barriers eliminated all damage.",
+      "C": "The barriers intensified the damage."
+    },
+    "correctAnswer": "A",
+    "evidence": "lessened wave damage, but several buildings were still flooded",
+    "explanation": "alleviate는 완화를 나타낸다. 일부 피해가 남았으므로 완전 제거를 주장할 수 없다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  },
+  {
+    "id": "TRAIN-E-06",
+    "module": "E",
+    "title": "산도와 염도",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "The water’s pH fell from 8.1 to 7.8, while its salt concentration stayed constant. What changed?",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "acidity / salinity",
+    "options": {
+      "A": "Acidity increased; salinity stayed constant.",
+      "B": "Salinity increased; acidity stayed constant.",
+      "C": "Both acidity and salinity disappeared."
+    },
+    "correctAnswer": "A",
+    "evidence": "pH fell ... salt concentration stayed constant",
+    "explanation": "pH 감소는 산도 증가를 나타낸다. 염분 농도인 salinity는 변하지 않았다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  },
+  {
+    "id": "TRAIN-E-07",
+    "module": "E",
+    "title": "기원과 복귀",
+    "targetSkillId": "VOCABULARY_DISCRIMINATION",
+    "sourceQuestionId": "TPO4-R6",
+    "source_error_ids": [
+      "TPO4-R6"
+    ],
+    "trainingRole": "transfer",
+    "exerciseType": "vocabulary",
+    "isOriginal": false,
+    "isTransfer": true,
+    "validationStatus": "REVIEWED",
+    "validationMethod": "편집 검토: 지문 근거와 모든 선택지/연결/어형을 대조. 외부 공인 검증 아님.",
+    "difficulty": "보통",
+    "provenance": "직접 제작한 연습 · 공식 TOEFL 문항 아님",
+    "passage": "Records show that the custom first appeared in 1620. Which phrase describes its origin?",
+    "prompt": "문맥에 정확히 맞는 표현을 고르세요.",
+    "comparison": "date back / return",
+    "options": {
+      "A": "It dates back to 1620.",
+      "B": "It was delayed until after 1620.",
+      "C": "It was returned in 1620."
+    },
+    "correctAnswer": "A",
+    "evidence": "first appeared in 1620",
+    "explanation": "date back to는 기원을 나타낸다. 돌려주다·지연되다와 다르다.",
+    "hint": "뜻이 비슷해도 강도와 적용 대상을 비교하세요. 남아 있는지, 무엇을 가리키는지가 결정적입니다."
+  }
+]

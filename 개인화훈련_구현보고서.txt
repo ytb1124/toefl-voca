@@ -1,0 +1,105 @@
+TOEFL 개인화 훈련 시스템 v4 — 2026-10-17
+
+1. 수정 전 점검
+빌드 없는 HTML/JavaScript/CSS, hash 라우팅, localStorage 구조를 유지했다.
+기존 홈에는 재개/진단/코스 카드가 함께 있어 다음 행동 선택지가 많았다.
+기존 14일 계획은 수동 체크 목록이었고 시험일, 실제 문항, 세션과 연결되지 않았다.
+새 문제 첫 시도 통계는 있었으나 단계별 훈련, 사용자 확정 진단에 따른 재배정, 지연 복습 기반 숙련은 없었다.
+구현전_점검.txt에 수정 전 확인 결과를 보존했다.
+
+2. 메뉴와 사용 흐름
+내 학습 / 훈련 / 오답뱅크 / 성장·복습, 네 메뉴로 통합.
+홈: 오늘의 약점과 추천 이유, '오늘의 훈련 시작', 수행할 3가지 작업, 복습 예정, 최근 결과.
+시험일을 비워두면 D-day 없음. 실제 날짜를 입력하면 D-day와 계획을 다시 계산한다.
+훈련: 원문 회상 → 사용자 확인 진단 → Guided 교정 → 독립 풀이 → 새 주제 적용 → 복습 예약.
+기본 목표 28분, 10~90분 조정 가능. 제한 시간에 일괄 강제 종료하지 않는다.
+훈련 메뉴 아래 기존 문제·C-Test 49개·교정 18개·기존 추가 연습 28개를 그대로 제공한다.
+기록·백업은 성장·복습 안에 있다. 예전 #history 주소도 유지한다.
+
+3. 다섯 모듈
+A 질문 판단: Target, 보기의 모든 주장에 근거가 있는지, 질문에 답하는지를 별도 판단.
+B 대상·특징: 키보드/모바일 선택형 매핑. 독립 풀이/새 적용은 자료를 숨긴 뒤 90초 연결.
+C 내용 처리: 합성음성 또는 텍스트 → 회상 → 답 → 막힌 단계 확인 → 선택 문장 재생/스크립트 → 다시 회상.
+  WHO/WHAT/WHERE/WHY/NEXT ACTION, Topic/Key Points/Conclusion, 순서 복원을 지원한다.
+  한 세션에서는 다음 행동/발화 기능/주제 중 같은 하위 기술을 유지한다.
+D C-Test: 제시 철자와 칸 수가 있는 새 문장. Guided 품사·형태·복원·문맥 검증과 Exam 직접 입력을 분리.
+E 어휘: mitigate/eliminate, residue/resident, query/complaint, distinction/recognition, acidity/salinity 등 문맥 구별.
+  근거 입력은 저장하되 자유 서술의 의미를 자동 채점한 것처럼 표시하지 않는다.
+새 연습 43개(이 중 새 문제 적용 21개), 원문/기존 추가 연습과 별도 유형.
+정답 배치를 순환하고 각 문항의 근거·모든 선택지·어형을 편집 검토했다.
+REVIEWED는 내부 편집 검토이며 외부 공인·심리측정 검증을 의미하지 않는다.
+이전 추가 연습 28개는 제거하지 않고, 새 숙련 판정에서는 검토 상태 UNKNOWN으로 제외한다.
+
+4. 데이터 모델과 보존
+같은 localStorage 키 taebin-toefl-study-v2를 사용하며 내부 버전을 4로 확장했다.
+기존 attempts/drafts/cursors/resume/analyses/analysisVersions/vocabOverrides/vocabReviews/customVocab/testNotes 보존.
+추가: settings, sessions, stageRecords.
+settings: 실제 시험일, 목표 시간, 학습 시작일, 수정 시각.
+sessions: 고유 ID, 원문 ID, targetSkillId, 단계, 단계별 입력/회상/힌트/시간, 사용 문항, 완료 시각.
+attempts 추가: sessionId, targetSkillId, stageRole, trainingMode, sourceMode, audioType, novelty,
+  validationStatus, response, timedLimitMs/timeExceeded, delayedReview, standardDueAt.
+stageRecords: 사용자 응답, 단계별 상호작용, 정오 또는 미채점(null), 시간, 도움 사용, 확실성.
+원본 문제는 canonical adapter에서 testId/testDate/setId, source/verificationStatus,
+  original/reported userAnswer, correctAnswer, passage/transcript, audioUrl=null 등으로 제공한다.
+원본 ID/보고서/이미지/답/정답/오류 코드 자체는 변경하지 않았다.
+원래 M=Memory 코드와 가이드 M=Meaning 세부 코드를 별도 보존했다.
+주원인 수정 시 이후 훈련 기술을 다시 배정한다. 과거 풀이의 기술과 규칙 스냅샷은 덮어쓰지 않는다.
+백업 병합은 기존 UID를 중복 추가하지 않고 최신 수정본을 선택한다.
+
+5. 추천·복습·숙련
+추천: 사용자 확정 원인, 재발, 최근 신규 실패, 미해결 독립 연습, 복습 기한, 기존 오답 빈도를 사용.
+근거가 적으면 '원보고서 기반 제안'으로 표시하며 정확한 실력 점수를 아는 것처럼 수치를 보여주지 않는다.
+질문/기술 상태: UNREVIEWED, DIAGNOSED, TRAINING, TRANSFER_PENDING, REVIEW_DUE, MASTERED, RELAPSED.
+숙련: 원문 독립 정답 + 검토된 새 문항 첫 독립 정답 + 둘보다 24시간 이상 뒤 정확한 복습.
+힌트/헷갈림/품사 오류/시간 초과는 숙련 근거로 인정하지 않는다.
+원문 반복 정답만으로 숙련을 부여하지 않는다. 첫 신규 오답은 재풀이 정답으로 덮어쓰지 않는다.
+숙련 후 독립 오답은 RELAPSED로 재등록한다. 이는 '같은 원인 재발'을 자동 확정했다는 뜻은 아니다.
+동일 원인 재발률은 기존처럼 풀이 전 진단 스냅샷과 사용자의 복습 판단이 있어야 계산한다.
+기본 1/3/7/14일, 시험일이 가까우면 압축한다. 날짜 변경은 저장된 복습 기한도 재계산한다.
+standardDueAt을 보존해 시험일을 지우거나 늦추면 기본 기한을 복원할 수 있다.
+14일 주제를 남은 날짜에 묶고 원문/새 적용/복습 문항으로 연결한다.
+독립 평가일·혼합/미니 모의일에는 원문 + 새 적용을 힌트 없이 바로 평가하는 세션을 제공한다.
+
+6. 63개 원본 보존
+TPO2=2026-10-02: Reading 13, Listening 8 (21)
+TPO3=2026-10-08: Reading 10, Listening 10 (최소 20)
+TPO4=2026-10-12: Reading 8, Listening 14 (22)
+합계 Reading 31 / Listening 32 / 고유 원본 63.
+TPO3-R5 / TPO3-L10은 미완성 상태를 유지하고 채점 대상에서 제외한다.
+TPO3 Listening 추가 단독 오답 6개는 분모가 없어 전체 정확도를 만들지 않는다.
+원본 이미지 51장과 기존 C-Test 49개 문단·정답·해설·순서를 대조한다.
+
+7. 검증
+자동 테스트 54개: 마이그레이션/백업 병합/불완전 자료/중복 방지/두 판단 분리/매핑/어형/
+  신규성/힌트/24시간 지연/숙련 후 재발/시험일 압축·복원/진단 변경·과거 기록 보존/입력 검증.
+브라우저: 홈 한 번 클릭, 전체 내용 처리 세션, 저장된 입력 새로고침 복원,
+  사용자 확인 진단, 텍스트/합성음성 분리, 구간 재생, A/B/D/E의 입력·채점,
+  90초 매핑, Guided/Exam 구분, 어휘 근거 필수, 실제 날짜 설정·압축 계획,
+  백업 14개 풀이/5개 세션/34개 단계 기록 내보내기 및 중복 0개 재가져오기.
+모바일 375px 홈/매핑/C-Test에서 가로 넘침 없이 조작 확인.
+지연 복습과 재발은 통제된 시각의 자동 테스트로 검증했다. 실제 24시간 학습 효과를 관찰한 결과는 아니다.
+테스트용 학습 기록은 로컬 QA 브라우저에만 있으며 배포 데이터에 포함하지 않는다.
+
+8. 수정/추가 파일
+study/app.js, study/index.html, study/progress.js, study/style.css
+study/training-engine.js, study/training-ui.js, study/training-items.json, study/training-items.js
+study/version.json, fillintheblank.html (캐시 갱신용 경로)
+scripts/build_training.py, scripts/package_study.py
+tests/learning.test.cjs, tests/training.test.cjs
+사용안내.txt, 검증_결과.json, 구현전_점검.txt, 개인화훈련_구현보고서.txt
+
+9. 제한과 미구현
+원본 음성파일 0개. 원문 Listening은 텍스트 교정이며 새 음성은 브라우저 합성음성이다.
+음성 인식 기반 자동 발음/내용 채점, 실제 원음 타임스탬프 구간 편집은 제공하지 않는다.
+정식 TOEFL 모의고사 재현/공식 점수 환산, Writing/Speaking 모듈은 범위에 포함하지 않았다.
+백엔드 계정/클라우드 기기 동기화는 없고 기존처럼 브라우저 저장 + 파일 백업이다.
+P2의 자동 난도 조정, 정교한 예측 모델, 무제한 AI 문항 생성은 구현하지 않았다.
+신규 검토 문항을 모두 소진하면 복습임을 명시하며 신규 평가로 부풀리지 않는다.
+기존 C-Test 원본 사진 경로는 기존 사이트에서도 404이며 복원되지 않은 사진을 만들지 않았다.
+
+10. 실제 사용
+기존 fillintheblank.html 주소 → 내 학습 → 시험일·훈련 시간 설정 → 오늘의 훈련 시작.
+오답을 맞힌 뒤에도 실제 원인을 직접 선택하고 다음 행동을 저장한다.
+훈련 후 새 문제에 적용하고, 복습 날짜가 오면 홈에서 이어간다.
+성장·복습에서 최초 시험/훈련/신규 적용/지연 유지/재발을 구분해 확인한다.
+다른 기기에서는 성장·복습 → 학습 기록·백업으로 옮긴다.
