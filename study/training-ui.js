@@ -12,7 +12,7 @@ const pct=m=>m.total?`${m.correct}/${m.total} · ${m.rate}%`:'기록 부족 · N
 const stateBadge=s=>`<span class="badge ${s.code==='MASTERED'?'good':s.code==='RELAPSED'?'warn':'active'}">${esc(s.label)}</span>`;
 const rowState=()=>{const key=E.phases[session.stageIndex][0];return session.responses[key]||(session.responses[key]={elapsedMs:0});};
 function tick(){const now=performance.now();if(clock!==null&&active()&&!document.hidden){const r=rowState();r.elapsedMs=(r.elapsedMs||0)+Math.max(0,now-clock);}clock=active()&&!document.hidden?now:null;}
-function save(){tick();if(session)P.saveSession(session);}
+function save(force=false){tick();if(session&&(force===true||active()))session=P.saveSession(session);}
 function record(action,response={},correct=null){tick();P.recordStage({sessionId:session.id,skillId:session.skillId,sourceQuestionId:session.sourceQuestionId,phase:E.phases[session.stageIndex][0],action,response:JSON.parse(JSON.stringify(response)),correct,timeSpentMs:Math.round(rowState().elapsedMs||0),hinted:!!rowState().hinted,trainingMode:session.stageIndex===2?session.mode:'exam'});}
 function draw(){save();ctx.render();clock=active()?performance.now():null;}
 function refreshMappings(){cat=E.remap(P.state,cat);}
@@ -20,7 +20,7 @@ function start(skillId,mode='guided',assessment=false){save();clock=null;refresh
  const pending=Object.values(P.state.sessions).filter(s=>!s.completedAt&&(!skillId||s.skillId===skillId)&&s.mode===mode&&!!s.assessment===assessment).sort((a,b)=>Date.parse(b.updatedAt)-Date.parse(a.updatedAt))[0];
  session=pending?JSON.parse(JSON.stringify(pending)):E.selectSession(P.state,cat,skillId||E.rank(P.state,cat)[0].id,Date.now(),mode);
  if(!session)return;session.assessment=assessment;if(!session.id){session.id=newId();P.saveSettings({startDate:P.state.settings.startDate||E.today()});}
- save();navigate('session');clock=performance.now();
+ save(true);navigate('session');clock=performance.now();
 }
 function resume(id){save();clock=null;const saved=P.state.sessions[id];if(!saved){navigate('home',false);return;}session=JSON.parse(JSON.stringify(saved));navigate('session',false);clock=performance.now();}
 function settingsForm(){return `<details class="settings card"><summary>시험일·훈련 시간 설정</summary><form id="training-settings"><div class="form-grid"><label>실제 시험 날짜<input type="date" name="examDate" value="${esc(P.state.settings.examDate||'')}"></label><label>한 세션 목표 시간 (10~90분)<input type="number" min="10" max="90" name="sessionMinutes" value="${esc(P.state.settings.sessionMinutes||28)}" required></label></div><p class="small muted">날짜를 비우면 D-day를 표시하지 않습니다. 계획을 다시 계산해도 기록은 그대로 유지됩니다. 목표 시간은 강제 종료 시간이 아닙니다.</p><button>설정 저장·계획 다시 계산</button><p id="settings-message" role="status"></p></form></details>`;}
@@ -115,8 +115,9 @@ function bind(){
  on('#stop-training-audio','click',()=>{if('speechSynthesis'in window)speechSynthesis.cancel();document.querySelector('#session-audio-status').textContent='재생을 멈췄습니다.';});
  on('#replay-segment','click',()=>{const item=currentItem(),r=rowState(),chunks=item.passage.match(/[^.!?]+[.!?]+|[^.!?]+$/g)||[item.passage];speech(chunks[Number(r.segment)||0]);record('post_answer_replay',{segment:Number(r.segment)||0,audioType:'synthetic'});});
  on('#listen-next','click',()=>{const r=rowState(),pane=r.pane||0;if(pane===0&&!r.sourceMode){document.querySelector('#session-error').textContent='합성음성 또는 텍스트 방식을 선택해 내용을 확인해주세요.';return;}if(pane===3&&!r.failure){document.querySelector('#session-error').textContent='이번 경험에 맞는 단계 또는 아직 모름을 선택해주세요.';return;}if(pane===3){const a=P.state.attempts.find(a=>a.uid===r.attemptUid);a.listeningDiagnosis={value:r.failure,certainty:r.failure.includes('아직')?'UNKNOWN':'USER_CONFIRMED',sourceMode:r.sourceMode};a.updatedAt=stamp();}record(pane===1||pane===5?'recall':pane===3?'listening_diagnosis':'source_review',{...r,certainty:pane===3&&!r.failure?.includes('아직')?'USER_CONFIRMED':'UNKNOWN'},null);if(pane===5)advance();else{r.pane=pane+1;if('speechSynthesis'in window)speechSynthesis.cancel();draw();window.scrollTo(0,0);}});
- on('#finish-session','click',()=>{record('schedule_review',{reflection:rowState().reflection||''});session.completedAt=stamp();save();navigate('growth');});
+ on('#finish-session','click',()=>{record('schedule_review',{reflection:rowState().reflection||''});session.completedAt=stamp();save(true);navigate('growth');});
 }
-window.addEventListener('pagehide',save);document.addEventListener('visibilitychange',()=>{tick();save();});setInterval(()=>{if(active()){tick();const countdown=document.querySelector('#mapping-countdown'),r=rowState();if(countdown&&r.mappingPrepared)countdown.textContent='남은 시간 '+Math.max(0,Math.ceil((90000-(r.elapsedMs-r.mappingStartMs))/1000))+'초 · 초과 여부를 기록합니다.';const el=document.querySelector('#session-elapsed');if(el)el.textContent='이 단계 '+duration(rowState().elapsedMs);P.saveSession(session);}},5000);
-return{cat,start,resume,home,trainPage,view,bind,progressPanel,curriculum,settingsForm,save,sessionHash:()=>session?.id||'',questionLabel:id=>{refreshMappings();return E.questionStatus(P.state,id,cat).label;},showLibrary:()=>libraryOpen=true};
+window.addEventListener('pagehide',()=>save());document.addEventListener('visibilitychange',()=>{tick();save();});setInterval(()=>{if(active()){tick();const countdown=document.querySelector('#mapping-countdown'),r=rowState();if(countdown&&r.mappingPrepared)countdown.textContent='남은 시간 '+Math.max(0,Math.ceil((90000-(r.elapsedMs-r.mappingStartMs))/1000))+'초 · 초과 여부를 기록합니다.';const el=document.querySelector('#session-elapsed');if(el)el.textContent='이 단계 '+duration(rowState().elapsedMs);save();}},5000);
+function sync(){if(active()){const saved=P.state.sessions[session.id];if(saved&&Date.parse(saved.updatedAt)>Date.parse(session.updatedAt)){session=JSON.parse(JSON.stringify(saved));clock=performance.now();}}}
+return{cat,start,resume,sync,home,trainPage,view,bind,progressPanel,curriculum,settingsForm,save,sessionHash:()=>session?.id||'',questionLabel:id=>{refreshMappings();return E.questionStatus(P.state,id,cat).label;},showLibrary:()=>libraryOpen=true};
 }};

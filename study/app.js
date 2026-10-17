@@ -135,6 +135,6 @@ setInterval(()=>{if(id&&page==='practice'&&!draft.checked){tick();const el=docum
 document.addEventListener('visibilitychange',()=>{tick(true);saveDraft();});
 
 const learning=TrainingUI.create({P,D,B,C,T,Q,S,esc,navigate,currentPage:()=>page,render});
-document.querySelectorAll('.tabs [data-page]').forEach(b=>b.onclick=()=>navigate(b.dataset.page));window.addEventListener('pagehide',saveDraft);window.addEventListener('storage',()=>{P.reload();if(page!=='practice')render()});window.addEventListener('hashchange',route);
+document.querySelectorAll('.tabs [data-page]').forEach(b=>b.onclick=()=>navigate(b.dataset.page));window.addEventListener('pagehide',saveDraft);window.addEventListener('storage',()=>{P.reload();learning.sync();if(page!=='practice')render()});window.addEventListener('hashchange',route);
 function route(){const path=location.hash.slice(1).split('/');if(path[0]==='session'&&path[1])learning.resume(path[1]);else if(path[0]==='question'&&Q[path[1]])open(path[1]);else if(path[0]==='analysis'&&Q[path[1]]){analysisId=path[1];navigate('analysis',false);}else if(path[0]==='vocab'&&path[1]){vocabId=path[1];navigate('vocab',false);}else navigate(['home','courses','bank','history','review','analysis','vocab','rules','growth','curriculum'].includes(path[0])?path[0]:'home',false);}route();
 })();
