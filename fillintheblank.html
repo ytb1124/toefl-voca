@@ -16,7 +16,7 @@
 <div class="study-nav"><a href="study/index.html">← 내 학습·진도</a><span>입력·채점 기록 자동 저장</span></div>
 <header><div><div class="eyebrow">READING · PERSONAL TRAINING</div><h1>Fill in the Blank</h1></div><label><span class="sr">Task 선택</span><select id="task-select"></select></label></header>
 <div class="progress-label"><span id="progress-text"></span><span>원본 자료 49개</span></div><progress id="progress" max="49"></progress>
-<section class="card"><h2 id="title"></h2><p class="instruction">보이는 철자 뒤의 밑줄 한 칸에 한 글자씩 입력하세요. 다 채운 뒤 ‘정답 확인하기’를 누르세요. 채점 후 ‘다음 Task’로 이동합니다. 입력 중 나가도 이어 풀 수 있습니다.</p><div id="passage" class="passage" aria-label="빈칸을 완성할 문단"></div><p id="status" role="status"></p><section id="feedback" aria-live="polite"></section><details class="source"><summary>원본 사진 확인</summary><img id="source" alt="현재 Task의 원본 사진"><p id="source-note">사진의 가려진 정답은 보이는 철자·칸 수·문맥으로 복원했습니다.</p></details></section>
+<section class="card"><h2 id="title"></h2><p class="instruction">보이는 철자 뒤의 밑줄 한 칸에 한 글자씩 입력하세요. 다 채운 뒤 ‘정답 확인하기’를 누르세요. 채점 후 ‘다음 Task’로 이동합니다. 입력 중 나가도 이어 풀 수 있습니다.</p><div id="passage" class="passage" aria-label="빈칸을 완성할 문단"></div><label class="instruction">답에 얼마나 확신하나요? <select id="ctest-confidence"><option value="">선택 안 함</option><option value="5">5 · 근거까지 확실</option><option value="4">4 · 대체로 확실</option><option value="3">3 · 두 답 사이에서 고민</option><option value="2">2 · 대략 추측</option><option value="1">1 · 거의 찍음</option></select></label><p id="status" role="status"></p><section id="feedback" aria-live="polite"></section><details class="source"><summary>원본 사진 확인</summary><img id="source" alt="현재 Task의 원본 사진"><p id="source-note">사진의 가려진 정답은 보이는 철자·칸 수·문맥으로 복원했습니다.</p></details></section>
 </main>
 <nav class="nav" aria-label="문제 이동"><button id="previous" type="button">← 이전 Task</button><button id="retry" hidden type="button">같은 Task 다시 풀기</button><button id="next" type="button" class="primary">정답 확인하기</button></nav>
 <script src="study/progress.js"></script>
@@ -46,11 +46,12 @@ let at=requested>=1&&requested<=TASKS.length?requested-1:savedCursor?taskIds.ind
 if(at<0)at=0;
 let drafts={};
 TASKS.forEach((_,i)=>{const d=progressStore.state.drafts[taskId(i)];if(d?.letters)drafts[i]=d.letters;});
-let revealed=false;
+let revealed=false,taskStarted=performance.now(),activeMs=0;
 const el=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>String(s).trim().toLowerCase();
-function persist(){progressStore.draft(taskId(),{letters:drafts[at]||[],checked:revealed,stage:2});}
+function clock(){if(!revealed&&taskStarted!==null)activeMs+=performance.now()-taskStarted;taskStarted=!revealed&&!document.hidden?performance.now():null;}
+function persist(){clock();progressStore.draft(taskId(),{letters:drafts[at]||[],checked:revealed,stage:2,confidence:el('ctest-confidence').value?Number(el('ctest-confidence').value):null,timeSpentMs:Math.round(activeMs)});}
 function refreshTaskLabels(){el('task-select').innerHTML=TASKS.map((task,i)=>'<option value="'+i+'">Task '+(i+1)+' · '+esc(task.title)+' · '+progressStore.status(taskId(i))+'</option>').join('');el('task-select').value=String(at);}
 function inputs(){return [...document.querySelectorAll('.slot')]}
 function readDraft(){return TASKS[at].blanks.map((_,i)=>[...document.querySelectorAll('[data-blank="'+i+'"]')].map(x=>x.value))}
@@ -58,7 +59,7 @@ function remember(){drafts[at]=readDraft();persist();updateStatus()}
 function updateStatus(){const list=inputs(),done=list.filter(x=>x.value).length;el('status').textContent=done===list.length?'입력을 마쳤습니다. 정답 확인하기를 눌러주세요.':'Tab으로 다음 칸 이동 · 모르는 칸은 비워 두고 확인할 수 있습니다.'}
 function wordHTML(b,values=[]){return '<span class="word" id="word-'+b.index+'"><span class="prefix">'+esc(b.prefix)+'</span><span class="slots">'+[...b.missing].map((_,j)=>'<input class="slot" type="text" inputmode="text" maxlength="1" data-blank="'+b.index+'" data-letter="'+j+'" aria-label="'+esc(b.prefix)+', 빈칸 '+(b.index+1)+', '+(j+1)+'번째 글자" autocomplete="off" autocapitalize="none" spellcheck="false" value="'+esc(/^[a-z]$/i.test(values[j]||'')?values[j]:'')+'">').join('')+'</span></span>'}
 function render(){
- const saved=progressStore.state.drafts[taskId()];
+ const saved=progressStore.state.drafts[taskId()];activeMs=saved?.timeSpentMs||0;taskStarted=performance.now();el('ctest-confidence').value=saved?.confidence||'';el('ctest-confidence').disabled=false;
  revealed=false;refreshTaskLabels();el('retry').hidden=true;const task=TASKS[at],draft=Array.isArray(drafts[at])?drafts[at]:[];
  el('task-select').value=String(at);el('title').textContent='Task '+(at+1)+' · '+task.title;el('progress-text').textContent='Task '+(at+1)+' / '+TASKS.length;el('progress').value=at+1;
  el('passage').innerHTML=task.parts.map(p=>typeof p==='string'?esc(p):wordHTML(p,Array.isArray(draft[p.index])?draft[p.index]:[])).join('');
@@ -86,17 +87,18 @@ function contextFor(task,b){const n=task.parts.indexOf(b);const left=task.parts.
 function grade(silent=false,restoring=false){
  remember();revealed=true;const task=TASKS[at],values=readDraft();let score=0;
  const result=task.blanks.map((b,i)=>{const answer=values[i].join(''),ok=values[i].every(v=>v.length===1)&&norm(answer)===norm(b.missing);if(ok)score++;el('word-'+i).classList.add(ok?'correct':'incorrect');return {b,answer,ok}});
- if(!restoring){progressStore.add({id:taskId(),kind:'ctest',answer:result.map(r=>r.b.prefix+r.answer).join(' / '),correct:score===10,score,total:10,hinted:false,tts:false,results:result.map(r=>({word:r.b.word,answer:r.b.prefix+r.answer,correct:r.ok}))});}
+ if(!restoring){progressStore.add({id:taskId(),kind:'ctest',answer:result.map(r=>r.b.prefix+r.answer).join(' / '),correct:score===10,score,total:10,confidence:el('ctest-confidence').value?Number(el('ctest-confidence').value):null,timeSpentMs:Math.round(activeMs),hinted:false,tts:false,results:result.map(r=>({word:r.b.word,meaning:r.b.meaning,sourceSentence:task.parts.map(p=>typeof p==='string'?p:p.word).join(''),answer:r.b.prefix+r.answer,correct:r.ok}))});}
  persist();if(!restoring)progressStore.advance(taskIds,taskId());refreshTaskLabels();el('retry').hidden=false;
- inputs().forEach(x=>x.disabled=true);
+ inputs().forEach(x=>x.disabled=true);el('ctest-confidence').disabled=true;
  el('status').textContent='정답과 해설을 확인한 뒤 다음 Task로 이동하세요.';
- el('feedback').className='result';el('feedback').innerHTML='<h3>'+score+' / 10 정답</h3><p class="result-note">'+esc(task.note)+'</p><div class="answer-list">'+result.map(({b,answer,ok})=>'<article class="answer-item"><h4><span class="'+(ok?'correct-mark':'incorrect-mark')+'">'+(ok?'✓':'✗')+'</span> '+esc(b.prefix)+'<span class="missing">'+esc(b.missing)+'</span> <small>· '+esc(b.meaning)+'</small></h4><p>입력한 부분: '+esc(answer||'미입력')+' → 정답: <b>'+esc(b.missing)+'</b></p><p class="context">… '+contextFor(task,b)+' …</p><p class="muted">이 표현에서 '+esc(b.word)+'는 “'+esc(b.meaning)+'”의 의미입니다. 주어진 '+esc(b.prefix)+'에 '+esc(b.missing)+'를 이어 완성합니다.</p></article>').join('')+'</div>';
+ el('feedback').className='result';el('feedback').innerHTML='<h3>'+score+' / 10 정답</h3><p class="result-note">'+esc(task.note)+'</p><p><a href="study/index.html#analysis/'+taskId()+'">오답 원인·교정 규칙·틀린 단어 연결하기 →</a></p><div class="answer-list">'+result.map(({b,answer,ok})=>'<article class="answer-item"><h4><span class="'+(ok?'correct-mark':'incorrect-mark')+'">'+(ok?'✓':'✗')+'</span> '+esc(b.prefix)+'<span class="missing">'+esc(b.missing)+'</span> <small>· '+esc(b.meaning)+'</small></h4><p>입력한 부분: '+esc(answer||'미입력')+' → 정답: <b>'+esc(b.missing)+'</b></p><p class="context">… '+contextFor(task,b)+' …</p><p class="muted">이 표현에서 '+esc(b.word)+'는 “'+esc(b.meaning)+'”의 의미입니다. 주어진 '+esc(b.prefix)+'에 '+esc(b.missing)+'를 이어 완성합니다.</p></article>').join('')+'</div>';
  el('next').textContent=at===TASKS.length-1?'학습 홈·진도 확인 →':'다음 Task →';if(!silent)el('feedback').scrollIntoView({block:'start',behavior:'smooth'});
 }
 function go(n){if(!revealed)remember();at=n;window.history.replaceState(null,'','?task='+(at+1));render();window.scrollTo({top:0,behavior:'smooth'})}
 function next(){if(!revealed){grade();return}if(at===TASKS.length-1){location.href='study/index.html';return;}go(at+1)}
 refreshTaskLabels();
-el('task-select').addEventListener('change',e=>go(Number(e.target.value)));el('previous').addEventListener('click',()=>go(Math.max(0,at-1)));el('next').addEventListener('click',next);el('retry').addEventListener('click',()=>{drafts[at]=[];revealed=false;persist();render();});el('source').addEventListener('error',()=>{el('source').hidden=true;el('source-note').textContent='이 Task의 원본 사진은 현재 저장소에 없습니다. 기존 문단·정답·해설은 그대로 사용할 수 있습니다.';});render();
+el('task-select').addEventListener('change',e=>go(Number(e.target.value)));el('previous').addEventListener('click',()=>go(Math.max(0,at-1)));el('next').addEventListener('click',next);el('retry').addEventListener('click',()=>{drafts[at]=[];revealed=false;activeMs=0;taskStarted=performance.now();el('ctest-confidence').value='';persist();render();});el('source').addEventListener('error',()=>{el('source').hidden=true;el('source-note').textContent='이 Task의 원본 사진은 현재 저장소에 없습니다. 기존 문단·정답·해설은 그대로 사용할 수 있습니다.';});render();
+el('ctest-confidence').addEventListener('change',persist);document.addEventListener('visibilitychange',()=>{clock();if(!revealed)persist();});
 window.addEventListener('pagehide',()=>{if(!revealed)remember();});
 </script>
 </body>

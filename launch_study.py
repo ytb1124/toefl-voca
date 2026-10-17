@@ -13,11 +13,13 @@ try:
 except OSError:
     try:
         with urlopen(f'http://127.0.0.1:{PORT}/study/version.json',timeout=2) as response:
-            if json.load(response).get('app')!='taebin-toefl-study':raise ValueError('other application')
+            running=json.load(response)
+            expected=json.loads((ROOT/'study/version.json').read_text())
+            if running.get('app')!='taebin-toefl-study' or running.get('build')!=expected.get('build'):raise ValueError('different study version')
         webbrowser.open(URL)
         print('이미 실행 중인 학습 화면을 열었습니다.')
     except Exception:
-        print('학습용 주소가 다른 프로그램에서 사용 중입니다. 기존 프로그램을 닫고 다시 시작해주세요.')
+        print('이전 학습 창이나 다른 프로그램이 실행 중입니다. 이전 학습용 터미널 창을 닫고 이 시작 파일을 다시 실행해주세요. 브라우저에 저장된 기록은 유지됩니다.')
     input('Enter 키를 눌러 닫기 ')
 else:
     threading.Thread(target=server.serve_forever,daemon=True).start()
