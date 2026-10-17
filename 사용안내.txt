@@ -78,6 +78,9 @@ C-Test 사진 경로는 기존 공개 사이트에서도 404입니다. 사진이
 
 GitHub
 원본 저장소: https://github.com/ytb1124/toefl-voca
+배포 후 기존 fillintheblank.html 주소를 열면 통합 학습 홈이 열립니다.
+C-Test를 선택하면 fillintheblank.html?task=번호로 원래 훈련 화면이 열립니다.
+기존 C-Test 화면부터 직접 시작하려면 fillintheblank.html?classic=1을 사용할 수 있습니다.
 index.html, fillintheblank.html, study/를 저장소의 같은 위치에 반영하면 온라인으로 동작합니다.
 다른 어휘·교재 HTML 파일은 변경하지 않았습니다.
 현재 연결 계정에 쓰기 권한이 없어 온라인 사이트에는 반영하지 않았습니다.

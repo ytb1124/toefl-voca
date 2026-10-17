@@ -13,7 +13,7 @@
     "TPO3-L10"
   ],
   "source_images_sha256_verified": 51,
-  "progress_tests_passed": 27,
+  "progress_tests_passed": 30,
   "browser_checks": [
     "문장 안 C-Test 빈칸 입력·채점",
     "미완성 입력 새로고침 후 복원",
@@ -50,5 +50,6 @@
   "authored_transfer_questions": 28,
   "confirmed_diagnostic_seed_count": 0,
   "diagnostic_suggestions": 63,
-  "ctest_task_count": 49
+  "ctest_task_count": 49,
+  "entry_route_tests_passed": 3
 }
