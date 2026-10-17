@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "date": "2026-10-17",
+  "original_ctest_constants_unchanged": {
+    "RAW_TASKS": 49,
+    "TITLES": 49,
+    "NOTES": 49
+  },
+  "unique_errors": 63,
+  "ready_original_questions": 61,
+  "reference_only_ids": [
+    "TPO3-R5",
+    "TPO3-L10"
+  ],
+  "source_images_sha256_verified": 51,
+  "progress_tests_passed": 10,
+  "browser_checks": [
+    "문장 안 C-Test 빈칸 입력·채점",
+    "미완성 입력 새로고침 후 복원",
+    "학습 홈의 다음 문제 안내",
+    "기존 C-Test로 이동·입력 복원",
+    "C-Test 10개 정답 채점",
+    "C-Test 채점 후 새로고침해도 중복 기록 없음",
+    "학습 기록에 C-Test와 TPO 성적 별도 표시",
+    "듣기 내용 확인→질문→채점",
+    "오답·스크립트 도움·헷갈림 복습 목록",
+    "복습 버튼이 새 풀이로 시작",
+    "추가 교정 별도 채점",
+    "문장 삽입 위치 선택·채점",
+    "미확인 문항 자동 채점 제외",
+    "좁은 화면 가로 넘침 없음"
+  ],
+  "limitations": [
+    "GitHub 계정의 저장소 쓰기 권한 없음: 온라인 반영 전",
+    "원본 음성파일 없음: 합성음성·스크립트만 제공",
+    "기존 C-Test 사진 경로는 공개 사이트에서도 404"
+  ]
+}

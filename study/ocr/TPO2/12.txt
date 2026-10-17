@@ -1,0 +1,22 @@
+Conversation 1
+
+>» 00:00 00:22
+[00:00.07] Listen to a conversation.
+[00:02.39]####_1_Woman:_#####t Did you feed the cat this morning? She's been meowing all afternoon.
+[00:05.99]####_2_Man:_#### Oh, no! | completely forgot. | was watering the flowers in the garden, and then | got a call from a client.
+[00:13.03]####_1_Woman:_#### Poor cat! She must be so hungry.
+
+[00:14.43]#t###_2_Man:_####### And now I've got a conference call coming up, and | need to look over my notes.
+[00:19.79]####_1_Woman:_####### You focus on that. I'll take care of the cat.
+
+a)
+
+What will the man probably do next?
+A Feed the cat
+B Phone a client
+Water the garden
+
+D Prepare for a meeting
+
+EWESR: D
+FRAO: A: WESEH HORE”, HERMIRIEPTRE; B: SP RICOH, ASRRARR: C: RAEN ARE, IE F—

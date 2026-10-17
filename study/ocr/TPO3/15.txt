@@ -1,0 +1,10 @@
+1 23 4(s}]s6 7
+
+Can you help me set up the employee lounge?
+
+>» 00:00 00:02
+A We provide it.
+B_ Sorry, | can't.
+Cc Exactly.
+
+D _ It's in the corner.

@@ -1,0 +1,9 @@
+Listen and Reply
+1 fa] s
+Would you like to join the audit committee?
+> 00:00 00:02
+A Sure, I'll organize it.
+B_ No, I'll vote later.
+C_ Is it committee work?
+
+D_ I'ma bit stretched right now.

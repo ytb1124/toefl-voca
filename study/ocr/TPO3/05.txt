@@ -1,0 +1,21 @@
+Traffic flow is often analyzed through mathematical models, but human psychology plays a significant role in driving behavior. Drivers'
+perceptions of time and stress levels can influence traffic conditions. Impatience in congested areas often leads to aggressive driving,
+worsening traffic jams. Interestingly, phantom traffic jams occur without any apparent cause. These are triggered by small disruptions, such
+as a single driver braking suddenly, leading to a ripple effect.
+
+Studies by traffic psychologists show that varying stress levels among drivers contribute to inconsistent driving patterns. Stressful events, like
+being late for work or facing a tight schedule, can cause drivers to make erratic decisions, impacting traffic flow. Drivers tend to react
+differently to traffic signals depending on their psychological state. A calm driver is likely to maintain a steady speed, while a stressed driver
+may frequently change lanes or speed up abruptly
+
+Another aspect of traffic psychology involves route selection. Drivers often choose routes based on perceived traffic conditions rather than
+actual data. This can lead to congestion on popular routes, even when alternative paths are more efficient. Traffic- management systems are
+being developed to incorporate real-time psychological data to predict and alleviate traffic issues, aiming for smoother and safer road
+experiences.
+
+Why does the author mention a "calm driver" and a "stressed driver"?
+A To illustrate the impact of varying states of mind on reactions to traffic signals
+B_ To suggest that calm drivers should be willing to take more risks than they typically do
+C_ To argue that stressful driving leads to unnecessarily hazardous road conditions
+
+D_ To suggest that calmness and stressfulness are both caused by increasing problems with the oversight of traffic patterns

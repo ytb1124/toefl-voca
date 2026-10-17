@@ -1,0 +1,378 @@
+TPO2-FOSSILS | Fossils
+원본: TPO2-IMG01
+Fossils provide critical evidence for understanding how life forms have evolved over time. One fascinating fossil, Archaeopteryx, was discovered in the late nineteenth century. It dates back about 150 million years and exhibits a unique set of features: it has feathers and wings like a bird, but also possesses teeth, a long bony tail, and clawed fingers, which are more typical of reptiles. This led scientists to classify Archaeopteryx as a transitional fossil, a creature that exhibits characteristics of two distinct groups.
+
+
+TPO2-LIBRARY | Missing library card
+원본: TPO2-IMG02
+Subject: Dear Ms. Robinson,
+
+You reported your library card missing yesterday. Please know that it has been located. It was in a book you returned last week. If you
+
+have already ordered a replacement card, let us know and we will deactivate your old card.
+
+Best regards, David Clark
+
+
+TPO2-URBAN | Urban Agriculture
+원본: TPO2-IMG03
+Urban agriculture, the practice of cultivating, processing, and distributing food in or around metropolitan areas, is gaining popularity worldwide. This movement is driven by the desire to increase food security and reduce the distance that food travels from farm to consumer. Movement adherents also seek to foster sustainable living. Community gardens, vertical farms, and rooftop gardens are common forms of urban agriculture that provide fresh produce to city dwellers.
+
+One of the main benefits of urban agriculture is its ability to enhance food security. By growing food locally, cities can reduce their dependence on imported produce and ensure a steady supply of fresh fruits and vegetables. Additionally, urban agriculture can contribute to environmental sustainability. Local food production reduces the need for transportation, lowering carbon emissions and minimizing the environmental impact of food distribution.
+
+However, urban agriculture faces several challenges. Limited space in densely populated cities can restrict the scale of food production. Moreover, urban soil can be contaminated with pollutants, making it unsuitable for growing food. Innovative solutions, such as hydroponics and aquaponics, are being developed to overcome these obstacles and maximize food production in urban areas.
+
+
+TPO2-PHOTO | Photosynthesis
+원본: TPO2-IMG04, TPO2-IMG05
+Photosynthesis is a vital process that occurs in plants, algae, and some bacteria, allowing them to convert light energy into chemical energy. This process is essential for the survival of these organisms and for the production of oxygen, which is crucial for life on Earth. Photosynthesis primarily takes place in the chloroplasts of plant cells, where chlorophyll absorbs sunlight and initiates the conversion of carbon dioxide and water into glucose and oxygen.
+
+Photosynthesis is not only important for plants but also has significant implications for climate change. Plants absorb carbon dioxide, a major greenhouse gas, during photosynthesis. This helps mitigate the effects of global warming by reducing the concentration of carbon dioxide in the atmosphere. Moreover, advancements in scientific research have explored ways to enhance photosynthesis in crops to improve food production and carbon sequestration.
+
+The efficiency of photosynthesis can be influenced by various factors, including light intensity, temperature, and the availability of water and nutrients. Scientists continue to study these factors to better understand how to optimize photosynthesis for agricultural purposes and environmental sustainability. Additionally, genetic engineering is being used to develop plant varieties with improved photosynthetic capabilities, potentially increasing crop yields and resilience to climate change.
+
+
+TPO2-MUSHROOM | Mushrooms
+원본: TPO2-IMG06
+Mushrooms are a fascinating type of fungus that can thrive in diverse environments, including forests, fields, and gardens. They vary widely in shape, size, and color, contributing to the richness of ecosystems. While some mushrooms are edible and valued for their nutritional benefits, others are highly toxic and must be avoided. Identifying safe varieties is essential for foragers and researchers. In addition to their culinary and medicinal uses, mushrooms serve a vital ecological role by decomposing organic matter, recycling nutrients, and enriching the soil for plant growth.
+
+
+TPO2-SLEEP | Sleep and Memory
+원본: TPO2-IMG07, TPO2-IMG08
+Sleep plays a critical role in memory formation and consolidation. During sleep, the brain processes and organizes information acquired throughout the day. Studies have shown that sleep helps transform short-term memories into long-term memories. This process is essential for learning and cognitive function.
+
+Research conducted at several universities found that participants who had a good night’s sleep performed better on memory tasks than those who were sleep deprived. For instance, individuals who slept after studying a list of words were more likely to recall the words the next day. This suggests that sleep strengthens the neural connections in the brain.
+
+There is also evidence that different stages of sleep contribute uniquely to memory consolidation. The rapid eye movement (REM) phase of sleep is associated with emotional and procedural memory, while non-REM sleep, especially slow-wave sleep, is linked to declarative memory —the conscious recall of facts and events. This distinction helps explain why certain types of memories are more affected by sleep than others. However, the modern lifestyle often disrupts sleep patterns, leading to insufficient sleep. Factors such as stress, light exposure, and irregular schedules can negatively impact sleep quality. As a result, memory formation and overall cognitive health can be compromised.
+
+
+TPO3-COGNITION | Cognition
+원본: TPO3-IMG01
+Cognition and consciousness are pivotal subjects in the exploration and study of the human mind. Cognition involves the mental mechanisms for acquiring and comprehending knowledge, encompassing perception and decision-making. Conversely, consciousness refers to self-awareness and the ability to reflect on thoughts and environment. Researchers in this field aim to investigate these phenomena to decipher how neural activities give rise to cognitive functions and conscious experiences, shedding light on the complexity of the brain.
+
+
+TPO3-QUERIES | Urgent queries
+원본: TPO3-IMG02
+Emily Chen (2:00 P.M.)
+
+Hi team. The client was originally fine with relaxing the deadline for the marketing project, but their competitors are moving too quickly. We need to adjust our schedules.
+
+Carlos Rivera (2:05 P.M.)
+
+Thanks for letting us know, Emily. I will update the project timeline and send it out to everyone. I'll also ensure all milestones are clearly defined.
+
+Sarah Thompson (2:10 P.M.)
+
+I will work on the content creation and aim to finish by Friday. I'll make sure all materials are reviewed and ready for final approval.
+
+David Nguyen (2:15 P.M.)
+
+I will be out of the office on Thursday but will complete my tasks before then. I'll also be available via e-mail for any urgent queries the team may have.
+
+Emily Chen (2:20 P.M.) Alright, David. I appreciate the effort! Let's all stay focused and ensure we meet the deadline.
+
+
+TPO3-SLEEP | The Science of Sleep
+원본: TPO3-IMG03
+Sleep is a vital process that allows the body and mind to rest and rejuvenate. Scientists have long studied sleep to understand its functions and benefits. Sleep is divided into several stages, including rapid eye movement (REM) and non-REM sleep. Each stage plays a crucial role in maintaining overall health. REM sleep is associated with dreaming and memory consolidation, while non-REM sleep is important for physical
+
+restoration and immune function.
+
+One of the key functions of sleep is to support cognitive processes. During sleep, the brain processes and consolidates information acquired throughout the day, which enhances learning and problem-solving abilities. Studies have shown that lack of sleep can impair cognitive performance, leading to difficulties in concentration, decision-making, and memory.
+
+Despite its importance, many people do not get enough sleep due to various factors such as stress, lifestyle choices, and medical conditions. Chronic sleep deprivation is linked to a range of health issues, including obesity, diabetes, cardiovascular diseases, and weakened immune function. Therefore, prioritizing good sleep hygiene and addressing sleep disorders are essential for maintaining overall health and well-being.
+
+
+TPO3-HEART | Human Heart
+원본: TPO3-IMG04
+The human heart is a vital organ with four chambers—two atria and two ventricles—that pumps blood nonstop, supplying oxygen and nutrients throughout the body. The heart works continuously to keep circulation efficient, ensuring that arteries carry oxygenated blood away from the organs while veins return it to the heart. This process supports tissues and organs, keeping them healthy. Regular exercise, a balanced diet, and good lifestyle choices help maintain heart health, reducing the risk of cardiovascular disease and promoting long-term well-being.
+
+
+TPO3-TRAFFIC | Traffic Psychology
+원본: TPO3-IMG05, TPO3-IMG06
+Traffic flow is often analyzed through mathematical models, but human psychology plays a significant role in driving behavior. Drivers' perceptions of time and stress levels can influence traffic conditions. Impatience in congested areas often leads to aggressive driving, worsening traffic jams. Interestingly, phantom traffic jams occur without any apparent cause. These are triggered by small disruptions, such as a single driver braking suddenly, leading to a ripple effect.
+
+Studies by traffic psychologists show that varying stress levels among drivers contribute to inconsistent driving patterns. Stressful events, like being late for work or facing a tight schedule, can cause drivers to make erratic decisions, impacting traffic flow. Drivers tend to react differently to traffic signals depending on their psychological state. A calm driver is likely to maintain a steady speed, while a stressed driver may frequently change lanes or speed up abruptly
+
+Another aspect of traffic psychology involves route selection. Drivers often choose routes based on perceived traffic conditions rather than actual data. This can lead to congestion on popular routes, even when alternative paths are more efficient. Traffic- management systems are being developed to incorporate real-time psychological data to predict and alleviate traffic issues, aiming for smoother and safer road experiences.
+
+
+TPO4-FOOD | Prehistoric Food
+원본: TPO4-IMG01
+The study of prehistoric food and diet offers valuable insights into the survival strategies and daily lives of early humans. Archaeologists study remains such as animal bones, plant residue, and culinary tools to understand what ancient people ate and how they acquired their food. Evidence suggests that early humans relied on a diverse diet. The development of agriculture marked a significant shift, enabling more stable food sources and leading to complex societies.
+
+
+TPO4-DESERT | Deserts
+원본: TPO4-IMG06
+Deserts are known for their hot and dry conditions. They receive very little rainfall, which makes it hard for living things to survive. Some creatures, like camels, have special traits that help them thrive in this harsh environment. They can go for long periods without water and eat vegetation that other animals cannot. Many types of plants have deep roots that reach far underground to find moisture and stay alive in the extreme heat.
+
+
+TPO4-GARCIA | Product Launch
+원본: TPO4-IMG02
+Dear Ms. Garcia,
+
+At Ultrasmart Wearables, we are excited to announce the launch of our new product line on next Monday. Please join us for the kick-off event which will be held from 10:00 a.m. to 6:00 P.M. at the Innovation Center, 45 Oak Road. The program will feature product demonstrations, guest speakers, and two Q&A sessions with panel participants. Complimentary refreshments will be provided. All retailers
+
+attending the event will have the opportunity to purchase a bulk shipment of our GQX smart watches at a 20 percent discount, so don't miss out.
+
+Please RSVP by Friday. For any questions, contact our support team at 955-3341.
+
+Regards, Daniel Lee
+
+Ultrasmart Wearables
+
+
+TPO4-GLACIERS | The Impact of Glaciers
+원본: TPO4-IMG03, TPO4-IMG04, TPO4-IMG05
+Glaciers are natural reservoirs of ice and snow that play important roles worldwide. They are powerful agents of erosion, capable of shifting landscapes by carving valleys, transporting sediment, and depositing glacial debris. Glaciers play an especially critical role in regulating Earth's climate. Found in polar regions and high mountains, glaciers store fresh water and release it slowly into rivers and oceans, providing a steady supply during warmer months. Glaciers reflect sunlight, cooling the planet by sending solar radiation back into space.
+
+The impact of glaciers on Earth's climate has come into sharp focus in recent decades. As global temperatures rise, glaciers are melting rapidly, which is reducing their reflective capacity and contributing to a rise in sea levels. The melting of glaciers also affects local ecosystems. Fresh water released from glaciers feeds rivers, impacting fish habitats and agriculture. In regions where glaciers are the primary water source, their decline can lead to severe water shortages.
+
+Scientists are actively studying glaciers to predict future changes and develop strategies to mitigate the impact that melting glaciers could have on the environment.. Despite these efforts, the future of glaciers remains uncertain. Continuous research and international cooperation are essential to address the challenges posed by melting glaciers and ensure the stability of global water resources.
+
+
+TPO2-HARDWARE | Hardware Store
+원본: TPO2-IMG09
+Why did the hardware store close early?
+
+
+TPO2-ANNOUNCE | Film Screening
+원본: TPO2-IMG10
+[00:00.23] Listen to an announcement in a classroom.
+
+[00:03.21]Teacher: Hey, students! Don't forget about the film screening by the International Club this Saturday. It ties nicely into our discussion about cultural impacts on learning.
+
+[00:12.68] Take good notes during the screening. In our next class, you'll present your analysis of the film. See you there!
+
+
+TPO2-OYSTERS | Ocean Acidification
+원본: TPO2-IMG11
+[00:00.11] Listen to a talk in an Earth science class.
+
+[00:05.06]Woman: Since the Industrial Revolution, human activities have caused atmospheric CO₂ levels to increase by about 50 percent. As more carbon dioxide enters the atmosphere, a significant portion is absorbed by the oceans.
+
+[00:19.18] This triggers a chemical reaction that lowers the water's pH, making it more acidic—a process known as acidification. Such conditions pose a serious threat to marine organisms that rely on calcium carbonate to build their shells and skeletons.
+
+[00:35.56] Take oysters, for example. These shellfish are especially vulnerable. In more acidic waters, young oysters struggle to form their initial shells, a critical stage in their development. Without strong shells, they're more susceptible to disease, predation, and death— threatening both wild populations and aquaculture industries.
+
+[00:57.36] Coral reefs are weakened by acidification, and this, too, doesn't just affect the corals themselves. These reefs support entire ecosystems, offering shelter and food to countless marine species. Even fish behavior and survival can be altered, disrupting food chains and impacting communities that depend on fishing for their livelihoods.
+
+[01:18.72] Tackling this issue means addressing its root cause: carbon emissions. By curbing CO₂ output and safeguarding marine habitats, we can help preserve the delicate balance of life beneath the waves.
+
+
+TPO2-CAT | Cat and Conference Call
+원본: TPO2-IMG12
+[00:00.07] Listen to a conversation.
+[00:02.39]Woman: Did you feed the cat this morning? She's been meowing all afternoon.
+[00:05.99]Man: Oh, no! I completely forgot. I was watering the flowers in the garden, and then I got a call from a client.
+[00:13.03]Woman: Poor cat! She must be so hungry.
+
+[00:14.43]Man: And now I've got a conference call coming up, and I need to look over my notes.
+[00:19.79]Woman: You focus on that. I'll take care of the cat.
+
+
+TPO2-MAGIC | Magical Realism
+원본: TPO2-IMG13, TPO2-IMG14
+[00:00.07] Listen to a talk in a literature class.
+
+[00:04.52]Man: Let's talk a little bit about magical realism in literature. Magical realism is a genre that blends magical elements with the real world, presenting fantastical events as normal aspects of everyday life. The critic Matthew Strecher defines it as “what happens when a highly detailed, realistic setting is invaded by something too strange to believe.”
+
+[00:27.34] Maybe you've heard about it in the context of Latin American authors like Gabriel Garcia Marquez and Isabel Allende, but we also see it in works by authors outside Latin America like Salman Rushdie and Milan Kundera. The term actually comes from a German and Italian painting style of the 1920s.
+
+[00:47.89] In a magical realist work, characters might encounter ghosts, levitate, manipulate time—just as they might in a fantasy work— but interestingly, these occurrences are never explained or questioned—they just coexist with reality.
+
+[01:02.26] The result for readers is a new perspective on reality. Many authors have used this new perspective to address social and political issues, so that the fantastical in a way comments on real-world problems. In Garcia Marquez's works, one purpose is to critique things like colonialism and corruption.
+
+[01:21.67] Of course, violating conventional narrative techniques requires a reader to have an open mind. So when you read a work like Garcia Marquez's One Hundred Years of Solitude, you're challenged to rethink your perceptions and think about the deeper truths beneath the surface of ordinary life.
+
+
+TPO2-SOCIAL | Socialization
+원본: TPO2-IMG15, TPO2-IMG16
+[00:00.00] Listen to a talk in a sociology class.
+
+[00:04.76]Man: Today, we're exploring the concept of socialization, which is the process by which individuals learn and adopt the values, norms, and behaviors necessary to participate in their society. When a child is born—from the very moment of birth— socialization begins and continues throughout an individual's life, and it significantly shapes their identity and their roles within the community.
+
+[00:31.62]There are various agents of socialization, such as family, schools, peers, media, and religion. Family is often considered the primary, the most fundamental agent of socialization, since it's usually the first social environment a child encounters, where they learn basic norms and values. Schools play a significant role in teaching academic skills and social norms through structured education.
+[00:59.62] Peer groups like classmates, friends, and neighbors allow individuals to develop interpersonal skills and, importantly, to explore and shape their identities outside of the family context, beyond the scope of family relationships.
+
+[01:17.12] The media provides a wide range of information and cultural norms that influence perceptions and behaviors. Religion can instill a sense of morality and community belonging.
+
+[01:28.81]Each of these agents contributes uniquely to the socialization process and helps individuals navigate and integrate into their society. Understanding socialization is crucial for analyzing how societal structures influence individual behaviors and vice versa.
+
+
+TPO3-CLIENT | Client
+원본: TPO3-IMG07
+Were you able contact the client?
+
+
+TPO3-ART | Art
+원본: TPO3-IMG08
+Can you help me with this art project?
+
+
+TPO3-SEMINAR | Seminar
+원본: TPO3-IMG09
+When should we be there for the seminar?
+
+
+TPO3-LUNCH | Lunch
+원본: TPO3-IMG10
+Let's grab lunch at that new place.
+
+
+TPO3-SAME | Same
+원본: TPO3-IMG11
+I've never seen anything like this before.
+
+
+TPO3-EXHIBITION | Exhibition
+원본: TPO3-IMG12
+The exhibition starts on Saturday.
+
+
+TPO3-LOUNGE | Lounge
+원본: TPO3-IMG15
+Can you help me set up the employee lounge?
+
+
+TPO3-GRADING | Group Project Grading
+원본: TPO3-IMG13
+[00:00.23] Listen to the following announcement in a classroom.
+
+[00:03.46]Teacher: Hey everyone, quick heads up about how we're going to grade the group projects this semester. Instead of one grade for the whole group, each of you will get your own grade based on what you contribute to the project.
+
+[00:17.46] This change is because we've noticed that not everyone contributes equally, and I believe this way is fairer to all.
+
+[00:24.97] If you have questions about this or need more details on how contributions are assessed, please come see me after class.
+
+
+TPO3-PHILOSOPHY | Existentialism
+원본: TPO3-IMG14
+[00:00.00] Listen to a talk in a philosophy class,
+
+[00:04.16]Man: Today, we're going to explore the concept of existentialism, a philosophical movement that emerged in the twentieth century. A central concept in existentialism is "the absurd," a term popularized by Albert Camus. It describes the conflict between our deep desire for meaning and the indifferent, chaotic nature of the universe. Camus argued that while life may lack inherent purpose, we must still live with integrity and passion, embracing the absurd rather than succumbing to despair.
+
+[00:29.17] This theme is powerfully explored in Samuel Beckett's play Waiting for Godot. Two characters, Vladimir and Estragon, wait endlessly for someone named Godot, who never arrives. Their repetitive conversations and actions highlight the emptiness and uncertainty of existence.
+
+[00:47.93] Rather than dramatic expressions of anxiety, the play presents a quieter, more subdued response to the absurd—one marked by endurance and the faint hope that meaning might eventually appear.
+
+[01:09.12] One anecdote suggests Beckett was inspired by a story about a man actually waiting for someone named Godot who never came. When asked who Godot was, Beckett famously replied, "If I knew, I would have said so in the play." This ambiguity is part of what makes the work so powerful—it captures existentialism not through answers but through the act of questioning and enduring.
+
+
+TPO4-LIBRARYEVENT | Library Event
+원본: TPO4-IMG07
+Isn't the library hosting an event today?
+
+
+TPO4-STUDYGROUP | Study Group
+원본: TPO4-IMG08
+[00:00.00] Listen to a conversation.
+
+[00:03.66]Man: Did you hear about the new coffee shop downtown?
+
+[00:07.29]Woman: My roommate said it was good. Have you been there yet?
+
+[00:11.46]Man: No, but I was thinking we could go there for our study group on Saturday, you know, since the library is being renovated and won’t be open until next week.
+
+[00:21.16]Woman: That’s a good idea! But I can’t go to the study group this weekend. My brother is coming to visit and I’m showing him around. Let me know how it is though. I always love to try new coffee shops.
+
+[00:32.62]Man: Will do.
+
+
+TPO4-PICNIC | Company Picnic
+원본: TPO4-IMG09
+[00:00.03] Listen to a conversation.
+
+[00:02.35]Man: Have you decided on a venue for the company picnic yet?
+
+[00:05.63]Woman: Yes, we're going to have it at Lakeside Park. It's perfect for outdoor activities and has plenty of space.
+[00:11.63]Man: Sounds great! What kind of activities are we planning?
+
+[00:15.09]Woman: We'll have a barbecue, some team games, and maybe a scavenger hunt.
+
+[00:19.17]Man: I'm looking forward to it!
+
+
+TPO4-PHOTOCLUB | Photography Club
+원본: TPO4-IMG10
+[00:00.00] Listen to a conversation.
+
+[00:02.40]Man: I'm thinking of joining the photography club. Do you know much about it? I'm looking for a place to learn more and meet other photography enthusiasts.
+
+[00:11.75]Woman: Yes, I've been a member for two years. It's a great place for that.
+
+[00:16.45]Man: That sounds perfect. Do they offer workshops?
+
+[00:19.69]Woman: Yes, they have workshops every month on different topics, like landscape and portrait photography.
+[00:26.30]Man: I'm definitely interested. I'll sign up right away.
+
+
+TPO4-LEADERSHIP | Leadership
+원본: TPO4-IMG11, TPO4-IMG12
+[00:00.00] Listen to a talk in a business class.
+
+[00:04.08]Woman: In a business class, we often discuss the importance of leadership in an organization. Leadership goes beyond just managing a team; it involves inspiring and guiding people towards achieving shared goals.
+
+[00:19.34] There are various styles of leadership, such as transformational, transactional, and servant leadership. Transformational leaders focus on inspiring and motivating their team by setting a vision and encouraging innovation in search of that goal.
+
+[00:35.41] Transactional leaders, on the other hand, focus on the exchange between leader and follower, rewarding performance and correcting mistakes. Servant leadership is a third kind. Servant leadership prioritizes the needs of employees and helps them develop and perform to their full potential.
+
+[00:54.22] Each style has its own strengths and can be effective depending on the context and the team dynamics. Good leaders are also good communicators; they listen actively and provide constructive feedback. Furthermore, a type of intelligence, called emotional intelligence, plays a crucial role in leadership. It involves being aware of and managing one’s own emotions, as well as understanding and influencing the emotions of others.
+
+[01:22.45] Ultimately, the best leaders are those who adapt their style to fit the needs of their team and the situation at hand.
+
+
+TPO4-TEA | History of Tea
+원본: TPO4-IMG13, TPO4-IMG14, TPO4-IMG15
+[00:00.11] Listen to a talk in a history class.
+
+[00:03.88]Woman: Today we're going to talk about a very special beverage. Tea has been consumed for thousands of years, and it's one of the most popular drinks in the world.
+
+[00:13.24] The story of tea began in ancient China. Legend has it that Emperor Shen Nong discovered tea accidentally when leaves from a wild tea bush fell into his pot of boiling water. Fascinated by the pleasant aroma and taste, he started to promote tea as a medicinal drink.
+[00:24.83] Tea spread from China to Japan around the eighth century, where it became deeply integrated into Japanese culture, including the development of the tea ceremony. By the seventeenth century, tea reached Europe, where it became extremely popular, especially in Britain. The British East India Company played a significant role in importing tea, and tea became a staple of British culture.
+[00:47.77]Today, tea is enjoyed in various forms around the globe, from traditional loose-leaf tea to tea bags and iced tea. Tea culture continues to evolve, with innovations like bubble tea, a tea-based drink that emerged in the eighties and has become trendy, especially with young people.
+
+
+TPO4-AUDIT | Audit Committee
+원본: TPO4-IMG16
+Would you like to join the audit committee?
+
+
+TPO4-GYM | Gym
+원본: TPO4-IMG17
+[00:00.00] Listen to a conversation.
+
+[00:02.39]Man: I'm thinking about joining the new gym that opened downtown. I need to get back to working out on a regular basis.
+
+[00:10.68]Woman: I visited there last week. It's really nice—lots of equipment, and the staff are helpful. They offer a variety of classes too, like yoga and kickboxing.
+
+[00:24.22]Man: Ooh, kickboxing sounds interesting. I'll look online and see if there are any spots still available.
+
+
+TPO4-HEAT | Urban Heat Island
+원본: TPO4-IMG18, TPO4-IMG19
+[00:00.23] Listen to a talk in an environmental science class.
+
+[00:08.54]Woman: We now turn to the phenomenon of the urban heat island effect. This occurs when urban areas experience higher temperatures than their rural surroundings. The primary causes are, one: buildings, roads, and other human infrastructure that absorb and retain heat; and two: reduced vegetation that would otherwise provide cooling through shade and transpiration—transpiration is the release of water vapor into the air by plants.
+
+[00:36.69] One contributing factor is the materials we use in urban construction. Materials like asphalt, concrete, and brick have high thermal mass, meaning they store heat during the day and release it slowly at night. This results in higher nighttime temperatures in cities compared to rural areas. Of course, air-conditioning units and cars also emit heat, and this further exacerbates the temperature difference.
+[01:02.73] There are several consequences to the urban heat island effect. For one thing, it causes residents and businesses to rely more heavily on air-conditioning, which increases energy consumption. Higher temperatures can also worsen air quality by increasing the formation of ground-level ozone, which is a key component of smog. It also affects human health, vulnerable populations in particular.
+[01:21.26] How do we mitigate the urban heat island effect? Increase green spaces in cities; use reflective materials in construction; and implement so-called green roofs, which are just what they sound like—roofs covered with a soil base and vegetation.
+
+
+TPO4-INDUSTRIAL | Industrial Revolution
+원본: TPO4-IMG20
+[00:00.00] Listen to a talk in a history class.
+
+[00:04.88]Man: Today we'll discuss the Industrial Revolution. This was a period of great change that paved the way for the quality of life we enjoy today.
+
+[00:13.87] The Industrial Revolution started in Great Britain around 1760, it reached the United States by the end of that century and parts of continental Europe early in the nineteenth century, and in all of these places it meant a shift from an agricultural economy to one driven by industrialization.
+
+[00:30.52] We're talking about moving from manual to machine-based manufacturing and ultimately the rise of the factory system. It also means the increasing use of steam power, new processes for chemical manufacturing and iron production, and the development of machine tools.
+
+[00:45.33] A key development was the Scotsman James Watt's coal-powered steam engine in 1769—not long after these events were set in motion in Great Britain. The steam engine represented a massive shift in power generation. Until then, factories had been powered by moving water and had to be located by, say, a river or a waterfall. Now they could be located anywhere.
+
+[01:08.19] Another milestone was a machine called the spinning jenny. The spinning jenny greatly reduced the amount of labor needed to produce textiles and it helped spur the English cotton manufacturing system.
+
+[01:19.12] This rapid change drove waves of workers from the countryside into overcrowded, unsanitary cities. They faced long hours, low pay, and dangerous conditions—sparking labor movements that would play a central role in the century to come.
+

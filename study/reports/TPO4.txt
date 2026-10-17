@@ -1,0 +1,2676 @@
+# TOEFL TPO4 학습 진단 보고서
+### Study Diagnostic Report — 2026.10.12
+
+**분석 범위: TPO4 Reading + Listening만 포함**
+
+TPO2와 TPO3의 성적, 오답, 어휘, 학습 분석은 모두 제외했다. 이 보고서는 10월 12일에 업로드한 TPO4 문제 스크린샷과 이 채팅에서 직접 언급한 학습 경험만을 근거로 한다.
+
+보고서의 목적은 다음과 같다.
+
+1. 실제 오답을 빠짐없이 추출한다.
+2. 단순한 어휘 부족과 정답 판단 오류를 구분한다.
+3. 반복되는 오답의 공통 원인을 확인한다.
+4. 이미 확인된 약점과 추가 검증이 필요한 약점을 구분한다.
+5. 다른 채팅으로 전달할 수 있는 독립적인 진단 자료를 제공한다.
+
+### 정보의 신뢰도
+
+이하 보고서는 세 가지 기준을 사용한다.
+
+- **[확인]** 실제 스크린샷, 채점 결과 또는 사용자의 직접 발언으로 확인되는 사실.
+- **[추정]** 선택한 오답과 정답의 차이를 분석하여 판단한 가능한 원인.
+- **[기록 없음]** 관련 자료가 없거나 확인되지 않은 사항.
+
+특히 **어떤 답을 선택했다는 사실과 왜 그 답을 선택했는지는 구분**한다. 오답 선택만으로 사용자가 특정 단어를 몰랐거나 문제를 제대로 듣지 못했다고 단정하지 않는다.
+
+---
+
+# PART 1. 시험 및 학습 기록
+
+## 1-1. 기본 정보
+
+| 항목 | 확인 내용 |
+|---|---|
+| 시험 | 2026 TOEFL 형식 연습 |
+| 회차 | TPO4 — 사용자 지정 |
+| 문제 풀이 및 업로드 날짜 | 2026년 10월 12일 |
+| 목표 점수 | 5.0/6.0 이상 |
+| 당시 시험까지 남은 기간 | 약 2주 — 사용자 직접 발언 |
+| 공식 ETS 모의고사 여부 | 확인 불가 |
+| 시험 시간 부족 여부 | 기록 없음 |
+| 문제 풀이 중 메모 사용 여부 | 기록 없음 |
+| 실제 풀이 환경 | 기록 없음 |
+| 청취 후 스크립트 이해 정도 | 대부분 이해됨 — 사용자 직접 발언 |
+| 리스닝에 대한 자기 평가 | 듣는 동안 어느 정도 이해하지만 길어지면 앞부분을 잊고 선택지도 헷갈리는 C 유형에 가까움 |
+
+**중요:** 아래 정답률은 실제 스크린샷의 문항 번호별 정오 표시를 기준으로 계산한 결과다. ETS의 공식 환산 점수가 아니다.
+
+## 1-2. Reading 성적
+
+| 세트 | 전체 문제 | 정답 | 오답 | 정답률 |
+|---|---:|---:|---:|---:|
+| C-Test: Prehistoric Food | 10 | 8 | 2 | 80% |
+| C-Test: Deserts | 10 | 8 | 2 | 80% |
+| Daily Life: Product Launch | 3 | 2 | 1 | 66.7% |
+| Academic: The Impact of Glaciers | 5 | 2 | 3 | 40% |
+| **Reading 합계** | **28** | **20** | **8** | **71.4%** |
+
+### 유형별 특징
+
+**C-Test: 16/20 정답 (80%)**
+
+두 세트 모두 8문제를 맞혔다. 현재 확인된 자료에서 C-Test 전체가 특히 심각한 상태라고 평가할 근거는 없다.
+
+다만 오답 4개 중 어휘나 철자와 직접적으로 관련된 문제가 포함되어 있어 정확도를 더 높일 여지가 있다.
+
+**Read in Daily Life: 2/3 정답 (66.7%)**
+
+한 문제에서 수신자의 직업을 추론하지 못했다.
+
+**Academic Reading: 2/5 정답 (40%)**
+
+다음 세 유형에서 오답이 발생했다.
+
+- Vocabulary: mitigate
+- Author's Purpose: fish habitats
+- Insert Text: This dynamic process
+
+한 지문에 오답이 집중되었다는 점이 중요하다. 그러나 한 지문의 5문제만으로 Academic Reading의 평소 정답률이 40%라고 일반화할 수는 없다.
+
+## 1-3. Listening 성적
+
+| 세트 | 전체 문제 | 정답 | 오답 | 정답률 |
+|---|---:|---:|---:|---:|
+| Listen & Reply — 10문항 | 10 | 9 | 1 | 90% |
+| Listen & Reply — 3문항 | 3 | 2 | 1 | 66.7% |
+| Conversation: Coffee Shop | 2 | 1 | 1 | 50% |
+| Conversation: Company Picnic | 2 | 1 | 1 | 50% |
+| Conversation: Photography Club | 2 | 1 | 1 | 50% |
+| Conversation: Gym | 2 | 1 | 1 | 50% |
+| Academic Talk: Leadership | 4 | 2 | 2 | 50% |
+| Academic Talk: History of Tea | 4 | 1 | 3 | 25% |
+| Academic Talk: Urban Heat Island | 4 | 2 | 2 | 50% |
+| Academic Talk: Industrial Revolution | 4 | 3 | 1 | 75% |
+| **Listening 합계** | **37** | **23** | **14** | **62.2%** |
+
+### 주요 특징
+
+**Listen & Reply: 11/13 정답 (84.6%)**
+
+대부분의 짧은 응답 문제를 해결했다. 다만 두 오답은 모두 질문에 자연스럽게 반응하는 능력과 관련되어 있다.
+
+**Conversation: 4/8 정답 (50%)**
+
+네 개의 Conversation에서 각각 한 문제씩 틀렸다. 오답은 추론, 장소, 목적, 다음 행동 문제에서 발생했다.
+
+**Academic Talk: 8/16 정답 (50%)**
+
+네 개의 강의 중 특히 History of Tea에서 3문제를 틀렸다.
+
+Leadership과 Urban Heat Island에서는 각각 2문제를 틀렸으며, 두 강의 모두 개념별 특징을 구분하는 문제가 포함되어 있다.
+
+### TPO4 전체
+
+| 구분 | 정답 | 전체 | 정답률 |
+|---|---:|---:|---:|
+| Reading | 20 | 28 | 71.4% |
+| Listening | 23 | 37 | 62.2% |
+| **합계** | **43** | **65** | **66.2%** |
+
+이 결과에서 바로 확인할 수 있는 것은 **TPO4에서는 Reading보다 Listening에서 정답 손실이 더 컸다**는 점이다.
+
+또한 Reading은 C-Test보다 Academic 지문에서, Listening은 짧은 응답보다 Conversation과 Academic Talk에서 정답률이 낮았다.
+
+다만 유형별 난이도와 문제 수가 다르기 때문에 이를 곧바로 인지 능력이나 영어 실력의 차이로 해석해서는 안 된다.
+
+---
+
+# PART 2. 전체 오답 데이터 추출
+
+TPO4에서 확인되는 오답은 총 **22개**다.
+
+- Reading: 8개
+- Listening: 14개
+
+아래 표의 오답 원인 코드는 실제 풀이 당시의 생각을 관찰한 결과가 아니라, 정답과 선택한 답의 차이에서 추정한 것이다.
+
+| 코드 | 의미 |
+|---|---|
+| V | Vocabulary — 어휘 |
+| G | Grammar — 문법·문장 구조 |
+| C | Comprehension — 내용 이해 |
+| I | Inference — 추론 |
+| J | Judgment — 선택지 판단 |
+| A | Attention — 정보 누락·주의 |
+| M | Memory — 청취 정보 기억 |
+| T | Time Management — 시간 관리 |
+
+## 2-A. Reading 전체 오답 8개
+
+### 오답 목록
+
+| 번호 | 유형 | 문제·핵심 문장 | 네 답 | 정답 | 가능한 원인 |
+|---|---|---|---|---|---|
+| R1 | C-Test | `plant resi____` | dent → resident | due → residue | V/J |
+| R2 | C-Test | `culi____ tools` | 입력값 확인 불가 | nary → culinary | V |
+| R3 | C-Test | `They rec____ very little rainfall` | 입력값 확인 불가 | eive → receive | V/C/A |
+| R4 | C-Test | `living thi____` | 입력값 확인 불가 | ngs → things | V/C/A |
+| R5 | Daily Life / Inference | Who most likely is Ms. Garcia? | A. Recently purchased smartwatch wearer | B. Smartwatch seller | I/J |
+| R6 | Vocabulary | mitigate | B. eliminate | A. lessen | V/J |
+| R7 | Author's Purpose | Why mention fish habitats? | B. Glacier formation affects fish | A. Importance of rivers fed by glaciers | I/J |
+| R8 | Insert Text | This dynamic process... | 선택 위치 확인 불가 | C. 세 번째 위치 | C/J |
+
+**R2~R4의 입력값에 관한 주의:** 스크린샷에서 해당 빈칸은 완성된 단어가 보이지 않고 오답으로 표시되어 있다. 정확히 무엇을 입력했는지는 확인할 수 없으므로 특정 철자를 썼다고 추정하지 않는다.
+
+### R1. residue / resident
+
+**[확인] 실제 문장**
+
+> Archaeologists study remains such as animal bones, plant residue, and culinary tools...
+
+**[확인] 답안**
+
+- 사용자 완성: resident
+- 정답: residue
+
+**왜 오답인가?**
+
+resident는 거주자이고 residue는 잔여물이다.
+
+이 지문은 고고학자들이 선사시대 식생활을 연구하기 위해 동물 뼈, 식물 잔해, 조리 도구 등을 조사한다는 내용이다.
+
+따라서 plant residue가 적절하다.
+
+**오답의 함정**
+
+두 단어는 모두 `resi-`로 시작한다.
+
+접두 철자를 보고 익숙한 단어를 완성했다면 resident가 떠올랐을 수 있다.
+
+하지만 그 이유로 선택했다고 직접 말한 기록은 없다.
+
+**[추정] 오답 원인**
+
+- V: 유사한 형태의 단어 혼동
+- J: 완성한 단어가 문맥에 맞는지 검증하지 못했을 가능성
+
+**재학습 포인트**
+
+- residue = 잔여물
+- resident = 거주자
+- plant residue = 식물 잔해
+- archaeological remains = 고고학적 유물·유해·잔존물
+
+빈칸의 철자뿐 아니라 전체 명사구의 의미를 확인해야 한다.
+
+---
+
+### R2. culinary
+
+**[확인] 실제 문장**
+
+> ... and culinary tools to understand what ancient people ate...
+
+**[확인] 답안**
+
+- 사용자 입력: 확인 불가
+- 정답: culinary
+- 완성 부분: nary
+
+**문장 의미**
+
+고대 사람들이 무엇을 먹었는지 파악하기 위한 조리 도구.
+
+culinary는 요리 또는 조리와 관련된 것을 의미하는 형용사다.
+
+**오답 원인**
+
+해당 단어를 실제로 몰랐는지는 확인되지 않는다.
+
+다만 완성하지 못한 결과가 나타났으므로 **어휘 복원 실패**로 분류할 수 있다.
+
+문맥상 tools 앞에는 도구의 종류를 설명하는 형용사가 필요하다.
+
+**재학습 포인트**
+
+- culinary tools = 조리 도구
+- culinary skills = 요리 기술
+- culinary traditions = 요리 전통
+
+이 문제는 단어를 알고 있었다면 문맥이 도움이 되지만, 모르는 단어였다면 단순한 품사 예측만으로 완성하기 어려울 수 있다.
+
+---
+
+### R3. receive
+
+**[확인] 실제 문장**
+
+> Deserts are known for their hot and dry conditions. They receive very little rainfall.
+
+**[확인] 답안**
+
+- 사용자 입력: 확인 불가
+- 정답: receive
+- 완성 부분: eive
+
+**핵심 문장 구조**
+
+They / receive / very little rainfall.
+
+- 주어: They
+- 동사: receive
+- 목적어: very little rainfall
+
+문장 전체는 사막의 강수량이 매우 적다는 설명이다.
+
+**[추정] 가능한 원인**
+
+정확히 어떤 단어를 떠올렸는지 확인되지 않는다.
+
+다만 빈칸을 복원하지 못한 이유가 다음 중 하나였을 가능성은 있다.
+
+- receive의 철자를 즉시 완성하지 못함
+- `receive rainfall`이라는 표현에 익숙하지 않음
+- 앞 문장의 dry conditions를 활용하지 못함
+
+어느 원인이 실제로 작용했는지는 확인 불가다.
+
+**재학습 포인트**
+
+- receive rainfall = 강수량을 기록하다, 비가 내리다
+- little rainfall = 적은 강수량
+- dry conditions = 건조한 환경
+
+---
+
+### R4. living things
+
+**[확인] 실제 문장**
+
+> ... which makes it hard for living things to survive.
+
+**[확인] 답안**
+
+- 사용자 입력: 확인 불가
+- 정답: things
+- 완성 부분: ngs
+
+**핵심 구조**
+
+`make it + adjective + for + noun + to V`
+
+전체 문장은 건조한 환경 때문에 생명체가 생존하기 어렵다는 의미다.
+
+**[추정] 가능한 원인**
+
+- living things라는 표현의 복원 실패
+- `for + noun + to V` 구조 활용 부족
+- 철자 완성 과정의 실수
+
+다만 실제 입력이 확인되지 않으므로 특정 문법 지식이 부족하다고 확정할 수는 없다.
+
+**재학습 포인트**
+
+- living things = 생명체
+- living organisms = 생물, 유기체
+- survive = 생존하다
+
+**R1~R4의 종합 진단**
+
+TPO4의 C-Test 네 오답은 모두 어휘나 문장 맥락을 이용한 복원과 관련되어 있다.
+
+다만 R2~R4에서는 실제 입력을 확인할 수 없기 때문에, 이 네 문제만으로 '문법보다 철자에 의존하는 습관'을 확정하기는 어렵다.
+
+---
+
+### R5. Daily Life — Ms. Garcia의 직업
+
+**[확인] 문제**
+
+> Who most likely is Ms. Garcia?
+
+**사용자 답**
+
+A. A person who wears a recently purchased smartwatch
+
+**정답**
+
+B. A person who sells smartwatches
+
+**핵심 근거**
+
+> All retailers attending the event will have the opportunity to purchase a bulk shipment of our GQX smart watches at a 20 percent discount.
+
+**정답 논리**
+
+Retailer는 상품을 소비자에게 판매하는 소매업자다.
+
+이메일은 스마트워치 소매업체 관계자들에게 신제품 출시 행사와 대량 구매 할인을 안내하고 있다.
+
+따라서 수신자인 Ms. Garcia도 스마트워치 판매자일 가능성이 높다.
+
+**왜 A가 그럴듯한가?**
+
+이메일 전체가 스마트워치 신제품과 관련되어 있다.
+
+따라서 스마트워치를 사용하는 사람도 행사와 관련 있을 수 있다.
+
+하지만 **Ms. Garcia가 최근 스마트워치를 구매하거나 착용했다는 근거는 없다.**
+
+**[추정] 오답 원인: I/J**
+
+- 이메일의 수신 대상과 상품 사용자를 혼동했을 가능성
+- 직접 근거가 없는 선택지를 상황상 그럴듯하다는 이유로 선택했을 가능성
+
+**핵심 교정 규칙**
+
+Who most likely...? 문제에서는 이메일의 발신자, 수신자, 대상 집단의 역할을 정확히 구분해야 한다.
+
+---
+
+### R6. Vocabulary — mitigate
+
+**[확인] 문제**
+
+> The word "mitigate" in the passage is closest in meaning to...
+
+**사용자 답**
+
+B. eliminate
+
+**정답**
+
+A. lessen
+
+**핵심 근거**
+
+> ... develop strategies to mitigate the impact that melting glaciers could have on the environment.
+
+**의미 비교**
+
+| 단어 | 뜻 | 핵심 |
+|---|---|---|
+| mitigate | 완화하다 | 부정적 영향을 줄임 |
+| lessen | 줄이다 | 정도를 낮춤 |
+| reduce | 감소시키다 | 양이나 정도를 줄임 |
+| alleviate | 완화하다 | 고통·문제 등을 덜어줌 |
+| eliminate | 제거하다 | 완전히 없앰 |
+
+**왜 B가 그럴듯한가?**
+
+mitigate와 eliminate는 모두 부정적인 영향을 다루는 문맥에서 사용될 수 있다.
+
+하지만 의미의 강도가 다르다.
+
+Mitigate는 피해를 감소시키는 것이고, eliminate는 제거하는 것이다.
+
+**[추정] 오답 원인: V/J**
+
+- 의미 방향은 파악했지만 강도 차이를 구분하지 못했을 가능성
+- 가장 정확한 동의어보다 관련성이 있는 단어를 선택했을 가능성
+
+**핵심 교정 규칙**
+
+TOEFL Vocabulary에서 비슷한 의미의 선택지가 나오면 완전한 제거, 부분 감소, 가능성, 확실성 등의 차이를 확인해야 한다.
+
+---
+
+### R7. Author's Purpose — Fish Habitats
+
+**[확인] 문제**
+
+> Why does the author mention fish habitats?
+
+**사용자 답**
+
+B. To explain how the process of glacier formation affects fish species.
+
+**정답**
+
+A. To highlight the importance of rivers fed by glaciers.
+
+**핵심 근거**
+
+> The melting of glaciers also affects local ecosystems. Fresh water released from glaciers feeds rivers, impacting fish habitats and agriculture.
+
+**지문의 논리 구조**
+
+빙하 변화가 지역 생태계에 영향을 미침
+
+↓
+
+빙하에서 담수가 방출됨
+
+↓
+
+강에 물이 공급됨
+
+↓
+
+물고기 서식지와 농업에 영향
+
+**왜 B가 틀렸는가?**
+
+B는 glacier formation, 즉 빙하의 형성 과정을 이야기한다.
+
+그러나 본문은 빙하의 형성 과정이 아니라 빙하에서 방출되는 담수가 생태계에 미치는 영향을 설명한다.
+
+**왜 B가 그럴듯한가?**
+
+glacier와 fish species라는 소재는 지문에 등장한다.
+
+하지만 그 사이에 존재하는 과정이 달라졌다.
+
+- 본문: 빙하의 융해 및 담수 방출
+- 오답: 빙하의 형성
+
+**[추정] 오답 원인: I/J**
+
+- 주제상 관련 있는 선택지를 근거보다 우선했을 가능성
+- 선택지에 추가된 glacier formation을 검증하지 못했을 가능성
+
+**핵심 교정 규칙**
+
+Author's Purpose는 사례 자체의 의미보다 **그 사례가 앞의 주장을 어떻게 뒷받침하는지** 확인해야 한다.
+
+---
+
+### R8. Insert Text — This Dynamic Process
+
+**[확인] 삽입 문장**
+
+> This dynamic process is crucial for maintaining the balance of freshwater ecosystems.
+
+**정답**
+
+C. 세 번째 삽입 위치
+
+**사용자가 선택한 위치**
+
+기록 없음.
+
+스크린샷에는 문항이 오답으로 표시되어 있고 정답 C가 제시되지만, 사용자가 어느 위치를 선택했는지는 식별할 수 없다.
+
+**핵심 근거**
+
+> Fresh water released from glaciers feeds rivers, impacting fish habitats and agriculture.
+
+정답 위치는 이 문장 뒤다.
+
+**정답 논리**
+
+삽입 문장의 `This dynamic process`는 앞에서 설명한 담수 공급과 생태계에 대한 영향을 가리킨다.
+
+따라서 다음 순서가 자연스럽다.
+
+1. 담수가 강으로 흘러간다.
+2. 물고기 서식지와 농업에 영향을 준다.
+3. 이러한 과정은 담수 생태계의 균형 유지에 중요하다.
+4. 빙하가 감소하면 물 부족 문제가 발생할 수 있다.
+
+**[추정] 가능한 원인: C/J**
+
+- `This dynamic process`의 지시 대상을 찾지 못했을 가능성
+- 삽입 문장과 앞뒤 문장의 연결 관계를 충분히 확인하지 못했을 가능성
+
+사용자가 고른 위치를 모르므로 더 구체적인 오류 원인은 확인할 수 없다.
+
+**핵심 교정 규칙**
+
+Insert Text에서 `This + 명사`가 나오면 직전 문장에 실제로 그 명사가 가리키는 내용이 존재하는지 확인해야 한다.
+
+---
+
+## 2-B. Listening 전체 오답 14개
+
+### 오답 목록
+
+| 번호 | 유형 | 문제 핵심 | 네 답 | 정답 | 가능한 원인 |
+|---|---|---|---|---|---|
+| L1 | Listen & Reply | Isn't the library hosting an event today? | A. Sure, why not? | C. I've already reserved my seat. | C/J |
+| L2 | Conversation / Inference | Study group | B. First meeting | A. Usually meets at the library | I/J/M |
+| L3 | Conversation / Detail | Company picnic location | B. An island in a river | C. At a park | C/A/M |
+| L4 | Conversation / Purpose | Why join photography club? | D. Travel and take photos | B. Learn more | J/A/M |
+| L5 | Academic / Detail | Transformational leadership | A. Correcting mistakes | C. Inspirational vision | C/J/M |
+| L6 | Academic / Detail | Leadership caring about employees | B. Transactional | C. Servant | C/J/M |
+| L7 | Academic / Detail | Legend about tea | B. Two Chinese doctors | A. Discovered by chance | C/J/M |
+| L8 | Academic / Detail | British East India Company | D. Created first tea bags | C. Imported tea | C/J/M |
+| L9 | Academic / Inference | Tea culture innovations | B. Combine different teas | C. Popularity among some groups | I/J/M |
+| L10 | Listen & Reply | Join the audit committee? | C. Is it committee work? | D. I'm a bit stretched right now. | V/C/J |
+| L11 | Conversation / Next Action | Gym | B. Make a phone call | C. Check a website | J/A/M |
+| L12 | Academic / Main Idea | Urban Heat Island | D. Climate change risks to energy systems | B. Higher city temperatures | C/J/M |
+| L13 | Academic / Inference | Green roofs | C. Store heat and release at night | D. Cooling effect | C/J/M |
+| L14 | Academic / Detail | Significance of 1760 | A. Greatest milestones occurred | B. Industrial Revolution began | C/J/M |
+
+리스닝의 M(Memory)은 가능한 원인으로 표시했다. 사용자는 길게 들으면 앞부분을 잊는다고 직접 설명했지만, 각 문제에서 실제로 기억 때문에 틀렸는지는 별도로 확인되지 않았기 때문이다.
+
+---
+
+### L1. Listen & Reply — Library Event
+
+**[확인] 질문**
+
+> Isn't the library hosting an event today?
+
+**사용자 답:** Sure, why not?  
+**정답:** I've already reserved my seat.
+
+**핵심**
+
+질문은 오늘 도서관에서 행사가 열리는지 확인하고 있다.
+
+`Sure, why not?`은 일반적으로 제안이나 초대에 대한 긍정적인 응답이다.
+
+반면 `I've already reserved my seat`은 행사가 열린다는 사실을 전제로 한 자연스러운 대답이다.
+
+**오답의 함정**
+
+A는 문법적으로 자연스럽고 긍정적인 표현이다.
+
+하지만 질문은 무언가를 함께 하자는 제안이 아니다.
+
+**[추정] 가능한 원인**
+
+발화의 기능을 사실 확인이 아니라 제안이나 초대로 해석했을 가능성.
+
+**교정 규칙:** 문장의 주제가 아니라 질문하는 사람의 의도를 먼저 판단해야 한다.
+
+---
+
+### L2. Conversation — Study Group
+
+**[확인] 문제**
+
+> What can be inferred about the study group mentioned by the speakers?
+
+**사용자 답:** It is meeting for the first time.  
+**정답:** It usually meets at the library.
+
+**핵심 근거 — 약 11초**
+
+> ... we could go there for our study group on Saturday ... since the library is being renovated and won't be open until next week.
+
+**정답 논리**
+
+도서관이 공사 중이므로 새로운 카페를 스터디 그룹 장소로 제안한다.
+
+즉, 평소 이용하던 도서관 대신 다른 장소를 찾는 상황으로 추론할 수 있다.
+
+**오답의 함정**
+
+새로운 카페에 가는 것이 스터디 그룹 자체의 첫 모임이라는 의미는 아니다.
+
+**[추정] 가능한 원인**
+
+- 장소가 변경된다는 정보에서 모임 자체가 새로 시작한다고 과잉추론했을 가능성
+- 평소 모임 장소와 대체 장소를 구분하지 못했을 가능성
+
+**교정 규칙:** 새로운 장소나 계획이 등장한다고 해서 해당 활동 자체가 처음 시작되는 것은 아니다.
+
+---
+
+### L3. Conversation — Company Picnic
+
+**[확인] 문제**
+
+> Where will the company picnic be held?
+
+**사용자 답:** On an island in a river  
+**정답:** At a park
+
+**핵심 근거 — 약 5초**
+
+> Yes, we're going to have it at Lakeside Park.
+
+**오답 분석**
+
+행사 장소는 명확하게 Lakeside Park라고 제시된다.
+
+Lakeside는 호숫가라는 의미이고, park는 공원이다.
+
+강 속의 섬이라는 설명은 등장하지 않는다.
+
+**[추정] 가능한 원인**
+
+- Lakeside Park라는 장소명을 정확히 포착하지 못했을 가능성
+- 장소 정보를 기억하지 못했을 가능성
+- 선택지를 보고 관련된 지리적 장소를 추측했을 가능성
+
+실제로 어떤 소리로 들었는지는 확인되지 않는다.
+
+**교정 규칙:** Where 질문에서는 장소의 구체적인 유형을 우선 확인해야 한다.
+
+---
+
+### L4. Conversation — Photography Club
+
+**[확인] 문제**
+
+> Why does the man want to join a photography club?
+
+**사용자 답:** To travel and take photos  
+**정답:** To learn more
+
+**핵심 근거 — 약 2초**
+
+> I'm looking for a place to learn more and meet other photography enthusiasts.
+
+**정답 논리**
+
+남자는 사진을 더 배우고 다른 사진 애호가들을 만나기 위해 동아리에 가입하려 한다.
+
+**오답의 함정**
+
+사진 촬영과 여행은 연관성이 있다.
+
+하지만 여행을 목적으로 동아리에 가입한다는 설명은 없다.
+
+후반부에 등장하는 landscape photography도 여행을 목적으로 한다는 뜻은 아니다.
+
+**[추정] 가능한 원인**
+
+- 사진 동아리라는 소재에서 여행 활동을 연상했을 가능성
+- 초반에 제시된 직접적인 가입 목적을 놓쳤을 가능성
+
+**교정 규칙:** Why 질문에서는 `I want to`, `I'm looking for`, `I'm hoping to` 같은 목적 표현을 우선적으로 기억해야 한다.
+
+---
+
+### L5. Academic Talk — Transformational Leadership
+
+**[확인] 문제**
+
+> According to the talk, what do transformational leaders focus on?
+
+**사용자 답:** Correcting mistakes  
+**정답:** Providing an inspirational vision
+
+**핵심 근거 — 약 19초**
+
+> Transformational leaders focus on inspiring and motivating their team by setting a vision and encouraging innovation.
+
+**정답 논리**
+
+Transformational leadership의 핵심은 비전 제시, 동기 부여, 혁신 장려다.
+
+**오답의 함정**
+
+Correcting mistakes는 실제 강의에서 등장한다.
+
+하지만 Transactional leadership의 특징으로 설명된다.
+
+**[추정] 가능한 원인**
+
+여러 리더십 유형을 연속으로 들으면서 특정 특징이 어느 유형에 속하는지 혼동했을 가능성.
+
+**교정 규칙:** 여러 개념이 등장할 때는 개념 이름과 특징을 함께 기억해야 한다.
+
+---
+
+### L6. Academic Talk — Servant Leadership
+
+**[확인] 문제**
+
+> Which leadership style cares about the employees the most?
+
+**사용자 답:** Transactional  
+**정답:** Servant
+
+**핵심 근거 — 약 35초**
+
+> Servant leadership prioritizes the needs of employees and helps them develop and perform to their full potential.
+
+**정답 논리**
+
+직원들의 필요를 우선시하고 잠재력 개발을 돕는 유형은 Servant leadership이다.
+
+Transactional leadership는 성과에 대한 보상과 실수 교정에 초점을 맞춘다.
+
+**오답의 함정**
+
+모든 리더십 유형이 팀이나 직원과 관련되어 있다.
+
+하지만 직원들의 필요를 우선한다는 설명은 Servant leadership에 해당한다.
+
+**[추정] 가능한 원인**
+
+L5와 마찬가지로 개념별 특징이 섞였을 가능성.
+
+### Leadership 강의의 핵심 정보
+
+| 개념 | 실제 특징 |
+|---|---|
+| Transformational | Vision, inspiration, innovation |
+| Transactional | Rewards, correcting mistakes |
+| Servant | Employee needs, development |
+| Emotional intelligence | Understanding and managing emotions |
+
+L5와 L6은 **동일 강의 안에서 발생한 두 개의 개념 구분 오류**라는 점이 중요하다.
+
+---
+
+### L7. Academic Talk — Discovery of Tea
+
+**[확인] 문제**
+
+> What does a legend say about tea?
+
+**사용자 답:** Tea was originally developed by two Chinese doctors.  
+**정답:** Tea was discovered by chance.
+
+**핵심 근거 — 약 13초**
+
+> Legend has it that Emperor Shen Nong discovered tea accidentally when leaves from a wild tea bush fell into his pot of boiling water.
+
+**정답 논리**
+
+신농 황제가 끓는 물에 우연히 떨어진 찻잎을 통해 차를 발견했다는 전설이다.
+
+`accidentally = by chance`
+
+**오답의 함정**
+
+강의에서 차가 medicinal drink로 사용되었다는 이야기는 등장한다.
+
+따라서 의학이나 의사를 연상할 수는 있지만, 중국 의사 두 명이 차를 개발했다는 설명은 없다.
+
+**[추정] 가능한 원인**
+
+- 신농 황제와 약용 음료 관련 설명을 혼동했을 가능성
+- 우연한 발견이라는 직접 정보를 놓쳤을 가능성
+
+**교정 규칙:** Who와 How를 구분해 기억해야 한다.
+
+- Who: Emperor Shen Nong
+- How: Accidentally
+
+---
+
+### L8. Academic Talk — British East India Company
+
+**[확인] 문제**
+
+> How did the British East India Company contribute to the history of tea?
+
+**사용자 답:** It created the first tea bags.  
+**정답:** It was responsible for importing tea into Europe.
+
+**핵심 근거 — 약 24초 이후**
+
+> The British East India Company played a significant role in importing tea.
+
+**정답 논리**
+
+동인도회사는 차의 수입에 중요한 역할을 했다.
+
+강의에서는 차가 유럽에 전파되고 영국에서 대중화되는 과정에서 동인도회사를 설명한다.
+
+**오답의 함정**
+
+Tea bags는 후반부에서 언급되지만, 동인도회사가 티백을 발명했다는 내용은 없다.
+
+**[추정] 가능한 원인**
+
+- 차 문화의 여러 발전 단계를 혼동했을 가능성
+- 후반부에 등장한 tea bags를 동인도회사와 연결했을 가능성
+
+**교정 규칙:** 역사 강의에서는 시기, 국가, 인물·기관, 역할을 구분해야 한다.
+
+---
+
+### L9. Academic Talk — Innovations in Tea Culture
+
+**[확인] 문제**
+
+> What does the speaker indicate about innovations in tea culture?
+
+**사용자 답:** They combine different kinds of tea.  
+**정답:** They have increased the popularity of tea among some groups.
+
+**핵심 근거 — 약 47초**
+
+> Tea culture continues to evolve, with innovations like bubble tea ... and has become trendy, especially with young people.
+
+**정답 논리**
+
+버블티와 같은 혁신적인 형태의 차가 등장하면서 특히 젊은 사람들 사이에서 인기를 얻었다.
+
+**오답의 함정**
+
+버블티와 같은 새로운 음료가 등장했다고 해서 서로 다른 종류의 차를 섞는 것이 혁신의 핵심이라는 뜻은 아니다.
+
+본문에서는 차의 혼합 방법이 아니라 특정 집단에서의 인기 증가를 강조한다.
+
+**[추정] 가능한 원인**
+
+- 새로운 차 문화의 특징을 제조 방식으로 해석했을 가능성
+- `trendy, especially with young people`이라는 핵심 결과를 놓쳤을 가능성
+
+### History of Tea 강의에서 실제로 필요한 정보
+
+| 시기 | 사건 |
+|---|---|
+| 고대 중국 | 차를 우연히 발견했다는 전설 |
+| 8세기경 | 일본으로 차 문화 전파 |
+| 17세기경 | 유럽으로 확산, 영국에서 대중화 |
+| 1980년대 이후 | 버블티 등장과 젊은 층의 인기 |
+
+이 강의는 단순한 어휘 설명보다 **역사적 사건과 역할을 연결하는 능력**이 중요했다.
+
+---
+
+### L10. Listen & Reply — Audit Committee
+
+**[확인] 질문**
+
+> Would you like to join the audit committee?
+
+**사용자 답:** Is it committee work?  
+**정답:** I'm a bit stretched right now.
+
+**핵심**
+
+상대방은 감사위원회에 참여할 의사가 있는지 묻고 있다.
+
+정답인 `I'm a bit stretched right now`는 현재 일이 많거나 여유가 부족하다는 의미로, 참여 제안을 간접적으로 거절하는 자연스러운 응답이다.
+
+**오답의 함정**
+
+C는 위원회라는 동일한 주제에 관한 질문이다.
+
+하지만 상대방이 참여 여부를 물었으므로 수락, 거절, 조건부 응답 등이 더욱 자연스럽다.
+
+**[추정] 가능한 원인**
+
+- `be stretched` 표현에 익숙하지 않았을 가능성
+- 참여 요청에 대한 자연스러운 반응을 판단하지 못했을 가능성
+
+**교정 규칙:** `Would you like to...?`는 초대나 제안의 기능을 갖는다. 응답도 그 기능에 맞아야 한다.
+
+---
+
+### L11. Conversation — Gym
+
+**[확인] 문제**
+
+> What will the man most likely do next?
+
+**사용자 답:** Make a phone call  
+**정답:** Check a website
+
+**핵심 근거 — 약 24초**
+
+> I'll look online and see if there are any spots still available.
+
+**정답 논리**
+
+남자는 온라인에서 킥복싱 수업의 자리가 남아 있는지 확인할 예정이다.
+
+따라서 웹사이트를 확인한다는 답이 가장 적절하다.
+
+**오답의 함정**
+
+수업의 남은 자리를 확인하기 위해 전화할 수도 있다.
+
+하지만 본문에서는 전화가 아니라 온라인 확인을 명시했다.
+
+**[추정] 가능한 원인**
+
+- 마지막 발언을 정확히 기억하지 못했을 가능성
+- 상황상 가능한 다른 행동을 선택했을 가능성
+
+**교정 규칙:** Next Action 문제에서는 마지막에 제시되는 `I'll...` 형태의 계획을 주의 깊게 들어야 한다.
+
+---
+
+### L12. Academic Talk — Urban Heat Island Main Idea
+
+**[확인] 문제**
+
+> What is the main topic of the talk?
+
+**사용자 답:** The risks climate change poses to city energy systems
+
+**정답:** The phenomenon in which cities experience higher temperatures than rural areas
+
+**핵심 근거 — 약 8초**
+
+> We now turn to the phenomenon of the urban heat island effect.
+
+이어지는 설명:
+
+> This occurs when urban areas experience higher temperatures than their rural surroundings.
+
+**정답 논리**
+
+강의는 도시 열섬현상의 정의, 원인, 결과, 해결책을 다룬다.
+
+도시 에너지 소비 증가는 그 결과 중 하나일 뿐이다.
+
+**오답의 함정**
+
+강의 중 에어컨 사용 증가와 에너지 소비에 관한 내용이 등장한다.
+
+따라서 도시 에너지 시스템과 관련된 내용은 존재한다.
+
+하지만 강의 전체의 중심 주제는 도시 열섬현상이다.
+
+**[추정] 가능한 원인**
+
+- 강의의 중심 주제보다 세부 결과에 주의를 기울였을 가능성
+- 마지막까지 내용을 기억하는 과정에서 전체 구조가 흐려졌을 가능성
+
+**교정 규칙:** Main Idea에서는 특정 세부사항이 아니라 도입부터 결론까지 전체 내용을 포괄하는 선택지를 찾아야 한다.
+
+---
+
+### L13. Academic Talk — Green Roofs
+
+**[확인] 문제**
+
+> What does the speaker suggest is true about green roofs?
+
+**사용자 답:** They store heat during the day and release it at night.
+
+**정답:** They contribute to a cooling effect in cities.
+
+**핵심 근거 — 약 1분 21초**
+
+> How do we mitigate the urban heat island effect? Increase green spaces in cities; use reflective materials in construction; and implement so-called green roofs...
+
+**정답 논리**
+
+Green roofs는 토양과 식물로 덮인 지붕이다.
+
+강의에서는 도시 열섬현상을 완화하기 위한 방법으로 소개된다.
+
+**오답의 함정**
+
+낮에 열을 저장하고 밤에 방출한다는 내용은 실제 강의에 등장한다.
+
+하지만 그 특징은 asphalt, concrete, brick 등의 건축 재료에 해당한다.
+
+반면 green roofs는 도시의 온도를 낮추는 해결책이다.
+
+**[추정] 가능한 원인**
+
+여러 대상의 특징을 혼동했을 가능성.
+
+이 문제는 Leadership 강의에서 다른 리더십 유형의 특징을 선택한 오류와 구조적으로 유사하다.
+
+**교정 규칙:** 개념별 특징뿐 아니라 '원인인지 해결책인지'를 함께 구분해야 한다.
+
+---
+
+### L14. Academic Talk — Industrial Revolution
+
+**[확인] 문제**
+
+> What is the significance of the year 1760 to the Industrial Revolution?
+
+**사용자 답:** The greatest milestones of the Industrial Revolution occurred in 1760.
+
+**정답:** The Industrial Revolution began in Great Britain around 1760.
+
+**핵심 근거 — 약 13초**
+
+> The Industrial Revolution started in Great Britain around 1760.
+
+**정답 논리**
+
+1760년경은 산업혁명이 영국에서 시작된 시기다.
+
+**오답의 함정**
+
+강의에서는 여러 중요한 기술 발전도 설명한다.
+
+하지만 산업혁명의 시작 시기와 중요한 기술 발전이 일어난 시기를 구분해야 한다.
+
+특히 제임스 와트의 증기기관은 강의에서 1769년의 발전으로 설명된다.
+
+**[추정] 가능한 원인**
+
+- 연도와 사건을 함께 기억하지 못했을 가능성
+- 시작 시점과 주요 발전 시점을 혼동했을 가능성
+
+**교정 규칙:** 역사적 설명에서는 날짜 자체뿐 아니라 그 날짜에 해당하는 사건을 한 쌍으로 기억해야 한다.
+
+---
+
+# PART 3. 어휘 및 표현 약점 전체 추출
+
+## 3-1. 사용자가 직접 몰랐다고 밝힌 단어
+
+**TPO4에 한정하면, 특정 단어를 직접 '몰랐다' 또는 '유추하지 못했다'고 명시한 기록은 없다.**
+
+다만 사용자는 리스닝 오답에 대해 다음과 같이 직접 말했다.
+
+> 틀린 문제를 스크립트로 다시 보니까 대부분 이해가 돼.
+
+이는 대다수 오답이 반드시 어휘 지식의 부족 때문에 발생한 것은 아닐 수 있음을 시사한다.
+
+따라서 아래 단어들은 모두 실제 오답에서 드러난 **학습 필요 후보**이며, 사용자가 모른다고 직접 확인한 어휘 목록과는 구분한다.
+
+## 3-2. Reading 어휘 및 표현
+
+| 단어·표현 | 정확한 의미 | 오답·혼동 내용 | 분류 | 중요도 |
+|---|---|---|---|---|
+| residue | 잔여물, 잔해 | resident와 혼동 | C/D | 높음 |
+| resident | 거주자 | residue 대신 완성 | C/D | 높음 |
+| culinary | 요리·조리의 | 단어 복원 실패 | A 가능 | 중 |
+| receive | 받다 | receive rainfall 복원 실패 | B/E 가능 | 높음 |
+| rainfall | 강수량 | 관련 표현 복원 실패 | E 가능 | 중 |
+| living things | 생명체 | things 복원 실패 | B/E 가능 | 중 |
+| retailer | 소매업자 | 구매·착용자와 역할 혼동 | B/E 가능 | 매우 높음 |
+| bulk shipment | 대량 배송 물량 | 판매자 추론의 맥락 | E 가능 | 중 |
+| mitigate | 완화하다 | eliminate 선택 | C | 매우 높음 |
+| lessen | 줄이다 | mitigate의 정답 동의어 | C | 매우 높음 |
+| eliminate | 완전히 제거하다 | mitigate와 강도 혼동 | C | 매우 높음 |
+| glacier formation | 빙하의 형성 | 융해·담수 방출 과정과 혼동 | B/E 가능 | 높음 |
+| freshwater | 담수 | 생태계 설명의 핵심 | E 가능 | 중 |
+| feed rivers | 강에 물을 공급하다 | fish habitats 문제의 근거 | E 가능 | 높음 |
+| dynamic process | 역동적인 과정 | 삽입문의 지시 대상 | E 가능 | 높음 |
+
+분류 의미:
+
+A. 단어 자체를 몰랐을 가능성  
+B. 문맥에서 의미 활용 실패 가능성  
+C. 유사어·의미 차이 혼동  
+D. 철자·형태 혼동  
+E. 표현을 문제 풀이에 활용하지 못했을 가능성
+
+여기서 비교적 명확한 어휘 혼동은 두 가지다.
+
+**① residue ↔ resident**
+
+형태가 비슷하지만 뜻은 전혀 다르다.
+
+**② mitigate ↔ eliminate**
+
+같은 부정적 문제를 다루는 문맥에서 사용될 수 있지만 의미의 강도가 다르다.
+
+반면 culinary, receive, living things는 정답으로 복원하지 못한 사실만 확인된다. 단어 자체를 몰랐는지, 철자가 기억나지 않았는지는 확인할 수 없다.
+
+---
+
+## 3-3. Listening 어휘 및 표현
+
+| 단어·표현 | 의미 | 오답과의 관련성 | 중요도 |
+|---|---|---|---|
+| host an event | 행사를 개최하다 | Library 질문 | 높음 |
+| Sure, why not? | 좋아, 그러자 | 제안 수락 표현을 사실 확인 질문에 선택 | 높음 |
+| reserve a seat | 자리를 예약하다 | Library 정답 | 중 |
+| renovate | 리모델링하다 | Study Group의 장소 변경 이유 | 높음 |
+| venue | 행사 장소 | Company Picnic 질문 | 높음 |
+| Lakeside | 호숫가 | Lakeside Park 장소명 | 중 |
+| enthusiast | 열성적인 애호가 | Photography Club 가입 목적 | 중 |
+| look online | 온라인에서 확인하다 | 전화 대신 웹사이트 확인 | 매우 높음 |
+| transformational | 변혁적인 | Leadership 유형 구분 | 높음 |
+| transactional | 거래적인 | Leadership 유형 혼동 | 높음 |
+| servant leadership | 봉사형 리더십 | 직원의 필요를 우선하는 유형 | 높음 |
+| prioritize | 우선시하다 | Servant leadership 핵심 | 매우 높음 |
+| inspire | 영감을 주다 | Transformational 핵심 | 높음 |
+| motivate | 동기를 부여하다 | Transformational 핵심 | 높음 |
+| legend has it that | 전설에 따르면 | 차 발견의 전설 | 중 |
+| accidentally | 우연히 | Tea 발견 문제 | 매우 높음 |
+| by chance | 우연히 | accidentally의 바꿔 쓰기 | 매우 높음 |
+| medicinal | 약용의 | 차를 약용 음료로 장려 | 중 |
+| import | 수입하다 | 동인도회사 역할 | 매우 높음 |
+| emerge | 나타나다, 등장하다 | 버블티의 등장 | 높음 |
+| trendy | 유행하는 | 젊은 층의 인기 | 매우 높음 |
+| be stretched | 여유가 부족하다 | 간접 거절 표현 | 매우 높음 |
+| audit committee | 감사위원회 | 참여 요청 | 중 |
+| spot available | 이용 가능한 자리 | Gym 다음 행동 | 높음 |
+| urban heat island | 도시 열섬현상 | Main Idea | 높음 |
+| retain heat | 열을 유지하다 | 건축 재료의 특성 | 높음 |
+| thermal mass | 열용량·축열 특성 | 건축 재료의 특징 | 중 |
+| mitigate | 완화하다 | 열섬현상 해결책 | 매우 높음 |
+| exacerbate | 악화시키다 | 열섬현상의 원인·결과 | 높음 |
+| reflective | 반사하는 | 열섬현상 해결책 | 중 |
+| milestone | 중요한 이정표 | 산업혁명 연도 문제 | 높음 |
+| pave the way for | ~의 길을 열다 | 산업혁명 강의 | 중 |
+
+**특히 중요한 학습 대상**
+
+`mitigate`는 TPO4 Reading과 Listening에 모두 등장한다.
+
+Reading에서는 정확한 뜻을 묻는 문제가 나왔고, Listening에서는 도시 열섬현상을 완화하는 방법을 소개할 때 사용되었다.
+
+따라서 이 단어는 TPO4 안에서 두 영역에 걸쳐 반복 노출된 어휘다.
+
+또한 `look online`, `be stretched`, `accidentally`, `prioritize`는 실제 정답을 결정하는 핵심 표현이었다.
+
+## 3-4. 어휘 약점에 대한 최종 판정
+
+**[확인]**
+
+- residue와 resident의 형태 혼동이 발생했다.
+- mitigate의 정답 동의어로 eliminate를 선택했다.
+- 여러 문제에서 정답을 결정하는 특정 표현을 활용하지 못했다.
+
+**[추정]**
+
+- 구어체 표현을 듣는 순간 의미로 연결하는 속도가 부족할 가능성이 있다.
+- 특정 단어의 사전적 의미는 알아도 문맥에서 빠르게 활용하지 못할 가능성이 있다.
+
+**[확정 불가]**
+
+- 전체적인 어휘량이 부족하다는 주장
+- 학술 영어 단어를 대부분 모른다는 주장
+- Listening 오답 대부분이 어휘 부족에서 비롯되었다는 주장
+
+현재 자료로는 광범위한 어휘력 부족보다 **정확한 의미 구별과 실시간 표현 활용**이 더 직접적인 훈련 대상이다.
+
+---
+
+# PART 4. 문제 유형별 약점 분석
+
+## 4-1. Reading 유형별 진단
+
+| 유형 | 확인된 오답 | 대표 문제 | 주요 문제점 | 잘하는 부분 | 개선 목표 | 심각도 | 확실성 |
+|---|---:|---|---|---|---|---|---|
+| C-Test | 4/20 | residue, culinary, receive, things | 어휘·표현 복원 | 16/20 정답 | 문맥·품사·철자 확인 | 중 | 높음 |
+| Read in Daily Life | 1/3 | Ms. Garcia | 수신자의 역할 추론 | 2/3 정답 | 인물의 역할과 근거 연결 | 중 | 보통 |
+| Academic Reading | 3/5 | Glaciers | 어휘 의미·문장 기능 판단 | 2/5 정답 | 선택지 근거 검증 | 상 | 높음 |
+| Vocabulary | 1개 | mitigate | 의미 강도 혼동 | 평가 자료 부족 | 유사어의 정확한 의미 비교 | 중 | 해당 문제 높음 |
+| Inference | 1개 | Ms. Garcia | 지문에 없는 사실을 추론 | 평가 자료 부족 | 최소한의 근거 있는 추론 | 중 | 해당 문제 높음 |
+| Main Idea | 분석 불가 | 기록 없음 | 판단 불가 | 판단 불가 | 추가 자료가 있어야 평가 가능 | 판정 불가 | 낮음 |
+| Author's Purpose | 1개 | fish habitats | 예시의 기능 판단 | 평가 자료 부족 | 주장과 사례 연결 | 중~상 | 해당 문제 높음 |
+| Insert Text | 1개 | This dynamic process | 지시어·앞뒤 문장 연결 | 평가 자료 부족 | 지시 대상과 문장 기능 확인 | 중~상 | 해당 문제 높음 |
+
+**주의:** 세부 유형은 상위 유형과 중복된다. 예를 들어 Vocabulary 1개는 Academic Reading의 3오답에 이미 포함되어 있다.
+
+### Reading에서 잘하는 부분
+
+C-Test는 두 세트 모두 80%를 기록했다.
+
+즉, 짧은 지문에서 대부분의 단어를 문맥에 맞게 복원할 수 있었다.
+
+Daily Life에서도 세 문제 중 두 문제를 맞혔다.
+
+따라서 TPO4의 모든 Reading 유형에서 광범위하게 문제가 발생했다고 보기는 어렵다.
+
+### Reading에서 취약한 부분
+
+Academic Reading에서는 세 오답이 모두 서로 다른 유형에서 발생했다.
+
+1. 정확한 동의어 선택
+2. 저자의 의도 파악
+3. 삽입 문장의 위치 판단
+
+이는 하나의 단어 또는 하나의 문법 요소만 학습한다고 모든 문제가 해결되는 유형은 아니라는 뜻이다.
+
+특히 R7과 R8은 단어의 의미뿐 아니라 **문장과 문장의 관계**를 정확히 이해해야 한다.
+
+### 가장 중요한 Reading 진단
+
+TPO4에서는 다음 두 종류의 실수를 구분해야 한다.
+
+**A. 어휘 복원 실패**
+
+R1~R4
+
+**B. 정답 선택 과정의 의미·논리 판단 실패**
+
+R5~R8
+
+C-Test 정답률이 상대적으로 높으므로, Academic Reading의 선택지 검증에 투자하는 학습 시간도 충분히 확보할 필요가 있다.
+
+---
+
+## 4-2. Listening 유형별 진단
+
+| 유형 | 확인된 오답 | 대표 문제 | 주요 문제점 | 잘하는 부분 | 개선 목표 | 심각도 | 확실성 |
+|---|---:|---|---|---|---|---|---|
+| Listen & Reply | 2/13 | Library, Audit Committee | 발화 의도와 자연스러운 응답 | 11/13 정답 | 상황별 응답 판단 | 중 | 높음 |
+| Conversation | 4/8 | Coffee, Picnic, Photography, Gym | 추론·장소·목적·다음 행동 | 4/8 정답 | 핵심 정보 포착 | 상 | 높음 |
+| Announcement | 분석 불가 | 해당 자료 없음 | 판단 불가 | 판단 불가 | 추가 자료 필요 | 판정 불가 | 낮음 |
+| Academic Talk | 8/16 | Leadership, Tea, Urban Heat, Industrial Revolution | 정보 연결·개념 구분 | 8/16 정답 | 구조화된 기억 | 상 | 높음 |
+| Main Idea | 1개 | Urban Heat Island | 전체 주제보다 세부 내용 선택 | 평가 자료 부족 | 강의 구조 파악 | 중 | 해당 문제 높음 |
+| Detail | 최소 6개 | Leadership, Tea, Industrial Revolution 등 | 명시적 정보 또는 대상별 특징 누락 | 일부 Detail 정답 | 직접 근거 기억 | 상 | 높음 |
+| Inference | 3개 | Study Group, Tea Innovation, Green Roofs | 근거 없는 추론 또는 개념 혼동 | 평가 자료 부족 | 직접 근거에서 최소한으로 추론 | 중~상 | 높음 |
+| Speaker's Purpose | 분석 불가 | 해당 유형 오답 확인 불가 | 판단 불가 | 판단 불가 | 추가 자료 필요 | 판정 불가 | 낮음 |
+| Next Action | 1개 | Gym | 마지막 행동 계획을 놓침 | 평가 자료 부족 | `I'll...` 정보 포착 | 중 | 해당 문제 높음 |
+| 개인 목적 파악 | 1개 | Photography Club | 초반에 제시된 목적 누락 | 평가 자료 부족 | `I'm looking for...` 포착 | 중 | 해당 문제 높음 |
+
+세부 유형의 분류 방식에 따라 Detail과 Purpose의 포함 범위는 달라질 수 있다. 여기서는 질문의 직접적인 기능을 기준으로 구분했다.
+
+## 4-3. Listening에서 가장 명확하게 드러난 문제
+
+### ① 개념별 특징 구분
+
+대표 문제:
+
+- Transformational → Vision
+- Transactional → Correcting mistakes
+- Servant → Employee needs
+- Asphalt → Retains heat
+- Green roofs → Cooling effect
+
+적어도 세 문제에서 **다른 대상의 특징을 선택한 사실**이 확인된다.
+
+이 문제들은 개별 단어를 아는 것과 별개로, 여러 정보를 정확히 연결하여 기억해야 해결할 수 있다.
+
+**심각도: 상**
+
+**판단 근거: 실제 오답 3개에서 같은 형태의 결과 확인**
+
+### ② 직접 제시된 세부정보 포착
+
+대표 문제:
+
+- Lakeside Park
+- To learn more
+- Look online
+- Accidentally discovered
+- Importing tea
+- Started around 1760
+
+이 정보들은 모두 강의나 대화에서 직접 등장한다.
+
+그런데 관련 문제를 틀렸다.
+
+다만 실제로 해당 문장을 듣지 못했는지, 들었지만 기억하지 못했는지, 선택지를 읽는 과정에서 실수했는지는 구분되지 않는다.
+
+**심각도: 상**
+
+**판단 근거: 여러 문제에서 직접 근거를 활용하지 못함**
+
+### ③ 듣기 기억과 정보 연결
+
+사용자가 직접 다음 상황에 가깝다고 밝혔다.
+
+> 듣는 순간에는 어느 정도 이해하지만, 길어지면 앞부분을 잊고 선택지도 헷갈린다.
+
+이 자기 보고는 중요하다.
+
+특히 여러 개념과 사건을 연속해서 설명하는 Academic Talk에서 정답률이 낮았다는 결과와 일치하는 측면이 있다.
+
+하지만 개별 오답의 직접적인 원인이 기억력 문제였다는 사실까지 입증하지는 않는다.
+
+따라서 현재 가장 타당한 판단은 다음과 같다.
+
+**실시간 청취 과정에서 정보를 기억하고 연결하는 능력이 TPO4의 주요 개선 후보이며, 사용자의 직접적인 학습 경험도 이를 뒷받침한다.**
+
+---
+
+# PART 5. 반복되는 사고 오류 분석
+
+이 부분에서는 TPO4 안에서 실제로 반복된 오류를 확인한다.
+
+같은 문제에서 여러 오류가 동시에 발생할 수 있으므로, 아래 발생 횟수를 서로 합산하면 안 된다.
+
+## 패턴 1. 다른 대상의 특징을 정답으로 선택
+
+**확인된 대표 사례: 최소 3개**
+
+| 문제 | 질문 대상 | 실제 선택한 정보 | 정확한 연결 |
+|---|---|---|---|
+| L5 | Transformational | Correcting mistakes | Transactional의 특징 |
+| L6 | Servant leadership | Transactional | Servant → Employee needs |
+| L13 | Green roofs | Store heat at night | Asphalt 등의 특징 |
+
+### 공통점
+
+오답으로 선택한 내용이 강의와 무관한 정보가 아니다.
+
+특히 L5와 L13에서는 오답의 내용 자체가 강의에 실제로 등장한다.
+
+하지만 해당 정보는 질문 대상이 아닌 다른 대상에 속한다.
+
+### 판정
+
+**[확인] 반복된 개념·특징 연결 오류**
+
+**[추정] 듣는 동안 정보를 개념별로 구분하여 기억하지 못했을 가능성**
+
+이 패턴은 TPO4에서 가장 명확하게 반복된 Academic Listening 오류 중 하나다.
+
+---
+
+## 패턴 2. 지문에 없는 사실을 선택지에서 받아들임
+
+**확인된 대표 사례: 최소 6개**
+
+| 문제 | 선택한 내용 | 실제 근거와의 차이 |
+|---|---|---|
+| R5 | 최근 스마트워치를 구매한 사람 | 구매 사실 없음 |
+| L2 | 스터디 그룹의 첫 모임 | 모임 장소 변경에 관한 내용 |
+| L4 | 여행하며 사진 촬영 | 더 배우고 싶다는 목적 |
+| L7 | 중국 의사 두 명이 차 개발 | 황제가 우연히 발견했다는 전설 |
+| L9 | 여러 종류의 차를 섞는 혁신 | 젊은 층에서의 인기 증가 |
+| L11 | 전화로 자리 확인 | 온라인 확인 계획 |
+
+### 공통점
+
+각 오답은 주제상 완전히 동떨어진 내용은 아니다.
+
+하지만 실제 지문이나 대화에는 해당 주장을 지지하는 정보가 없다.
+
+### 판정
+
+**[확인] 근거가 없는 사실이 포함된 선택지를 여러 차례 선택**
+
+**[추정] 주제상 그럴듯한 내용을 실제로 들었거나 읽은 사실과 혼동했을 가능성**
+
+특히 TOEFL에서는 선택지가 상황에 자연스럽게 어울린다고 해서 정답이 되는 것은 아니다.
+
+---
+
+## 패턴 3. 질문의 핵심 범위를 유지하지 못함
+
+**확인된 대표 사례: 최소 3개**
+
+### R7 — Fish Habitats
+
+질문은 물고기 서식지를 언급한 목적을 묻는다.
+
+정답은 빙하가 공급하는 강물의 중요성이다.
+
+그러나 사용자는 빙하의 형성 과정에 관한 설명을 선택했다.
+
+### L12 — Urban Heat Island
+
+질문은 강의의 전체 주제를 묻는다.
+
+정답은 도시 열섬현상 자체다.
+
+그러나 사용자는 도시 에너지 시스템에 대한 위험을 선택했다.
+
+### L9 — Tea Innovations
+
+질문은 차 문화의 혁신이 가져온 결과를 묻는다.
+
+정답은 특정 집단에서의 인기 증가다.
+
+그러나 사용자는 서로 다른 차를 섞는 방식을 선택했다.
+
+### 공통점
+
+지문과 선택지가 같은 넓은 주제를 다루더라도, **질문이 요구하는 관계나 범위**는 다를 수 있다.
+
+### 판정
+
+**[확인] 질문의 초점과 불일치하는 선택지 선택**
+
+다만 사용자가 실제로 질문을 잘못 읽거나 들었다고 직접 밝힌 것은 아니다.
+
+그 원인은 추정으로 남겨야 한다.
+
+---
+
+## 패턴 4. 직접적인 핵심 정보를 정답에 활용하지 못함
+
+**확인된 대표 사례: 최소 6개**
+
+- L3: At Lakeside Park
+- L4: To learn more
+- L7: Discovered accidentally
+- L8: Importing tea
+- L11: Look online
+- L14: Started around 1760
+
+### 공통점
+
+정답을 결정하는 정보가 실제 음원에 직접 등장한다.
+
+즉, 복잡한 추론을 요구하지 않는 문제에서도 정답 손실이 발생했다.
+
+### 가능한 원인
+
+세 가지 가능성을 구분해야 한다.
+
+**A. 소리 인식 실패**
+
+해당 표현이 실제로 들리지 않았다.
+
+**B. 실시간 기억 실패**
+
+듣는 순간 이해했지만 문제를 풀 때 기억하지 못했다.
+
+**C. 선택지 판단 실패**
+
+정보를 기억했지만 선택지와 정확하게 연결하지 못했다.
+
+사용자는 전체적으로 C 유형의 학습 어려움을 직접 언급했지만, 위 여섯 문제의 개별 원인은 확인되지 않았다.
+
+### 판정
+
+**[확인] 직접 근거가 있는 문제에서 반복적으로 오답 발생**
+
+**[추정] 실시간 정보 포착·기억·선택지 연결 중 하나 이상의 과정이 불안정할 가능성**
+
+---
+
+## 패턴 5. 비슷한 의미의 단어에서 강도 차이를 놓침
+
+**확인된 사례: 1개**
+
+R6: mitigate → eliminate
+
+### 문제의 본질
+
+mitigate는 완화하는 것이고 eliminate는 완전히 제거하는 것이다.
+
+### 판정
+
+**[확인] 의미 강도 혼동 1회**
+
+다만 이 유형의 추가 오답이 확인되지 않으므로 TPO4만으로 반복적인 약점이라고 확정할 수는 없다.
+
+---
+
+## 패턴 6. C-Test에서 철자와 단어 복원 실패
+
+**확인된 사례: 4개**
+
+- residue
+- culinary
+- receive
+- things
+
+이 중 실제로 잘못 완성한 철자가 확인되는 것은 residue 문제다.
+
+나머지는 정확한 입력값이 없다.
+
+### 판정
+
+**[확인] C-Test에서 4개 오답 발생**
+
+**[추정] 어휘·철자·문맥 예측 중 한 가지 이상이 원인일 가능성**
+
+하지만 품사 판단보다 철자에 먼저 의존한다는 학습 습관은 TPO4 자료만으로 확정할 수 없다.
+
+---
+
+## 패턴 7. 짧은 대화에서 발화 의도를 잘못 판단
+
+**확인된 사례: 2개**
+
+### L1
+
+사실 확인 질문에 제안 수락 표현을 선택했다.
+
+### L10
+
+위원회 참여 제안에 직접적인 참여 여부 대신 다른 질문을 선택했다.
+
+### 판정
+
+**[확인] 대화의 발화 기능과 응답 기능이 일치하지 않는 오답 2개**
+
+다만 Listen & Reply 전체에서는 11/13을 맞혔다.
+
+따라서 **전체적으로 취약한 유형이라기보다 특정 상황에서 실수하는 유형**으로 보는 것이 더 정확하다.
+
+---
+
+## 패턴 8. 난이도가 높아지면 정답률이 급락하는가?
+
+### 실제 TPO4 결과
+
+| 영역 | 비교적 짧은 유형 | 긴 학술 유형 |
+|---|---:|---:|
+| Reading | C-Test 80% | Academic 40% |
+| Listening | Listen & Reply 84.6% | Academic Talk 50% |
+
+### 판정
+
+**[확인] TPO4에서 긴 학술 유형의 정답률이 상대적으로 낮았다.**
+
+**[확정 불가] 반드시 문제 난이도 때문에 정답률이 낮아졌다는 주장**
+
+Academic Reading의 표본은 5문제에 불과하고, 각 영역은 문제 형식 자체가 다르다.
+
+따라서 난이도와 정답률의 인과관계를 확정할 수는 없다.
+
+---
+
+## 패턴 9. 시간 부족으로 틀리는가?
+
+**기록 없음.**
+
+실제 제한 시간을 얼마나 사용했는지, 특정 문제에서 시간이 부족했는지에 대한 자료는 없다.
+
+따라서 시간 관리 실패를 주요 약점으로 판정하지 않는다.
+
+---
+
+## PART 5 최종 요약
+
+TPO4에서 가장 강하게 관찰되는 오류는 다음과 같다.
+
+| 우선 확인할 문제 | 근거 수준 |
+|---|---|
+| 개념 A의 특징을 B에 연결 | 반복 확인 |
+| 실제 근거 없는 내용을 정답으로 선택 | 반복 확인 |
+| 질문이 요구하는 범위와 선택지가 불일치 | 반복 확인 |
+| 직접 등장한 세부정보를 정답에 활용하지 못함 | 반복 확인 |
+| C-Test 어휘·철자 복원 실패 | 확인 |
+| 발화 의도와 응답 기능 불일치 | 2개 확인 |
+| 의미 강도 혼동 | 1개 확인 |
+| 시간 관리 실패 | 근거 없음 |
+
+중요한 것은 **선택 결과를 통해 확인되는 오류와 사용자의 실제 사고 습관을 혼동하지 않는 것**이다.
+
+---
+
+# PART 6. 사용자의 학습 특성
+
+## 6-1. 사용자가 직접 밝힌 리스닝 경험
+
+TPO4 오답 분석 이후 사용자는 다음과 같이 말했다.
+
+> 틀린 문제를 스크립트로 다시 보니까 대부분 이해가 돼.
+
+이것은 직접 확인된 학습 정보다.
+
+### 이 발언이 의미하는 것
+
+스크립트로 읽었을 때 내용을 대부분 이해할 수 있다면, 모든 오답의 원인이 문장 의미 자체를 모르는 데 있다고 보기는 어렵다.
+
+실시간 청취에서는 다음 능력이 추가로 필요하다.
+
+- 빠르게 지나가는 영어 표현을 인식하는 능력
+- 이전 문장의 정보를 유지하는 능력
+- 여러 개념과 인물의 정보를 연결하는 능력
+- 기억한 정보와 선택지를 비교하는 능력
+
+다만 스크립트 이해와 실제 청취 이해의 차이가 얼마나 큰지는 정량적으로 측정되지 않았다.
+
+---
+
+## 6-2. 사용자가 직접 선택한 학습 어려움
+
+앞선 대화에서 리스닝의 어려움을 세 가지 상황으로 구분했을 때, 사용자는 C 유형에 가깝다고 답했다.
+
+해당 유형은 다음과 같다.
+
+> 둘 다 있었어. 특히 Lecture에서 내용이 길어지면 앞부분을 잊어버려.
+
+### 확인되는 학습 특성
+
+**[확인]**
+
+사용자는 긴 리스닝에서 정보 기억과 선택지 판단 모두에 어려움을 느낀다.
+
+**[추정]**
+
+Lecture의 내용이 길어질수록 개념 간 연결이 불안정해질 가능성이 있다.
+
+실제로 Leadership, History of Tea, Urban Heat Island의 오답이 이러한 설명과 일치하는 부분이 있다.
+
+하지만 긴 강의를 들을 때 반드시 앞부분부터 기억을 잃는다고 일반화할 수는 없다.
+
+---
+
+## 6-3. Reading 문제를 풀 때의 사고 과정
+
+**기록 없음.**
+
+사용자가 TPO4의 특정 문제를 풀면서 어떤 근거로 정답을 선택했는지 직접 설명한 기록은 없다.
+
+따라서 다음과 같은 진술은 확정할 수 없다.
+
+- 철자만 보고 C-Test를 푼다.
+- 배경지식을 이용해서 추론한다.
+- 시간이 부족하면 급하게 선택한다.
+- 선택지의 앞부분만 읽는다.
+
+확인되는 것은 실제 답안과 정답 사이의 불일치뿐이다.
+
+---
+
+## 6-4. 자주 헷갈린 선택지의 특징
+
+실제 TPO4 오답에서 관찰되는 선택지의 특징은 다음과 같다.
+
+**① 같은 소재지만 다른 행동을 설명함**
+
+예: Photography Club에서 learn more와 travel and take photos.
+
+**② 같은 강의에서 등장한 다른 대상의 특징을 사용함**
+
+예: Green roofs에 asphalt의 특징을 연결.
+
+**③ 실제로는 언급되지 않은 사실을 추가함**
+
+예: 스마트워치를 최근 구매한 사람.
+
+**④ 직접 제시된 표현을 다르게 연결함**
+
+예: look online을 듣는 대화에서 phone call을 선택.
+
+**⑤ 의미가 비슷하지만 강도가 다름**
+
+예: mitigate와 eliminate.
+
+이러한 선택지의 특징은 실제 오답에서 확인된다.
+
+---
+
+## 6-5. 시간 압박에 대한 반응
+
+**기록 없음.**
+
+TPO4 문제를 제한 시간 안에 모두 해결했는지, 얼마나 급하게 풀었는지 확인되지 않는다.
+
+따라서 시간 제한 훈련이 반드시 최우선이라는 결론은 내릴 수 없다.
+
+---
+
+## 6-6. 모르는 단어를 처리하는 방식
+
+**직접 기록 없음.**
+
+C-Test에서 residue를 resident로 완성했다는 사실은 확인된다.
+
+하지만 모르는 단어가 나올 때 항상 철자부터 추측하는 습관이 있다고 단정할 수 없다.
+
+---
+
+## 6-7. 같은 문제를 다시 풀었을 때의 변화
+
+**기록 없음.**
+
+TPO4 오답을 설명한 뒤 동일 문제를 다시 풀어 제출한 기록이 없다.
+
+따라서 오답 복습 전후의 정답률 변화는 측정할 수 없다.
+
+---
+
+## 6-8. 기존 훈련의 효과
+
+**객관적 효과 검증 자료 없음.**
+
+TPO4 안에서 특정 훈련을 시행한 후 새로운 문제에서 얼마나 개선되었는지 측정한 기록은 없다.
+
+다만 사용자는 기존 오답 분석을 활용해 남은 시험 준비 기간을 효율적으로 구성하려는 의도를 반복적으로 밝혔다.
+
+이 사실은 확인되지만, 오답 분석이 실제로 점수를 얼마나 높였는지는 확인되지 않는다.
+
+---
+
+## 6-9. 사용자가 원하는 피드백 방식
+
+사용자는 이 채팅에서 다음과 같은 요청을 했다.
+
+- 오늘 틀린 Reading 문제를 리뷰해 달라고 요청
+- 오늘 틀린 Listening 문제를 리뷰해 달라고 요청
+- 남은 2주 동안 어떤 노력을 해야 하는지 질문
+- 이미 확인된 약점 진단 단계를 생략할 수 있는지 검토 요청
+- 이전 채팅의 오답 데이터를 다른 채팅으로 이전할 방법 요청
+
+따라서 사용자가 **구체적인 오답 데이터를 근거로 학습 계획을 세우는 방식을 선호한다는 것**은 직접적인 대화 기록으로 확인된다.
+
+그러나 특정 피드백 방식이 실제 학습 성과를 높였는지는 아직 검증되지 않았다.
+
+---
+
+# PART 7. 실력과 약점의 변화
+
+## 7-1. 시간에 따른 변화
+
+TPO4의 Reading과 Listening 기록은 2026년 10월 12일에 업로드된 한 차례의 문제 풀이 자료다.
+
+따라서 **TPO4만으로 장기적인 실력 향상 또는 하락을 판단할 수 없다.**
+
+사용자가 이전 시험을 언급했더라도 이 보고서에서는 분석 대상에서 제외한다.
+
+---
+
+## 7-2. TPO4 안에서의 정답률 차이
+
+### C-Test
+
+- Prehistoric Food: 8/10
+- Deserts: 8/10
+
+두 세트의 결과가 동일하다.
+
+따라서 TPO4 안에서는 C-Test 정확도가 80%로 일치한다.
+
+하지만 두 세트만으로 장기적으로 80%의 정확도를 유지한다고 단정할 수는 없다.
+
+### Academic Reading
+
+- The Impact of Glaciers: 2/5
+
+현재 확인 가능한 Academic Reading은 이 한 지문뿐이다.
+
+따라서 다른 학술 지문과의 비교는 불가능하다.
+
+### Academic Listening
+
+| 강의 | 정답률 |
+|---|---:|
+| Leadership | 50% |
+| History of Tea | 25% |
+| Urban Heat Island | 50% |
+| Industrial Revolution | 75% |
+
+각 강의에서 정답률의 차이가 나타났다.
+
+가장 많은 오답은 History of Tea에서 발생했다.
+
+가장 높은 정답률은 Industrial Revolution에서 나타났다.
+
+다만 이러한 차이가 강의 난이도, 관심 분야, 어휘 지식, 듣기 기억 중 무엇 때문에 발생했는지는 확인되지 않는다.
+
+---
+
+## 7-3. 반복적으로 틀린 유형
+
+TPO4 한 회차 안에서 반복적으로 확인된 유형은 다음과 같다.
+
+- C-Test 어휘·표현 복원
+- Listening의 개념과 특징 연결
+- Listening에서 직접 등장한 정보의 활용
+- 질문 범위를 벗어난 선택지 판단
+
+반면 Reading의 Vocabulary, Author's Purpose, Insert Text는 각각 한 문제씩만 틀렸으므로 TPO4만으로 특정 세부 유형에 대한 지속적인 취약성을 확정할 수 없다.
+
+---
+
+## 7-4. 정확도가 개선되었는가?
+
+**판단 불가.**
+
+TPO4 내부의 문제 풀이 순서만으로 실력이 향상되었다고 판단할 수 없다.
+
+서로 다른 지문이나 강의의 정답률 차이는 학습 효과를 의미하지 않는다.
+
+---
+
+## 7-5. 현재 안정적인 영역과 불안정한 영역
+
+**상대적으로 안정적인 것으로 관찰된 영역**
+
+- C-Test: 16/20
+- Listen & Reply: 11/13
+
+**TPO4에서 정답 손실이 상대적으로 컸던 영역**
+
+- Academic Reading: 3/5 오답
+- Conversation: 4/8 오답
+- Academic Talk: 8/16 오답
+
+이는 TPO4 안에서의 관찰 결과다.
+
+장기적인 안정성을 평가하려면 별도의 반복 측정이 필요하다.
+
+---
+
+# PART 8. 남은 14일을 위한 핵심 진단
+
+이 부분에서는 TPO4의 실제 오답을 근거로 이미 확인된 문제와 추가 검증이 필요한 문제를 구분한다.
+
+## A. 이미 충분히 확인되어 교정 훈련을 시작할 수 있는 약점
+
+### A-1. Listening — 개념과 특징의 연결 오류
+
+**확인된 대표 오답**
+
+- L5: Transformational에 Transactional의 특징 연결
+- L6: Servant 대신 Transactional 선택
+- L13: Green roofs에 asphalt의 특징 연결
+
+이 세 문제는 모두 **서로 다른 대상의 특징을 구분하는 과정**에서 오답이 발생했다.
+
+따라서 같은 오류가 다시 발생하는지 확인하기 위한 장기간의 추가 진단보다는 곧바로 교정 훈련을 시작할 수 있다.
+
+추천 훈련은 **Entity–Attribute Mapping**이다.
+
+강의를 듣고 다음 형태로 기억한다.
+
+`대상 → 핵심 특징`
+
+예를 들어,
+
+Transformational → Vision  
+Transactional → Rewards  
+Servant → Employee needs
+
+정답을 기억하는 것이 아니라 어떤 특징이 어떤 대상에 속하는지 구분하는 훈련이다.
+
+### A-2. Listening — 직접 정보 포착과 기억
+
+**확인된 대표 오답**
+
+- L3: Lakeside Park
+- L4: To learn more
+- L11: Look online
+- L14: Started around 1760
+
+이 문제들은 정답 근거가 직접 제시되어 있다.
+
+따라서 복잡한 추론보다는 중요한 정보를 청취한 후 정확히 기억하고 활용하는 과정에 집중할 필요가 있다.
+
+사용자가 긴 강의에서 앞부분을 잊는다고 직접 설명한 것도 이 훈련의 필요성을 뒷받침한다.
+
+추천 훈련은 **Listen → Recall → Verify**다.
+
+### A-3. Reading — C-Test 단어 복원
+
+**확인된 오답: 4/20**
+
+- residue
+- culinary
+- receive
+- things
+
+단어 복원에서 실수가 발생한다는 사실은 확인되었다.
+
+다만 C-Test의 전체 정답률은 80%이므로, 기초부터 모든 문법을 다시 학습해야 한다는 근거는 없다.
+
+추천 훈련은 **Slot Prediction + Context Verification**이다.
+
+품사와 의미를 먼저 예상한 뒤, 완성한 단어가 실제 문맥에 맞는지 확인한다.
+
+---
+
+## B. 지금 바로 교정 훈련을 시작해야 하는 약점
+
+TPO4의 오답을 기준으로 즉시 훈련할 가치는 다음 순서로 판단된다.
+
+### 1. Academic Listening의 정보 구분과 기억
+
+Leadership, Tea, Urban Heat Island에서 여러 오답이 발생했다.
+
+그중 일부는 서로 다른 개념의 정보가 혼동된 문제다.
+
+**목표:** 강의를 듣고 주요 대상과 특징을 정확히 연결한다.
+
+### 2. Conversation의 핵심 정보 포착
+
+네 개의 Conversation에서 각각 한 문제씩 틀렸다.
+
+특히 장소, 목적, 다음 행동처럼 직접 등장하는 정보에서 실수가 발생했다.
+
+**목표:** Who / Why / Where / What Next를 빠르게 구분한다.
+
+### 3. Academic Reading의 근거 검증
+
+Glaciers에서 세 가지 다른 유형의 오답이 발생했다.
+
+**목표:** 선택지가 지문의 정확한 의미와 관계를 전달하는지 확인한다.
+
+### 4. C-Test의 정확도 향상
+
+두 세트 모두 8/10을 기록했다.
+
+**목표:** 이미 맞힐 수 있는 문제의 정답률을 유지하면서 어휘 복원 오류를 줄인다.
+
+### 5. Listen & Reply의 간접 표현
+
+짧은 응답에서 두 문제를 틀렸다.
+
+**목표:** 질문의 발화 의도와 자연스러운 응답을 즉시 연결한다.
+
+---
+
+## C. 14일 안에 개선 가능성이 비교적 높은 약점
+
+다음 항목들은 상대적으로 구체적인 절차를 반복하는 방식으로 훈련할 수 있다.
+
+| 훈련 대상 | 실제 오답 | 훈련 방법 |
+|---|---|---|
+| 개념과 특징 연결 | Leadership, Green Roofs | Entity–Attribute Mapping |
+| 직접 정보 포착 | Lakeside Park, Look Online | 핵심 정보 회상 |
+| 어휘 의미 강도 | Mitigate | 동의어 의미 비교 |
+| 지시어 추적 | This Dynamic Process | Reference Tracking |
+| 발화 의도 판단 | Library, Audit Committee | Speech Act Classification |
+
+이 훈련들이 14일 안에 어느 정도 점수 향상으로 이어질지는 아직 측정할 수 없다.
+
+하지만 훈련 대상이 구체적이고, 실제 오답에 직접 대응한다는 점에서 우선적으로 시도할 가치가 있다.
+
+---
+
+## D. 장기적인 어휘·언어 능력 향상이 필요한 부분
+
+TPO4에서 추가 학습이 필요한 것으로 확인되거나 추정되는 표현은 다음과 같다.
+
+**학술 어휘**
+
+- culinary
+- residue
+- mitigate
+- exacerbate
+- retain
+- thermal mass
+- prioritize
+
+**실용 영어**
+
+- be stretched
+- host an event
+- reserve a seat
+- look online
+- retailer
+
+**문맥 및 바꿔 쓰기**
+
+- mitigate → lessen
+- accidentally → by chance
+- look online → check a website
+- inspiring a team by setting a vision → providing an inspirational vision
+
+다만 사용자가 대부분의 리스닝 스크립트를 읽고 이해할 수 있다고 했으므로, **어휘량을 무조건 늘리는 것이 모든 오답의 해결책이라고 볼 수는 없다.**
+
+실제 청취 상황에서 표현을 즉시 이해하고 필요한 정보를 추출하는 연습도 함께 필요하다.
+
+---
+
+## E. 시험 직전 반드시 주의해야 할 실수
+
+TPO4에서 확인된 오류를 행동 규칙으로 바꾸면 다음과 같다.
+
+1. **C-Test:** 단어를 완성한 뒤 문장 전체에서 의미가 자연스러운지 확인한다.
+2. **Vocabulary:** 동의어의 의미 강도까지 비교한다.
+3. **Inference:** 지문에 없는 사건이나 행동을 추가하지 않는다.
+4. **Author's Purpose:** 사례가 어떤 주장을 뒷받침하는지 확인한다.
+5. **Insert Text:** This, These, Such가 무엇을 가리키는지 확인한다.
+6. **Conversation:** 장소·목적·다음 행동을 명시적으로 기억한다.
+7. **Academic Talk:** 비슷한 개념의 특징을 서로 바꾸지 않는다.
+8. **Main Idea:** 세부 결과가 아닌 전체 주제를 선택한다.
+9. **Listen & Reply:** 질문이 사실 확인인지, 제안인지, 요청인지 구분한다.
+10. **선택지 검증:** 관련성이 있다는 이유만으로 정답을 선택하지 않는다.
+
+---
+
+# TPO4 기준 최종 개선 우선순위 TOP 5
+
+| 순위 | 개선 영역 | 실제 근거 | 추천 훈련 |
+|---|---|---|---|
+| **1위** | Academic Listening의 개념·특징 연결 | L5, L6, L13 | Entity–Attribute Mapping |
+| **2위** | 직접 제시된 정보의 포착·기억 | L3, L4, L7, L8, L11, L14 | Active Recall |
+| **3위** | Reading의 정확한 의미·논리 판단 | R5, R6, R7, R8 | Evidence Verification |
+| **4위** | C-Test 어휘·표현 복원 정확도 | R1~R4 | Slot Prediction |
+| **5위** | 상황에 맞는 짧은 응답 | L1, L10 | Speech Act Training |
+
+**최종 판단**
+
+TPO4 자료에서 가장 먼저 주목할 부분은 Listening이다.
+
+특히 Academic Talk에서 개념별 특징을 정확히 구분하고 기억하는 능력이 주요 개선 대상이다.
+
+Reading에서는 C-Test에서 80%를 맞혔으므로 모든 시간을 단어 복원에 투자하기보다, Academic Reading의 의미 비교와 선택지 검증을 병행할 필요가 있다.
+
+이 우선순위는 오직 TPO4에 기반한 판단이다.
+
+---
+
+# PART 9. [TOEFL LEARNING DIAGNOSTIC REPORT — TRANSFER VERSION]
+
+아래 보고서는 다른 채팅방으로 독립적으로 전달할 수 있는 통합 자료다.
+
+**TPO4의 성적, 실제 오답 22개, 어휘 문제, 반복 오류, 학습 특성, 14일 훈련 우선순위를 모두 포함한다.**
+
+---
+
+## 1. 기본 정보
+
+**분석 대상:** TOEFL TPO4
+
+**풀이 및 오답 업로드 날짜:** 2026년 10월 12일
+
+**시험 형식:** 2026 TOEFL 형식
+
+**목표 점수:** 5.0/6.0 이상
+
+**당시 시험까지 남은 기간:** 약 14일
+
+**분석에 사용된 자료:** TPO4 Reading 및 Listening 스크린샷, 정답 표시, 음원 스크립트, 사용자 직접 발언.
+
+**제외된 자료:** TPO2, TPO3 및 다른 회차의 모든 성적과 오답.
+
+**정보 구분:** 오답 선택 결과는 확인된 사실이지만, 실제 시험 당시의 사고 과정은 대부분 확인되지 않았다.
+
+---
+
+## 2. TPO4 성적
+
+### Reading
+
+| 유형 | 정답/전체 | 정답률 |
+|---|---:|---:|
+| Prehistoric Food C-Test | 8/10 | 80% |
+| Deserts C-Test | 8/10 | 80% |
+| Read in Daily Life | 2/3 | 66.7% |
+| Academic Reading | 2/5 | 40% |
+| **전체** | **20/28** | **71.4%** |
+
+**Reading 오답: 8개**
+
+### Listening
+
+| 유형 | 정답/전체 | 정답률 |
+|---|---:|---:|
+| Listen & Reply | 11/13 | 84.6% |
+| Conversation | 4/8 | 50% |
+| Academic Talk | 8/16 | 50% |
+| **전체** | **23/37** | **62.2%** |
+
+**Listening 오답: 14개**
+
+### 합계
+
+**43/65 정답, 22오답, 정답률 66.2%.**
+
+이 수치는 업로드된 TPO4 세트의 단순 정답률이며 TOEFL 공식 환산 점수를 의미하지 않는다.
+
+---
+
+## 3. Reading 실제 오답 8개
+
+### R1. residue
+
+문장: `plant resi____`
+
+사용자 완성: **resident**
+
+정답: **residue**
+
+정확한 의미: 식물 잔해.
+
+오류: 형태가 비슷하지만 의미가 다른 단어를 완성함.
+
+가능한 원인: 어휘·형태 혼동 및 문맥 검증 부족.
+
+### R2. culinary
+
+문장: `culi____ tools`
+
+사용자 입력: **확인 불가**
+
+정답: **culinary**
+
+정확한 의미: 조리의, 요리의.
+
+오류: 문맥에 필요한 형용사를 완성하지 못함.
+
+가능한 원인: 어휘 또는 철자 복원 실패.
+
+### R3. receive
+
+문장: `They rec____ very little rainfall.`
+
+사용자 입력: **확인 불가**
+
+정답: **receive**
+
+정확한 의미: 비가 내리다, 강수량을 기록하다.
+
+오류: 문장의 의미에 필요한 동사 복원 실패.
+
+가능한 원인: 단어 철자, 연어 또는 문맥 활용 문제.
+
+### R4. living things
+
+문장: `It makes it hard for living thi____ to survive.`
+
+사용자 입력: **확인 불가**
+
+정답: **things**
+
+정확한 의미: 생명체.
+
+오류: 문맥에 필요한 표현 복원 실패.
+
+가능한 원인: 어휘 복원 또는 문장 구조 활용 문제.
+
+### R5. Ms. Garcia
+
+질문: Who most likely is Ms. Garcia?
+
+사용자 답: **A person who wears a recently purchased smartwatch**
+
+정답: **A person who sells smartwatches**
+
+핵심 근거: 이메일의 `retailers`와 `bulk shipment`.
+
+오류: 수신자의 역할을 상품 구매·착용자와 혼동.
+
+정확한 구분: 소매업자는 제품을 소비자에게 판매하는 사람이다. Ms. Garcia가 최근 스마트워치를 구매했다는 근거는 없다.
+
+### R6. mitigate
+
+질문: mitigate의 가장 가까운 의미.
+
+사용자 답: **eliminate**
+
+정답: **lessen**
+
+오류: 완화와 완전한 제거의 의미 차이.
+
+핵심: mitigate = reduce/lessen the harmful impact.
+
+### R7. Fish Habitats — Author's Purpose
+
+질문: Why does the author mention fish habitats?
+
+사용자 답: **To explain how the process of glacier formation affects fish species**
+
+정답: **To highlight the importance of rivers fed by glaciers**
+
+핵심 근거: 빙하에서 방출된 담수가 강에 물을 공급하고 물고기 서식지에 영향을 준다.
+
+오류: 융해 및 담수 공급에 관한 설명을 빙하 형성 과정으로 변경.
+
+핵심: 관련 소재뿐 아니라 실제 설명된 과정이 일치해야 한다.
+
+### R8. Insert Text
+
+삽입 문장:
+
+`This dynamic process is crucial for maintaining the balance of freshwater ecosystems.`
+
+사용자가 선택한 위치: **확인 불가**
+
+정답: **C, 세 번째 삽입 위치**
+
+핵심 근거: 앞 문장에서 빙하의 담수가 강에 공급되어 생태계에 영향을 주는 과정을 설명한다.
+
+오류: 문장 삽입 위치 판단 실패.
+
+가능한 원인: 지시어 `This dynamic process`의 선행 내용 또는 문장 연결 관계 판단 실패.
+
+---
+
+## 4. Listening 실제 오답 14개
+
+### L1. Library Event
+
+질문: `Isn't the library hosting an event today?`
+
+사용자 답: **Sure, why not?**
+
+정답: **I've already reserved my seat.**
+
+오류: 사실 확인 질문에 제안 수락 표현 선택.
+
+### L2. Study Group
+
+질문: What can be inferred about the study group?
+
+사용자 답: **It is meeting for the first time.**
+
+정답: **It usually meets at the library.**
+
+핵심 근거: 도서관 리모델링 때문에 새 카페를 모임 장소로 제안.
+
+오류: 새로운 장소에서 모이는 것과 스터디 그룹의 첫 모임을 혼동.
+
+### L3. Company Picnic
+
+질문: Where will the company picnic be held?
+
+사용자 답: **On an island in a river**
+
+정답: **At a park**
+
+핵심 근거: `Lakeside Park`.
+
+오류: 직접 제시된 장소 정보 활용 실패.
+
+### L4. Photography Club
+
+질문: Why does the man want to join?
+
+사용자 답: **To travel and take photos**
+
+정답: **To learn more**
+
+핵심 근거: `I'm looking for a place to learn more...`
+
+오류: 가입 목적에 대한 직접 정보 활용 실패. 여행은 언급되지 않음.
+
+### L5. Transformational Leadership
+
+질문: What do transformational leaders focus on?
+
+사용자 답: **Correcting mistakes**
+
+정답: **Providing an inspirational vision**
+
+핵심 근거: `setting a vision`, `inspiring and motivating`.
+
+오류: Transactional leadership의 특징을 Transformational에 연결.
+
+### L6. Servant Leadership
+
+질문: Which leadership style cares about employees the most?
+
+사용자 답: **Transactional**
+
+정답: **Servant**
+
+핵심 근거: `prioritizes the needs of employees`.
+
+오류: 서로 다른 리더십 유형의 특징 혼동.
+
+### L7. Discovery of Tea
+
+질문: What does a legend say about tea?
+
+사용자 답: **Two Chinese doctors developed tea**
+
+정답: **Tea was discovered by chance**
+
+핵심 근거: 신농 황제가 우연히 떨어진 찻잎으로 차를 발견했다는 전설.
+
+오류: `accidentally`라는 발견 방식에 대한 직접 정보 활용 실패. 의사 두 명은 언급되지 않음.
+
+### L8. British East India Company
+
+질문: How did the company contribute to the history of tea?
+
+사용자 답: **It created the first tea bags**
+
+정답: **It was responsible for importing tea into Europe**
+
+핵심 근거: `played a significant role in importing tea`.
+
+오류: 차 수입에 관한 설명과 후반부의 티백 관련 정보를 혼동.
+
+### L9. Tea Culture Innovations
+
+질문: What does the speaker indicate about innovations in tea culture?
+
+사용자 답: **They combine different kinds of tea**
+
+정답: **They have increased the popularity of tea among some groups**
+
+핵심 근거: 버블티가 특히 젊은 사람들 사이에서 유행했다.
+
+오류: 차 문화의 혁신을 제조 방식으로 해석. 서로 다른 차를 섞는다는 설명은 없음.
+
+### L10. Audit Committee
+
+질문: `Would you like to join the audit committee?`
+
+사용자 답: **Is it committee work?**
+
+정답: **I'm a bit stretched right now.**
+
+핵심 표현: `be stretched` = 여유가 부족하다.
+
+오류: 참여 요청에 대한 자연스러운 간접 거절 표현을 선택하지 못함.
+
+### L11. Gym
+
+질문: What will the man most likely do next?
+
+사용자 답: **Make a phone call**
+
+정답: **Check a website**
+
+핵심 근거: `I'll look online...`
+
+오류: 온라인 확인 계획을 전화 통화로 바꾸어 판단.
+
+### L12. Urban Heat Island
+
+질문: What is the main topic of the talk?
+
+사용자 답: **The risks climate change poses to city energy systems**
+
+정답: **The phenomenon in which cities experience higher temperatures than rural areas**
+
+핵심 근거: 도시 열섬현상의 정의, 원인, 결과, 해결책.
+
+오류: 전체 주제보다 세부 결과에 집중.
+
+### L13. Green Roofs
+
+질문: What is true about green roofs?
+
+사용자 답: **They store heat during the day and release it at night**
+
+정답: **They contribute to a cooling effect in cities**
+
+핵심 근거: Green roofs는 열섬현상을 완화하는 해결책.
+
+오류: 아스팔트·콘크리트의 축열 특성을 Green roofs에 연결.
+
+### L14. Industrial Revolution
+
+질문: What is the significance of 1760?
+
+사용자 답: **The greatest milestones occurred in 1760**
+
+정답: **The Industrial Revolution began in Great Britain around 1760**
+
+핵심 근거: `started in Great Britain around 1760`.
+
+오류: 산업혁명의 시작 시점과 주요 기술 발전 시점을 혼동.
+
+---
+
+## 5. TPO4의 주요 어휘 약점
+
+### Reading
+
+| 단어·표현 | 의미 | 관찰된 문제 |
+|---|---|---|
+| residue | 잔여물, 잔해 | resident로 완성 |
+| resident | 거주자 | residue와 형태 혼동 |
+| culinary | 요리·조리의 | 단어 복원 실패 |
+| receive rainfall | 비가 내리다, 강수량을 기록하다 | 표현 복원 실패 |
+| living things | 생명체 | 표현 복원 실패 |
+| retailer | 소매업자 | 수신자의 역할 추론 실패 |
+| mitigate | 완화하다 | eliminate 선택 |
+| lessen | 줄이다 | mitigate의 정답 동의어 |
+| eliminate | 완전히 제거하다 | 의미 강도 혼동 |
+| glacier formation | 빙하 형성 | 융해 및 담수 방출 과정과 혼동 |
+| dynamic process | 역동적인 과정 | 지시 대상 연결 문제 가능성 |
+
+### Listening
+
+| 단어·표현 | 의미 | 관련 문제 |
+|---|---|---|
+| host an event | 행사를 개최하다 | Library |
+| reserve a seat | 자리를 예약하다 | Library |
+| renovate | 리모델링하다 | Study Group |
+| Lakeside | 호숫가 | Company Picnic |
+| enthusiast | 열성적인 애호가 | Photography Club |
+| prioritize | 우선시하다 | Servant Leadership |
+| transformational | 변혁적인 | Leadership |
+| transactional | 거래적인 | Leadership |
+| accidentally | 우연히 | Tea |
+| by chance | 우연히 | Tea |
+| medicinal | 약용의 | Tea |
+| import | 수입하다 | East India Company |
+| trendy | 유행하는 | Tea Innovations |
+| be stretched | 여유가 부족하다 | Audit Committee |
+| look online | 온라인에서 확인하다 | Gym |
+| retain heat | 열을 유지하다 | Urban Heat Island |
+| mitigate | 완화하다 | Urban Heat Island |
+| exacerbate | 악화시키다 | Urban Heat Island |
+| thermal mass | 열용량·축열 특성 | Urban Heat Island |
+| milestone | 중요한 이정표 | Industrial Revolution |
+
+**주의:** 사용자가 직접 모른다고 인정한 단어는 TPO4 기록에서 확인되지 않는다. 위 목록은 실제 오답과 관련된 학습 후보이며, 모두 어휘 부족으로 판정해서는 안 된다.
+
+---
+
+## 6. TPO4에서 반복되는 오류
+
+### ① 개념과 특징의 연결 오류
+
+**대표 오답 3개**
+
+- Transformational → Correcting mistakes
+- Servant → Transactional
+- Green roofs → Store heat
+
+핵심 문제: 다른 대상의 특징을 질문 대상에 연결.
+
+### ② 근거 없는 선택지 판단
+
+**대표 오답 최소 6개**
+
+- Ms. Garcia가 최근 스마트워치를 구매했다는 선택
+- Study Group의 첫 모임이라는 선택
+- Photography Club 가입 목적이 여행이라는 선택
+- 중국 의사 두 명이 차를 개발했다는 선택
+- 혁신적인 차 문화가 여러 차를 섞는 것이라는 선택
+- 온라인 확인 대신 전화 통화를 선택
+
+핵심 문제: 주제상 그럴듯하지만 지문에서 뒷받침하지 않는 사실.
+
+### ③ 직접 제시된 정보 활용 실패
+
+**대표 오답 최소 6개**
+
+- Lakeside Park
+- To learn more
+- Accidentally
+- Importing tea
+- Look online
+- Started around 1760
+
+핵심 문제: 직접 들은 정보의 포착, 기억 또는 선택지 연결 과정 중 하나 이상에서 실패.
+
+### ④ 질문의 핵심 범위 불일치
+
+**대표 오답 3개**
+
+- Fish Habitats
+- Urban Heat Island Main Idea
+- Tea Innovations
+
+핵심 문제: 지문과 관련된 선택지이지만 실제 질문의 초점과 불일치.
+
+### ⑤ 짧은 응답의 발화 기능 불일치
+
+**확인된 오답 2개**
+
+- Library Event
+- Audit Committee
+
+핵심 문제: 사실 확인과 제안·초대의 기능을 구분하는 과정에서 오류.
+
+### ⑥ 어휘 의미 강도 혼동
+
+**확인된 사례 1개**
+
+- mitigate → eliminate
+
+핵심 문제: 완화와 완전한 제거의 차이.
+
+### ⑦ C-Test 단어 복원 오류
+
+**확인된 오답 4개**
+
+- residue
+- culinary
+- receive
+- things
+
+핵심 문제: 어휘·철자·문맥을 이용한 단어 복원 실패.
+
+---
+
+## 7. 사용자가 직접 밝힌 학습 특성
+
+### 직접 확인된 내용
+
+**첫째, 리스닝 스크립트를 다시 읽으면 대부분 이해된다.**
+
+이는 대다수 오답이 반드시 기본적인 문장 해석 부족 때문에 발생한 것은 아닐 가능성을 시사한다.
+
+**둘째, 긴 Lecture에서 앞부분을 잊고 선택지도 헷갈리는 상황에 가깝다고 답했다.**
+
+이는 실시간 정보 기억과 구조화의 어려움을 직접적으로 설명한 것이다.
+
+**셋째, TOEFL 시험까지 당시 약 2주 남았으며 목표는 5.0 이상이라고 밝혔다.**
+
+### 확인할 수 없는 내용
+
+- 실제 문제 풀이 당시의 구체적인 사고 과정
+- Reading에서 시간 압박을 받았는지
+- Listening 오답마다 실제로 어느 구간을 못 들었는지
+- 어떤 단어를 사전에 몰랐는지
+- 재풀이 후 얼마나 개선되었는지
+- 기존 훈련이 실제 점수 향상으로 이어졌는지
+
+이 항목들은 실제 기록이 없으므로 추정해서 채우지 않는다.
+
+---
+
+## 8. 이미 확인되어 바로 훈련할 수 있는 약점
+
+**Reading**
+
+1. C-Test 어휘·표현 복원
+2. 질문이 요구하는 정확한 대상·관계 확인
+3. Academic Reading 선택지의 의미 검증
+4. Author's Purpose의 주장·예시 연결
+5. Insert Text의 지시어 추적
+
+**Listening**
+
+1. Academic Lecture에서 개념과 특징 연결
+2. 직접 제시된 장소·목적·행동·사건 정보 포착
+3. Lecture 전체 구조 기억
+4. 추론 시 실제 근거를 벗어나지 않기
+5. Listen & Reply의 간접적 표현 이해
+
+일부 세부 유형은 한 문제만 확인되므로 장기적인 취약성은 확정하지 않는다. 그러나 해당 오답을 겨냥한 교정 훈련은 바로 시작할 수 있다.
+
+---
+
+## 9. 남은 14일을 위한 우선순위
+
+### Priority 1 — Academic Listening: Entity–Attribute Mapping
+
+**근거**
+
+- L5 Transformational
+- L6 Servant Leadership
+- L13 Green Roofs
+
+**훈련 목표**
+
+긴 강의에서 여러 대상이 등장할 때 각각의 특징을 정확하게 기억한다.
+
+**훈련 방법**
+
+Lecture를 듣고 각 대상과 특징을 한 쌍으로 정리한 다음, 음원을 보지 않고 재구성한다.
+
+---
+
+### Priority 2 — Listening: Direct Information Recall
+
+**근거**
+
+- L3 Lakeside Park
+- L4 To learn more
+- L7 Accidentally
+- L8 Importing tea
+- L11 Look online
+- L14 Started around 1760
+
+**훈련 목표**
+
+직접 제시된 장소, 목적, 사건, 다음 행동을 놓치지 않는다.
+
+**훈련 방법**
+
+처음에는 스크립트를 보지 않고 듣는다.
+
+그다음 핵심 내용을 기억해 적거나 말한다.
+
+마지막으로 해당 구간을 다시 듣고 실제 내용과 비교한다.
+
+---
+
+### Priority 3 — Academic Reading: Evidence Verification
+
+**근거**
+
+- R5 Ms. Garcia
+- R6 Mitigate
+- R7 Fish Habitats
+- R8 Insert Text
+
+**훈련 목표**
+
+주제상 그럴듯한 선택지와 실제 근거에 부합하는 선택지를 구별한다.
+
+**훈련 방법**
+
+정답을 고르기 전에 다음을 확인한다.
+
+- 질문의 대상이 맞는가?
+- 선택지의 행동이나 과정이 실제 지문과 일치하는가?
+- 의미의 강도와 범위가 정확한가?
+- 앞뒤 문장의 논리 관계가 맞는가?
+
+---
+
+### Priority 4 — C-Test: Context-Based Word Completion
+
+**근거**
+
+- R1 residue
+- R2 culinary
+- R3 receive
+- R4 things
+
+**훈련 목표**
+
+현재 80%인 TPO4 C-Test 정확도를 유지하면서 단어 복원 실수를 줄인다.
+
+**훈련 방법**
+
+품사 예측 → 문맥상 필요한 의미 예측 → 철자 완성 → 문장 재검증.
+
+어휘 자체를 몰랐던 경우와 알고도 완성하지 못한 경우는 구분해서 복습한다.
+
+---
+
+### Priority 5 — Listen & Reply: Speech Act Recognition
+
+**근거**
+
+- L1 Library Event
+- L10 Audit Committee
+
+**훈련 목표**
+
+사실 확인, 제안, 요청, 초대, 거절의 기능을 빠르게 판단한다.
+
+**훈련 방법**
+
+질문을 들은 후 바로 선택지를 보지 않고 먼저 발화 의도를 판단한다.
+
+그다음 적절한 반응을 선택한다.
+
+---
+
+## 10. 14일 훈련 방향 요약
+
+TPO4에 근거한 권장 훈련 구조는 다음과 같다.
+
+| 기간 | Reading 집중 | Listening 집중 |
+|---|---|---|
+| Day 1~3 | C-Test 복원 + Academic 근거 검증 | Lecture 개념·특징 연결 |
+| Day 4~6 | Author's Purpose + Insert Text | 직접 정보 포착 및 회상 |
+| Day 7 | 처음 보는 문제로 중간 점검 | 처음 보는 문제로 중간 점검 |
+| Day 8~10 | 반복 오답 유형 집중 교정 | Lecture + Conversation 집중 |
+| Day 11~12 | 실전 조건에서 새로운 문제 풀이 | 실전 조건에서 새로운 문제 풀이 |
+| Day 13 | 오답 어휘 및 선택지 판단 복습 | 주요 표현과 정보 구조 복습 |
+| Day 14 | 가벼운 최종 점검 | 가벼운 최종 점검 |
+
+이는 TPO4만을 바탕으로 만든 우선순위 계획이며, 다른 회차의 결과는 반영하지 않았다.
+
+---
+
+## 11. 최종 진단
+
+TPO4에서 확인된 Reading 성적은 **20/28(71.4%)**, Listening 성적은 **23/37(62.2%)**이다.
+
+Reading은 C-Test에서 80%의 정답률을 보였지만, Academic Reading 한 지문에서는 5문제 중 3문제를 틀렸다.
+
+Listening은 Listen & Reply에서 84.6%를 맞혔지만, Conversation과 Academic Talk에서 각각 50%의 정답률을 기록했다.
+
+**가장 중요한 발견은 Listening에서 서로 다른 개념의 특징을 혼동하는 오류가 반복되었으며, 정답 근거가 직접 제시된 문제에서도 여러 차례 점수를 잃었다는 점이다.**
+
+사용자가 스크립트를 읽으면 대부분 이해할 수 있다고 직접 밝힌 점을 고려하면, 실시간 청취에서 핵심 정보를 포착하고 구조화해 기억하는 능력이 중요한 개선 대상이다.
+
+Reading에서는 단어 복원 정확도를 높이는 동시에, 선택지의 의미와 지문의 근거를 정확하게 비교해야 한다.
+
+따라서 TPO4를 기준으로 남은 학습 기간의 핵심 목표는 다음 두 가지다.
+
+**Reading: 문맥에서 단어를 정확하게 복원하고, 선택지의 모든 의미 요소가 근거와 일치하는지 확인한다.**
+
+**Listening: 중요한 정보를 듣는 순간 대상·특징·행동·시기와 연결하여 기억한다.**
+
+이 보고서는 **TPO4에서 실제로 확인된 오답과 사용자 발언만을 근거로 작성한 독립적인 학습 진단 자료**다.
+
+추가적인 장기 진단에 시간을 사용하기보다, 확인된 약점을 대상으로 교정 훈련을 시작하고 처음 보는 문제에서 개선 여부를 측정하는 것이 적절하다.
+
+**[END OF TOEFL TPO4 LEARNING DIAGNOSTIC REPORT]**

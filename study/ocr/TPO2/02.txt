@@ -1,0 +1,29 @@
+Daily Life 1
+
+Je
+
+What does the library want to know?
+
+A
+
+Whether an order was placed
+
+Whether a book was returned
+
+Whether an item was located
+
+Whether a receipt was kept
+
+Missing library card
+
+Dear Ms. Robinson,
+
+You reported your library card missing yesterday. Please know that
+it has been located. It was in a book you returned last week. If you
+
+have already ordered a replacement card, let us know and we will
+deactivate your old card.
+
+Best regards,
+David Clark
+

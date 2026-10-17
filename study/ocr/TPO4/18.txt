@@ -1,0 +1,27 @@
+>» 00:00 01:42
+
+[00:00.23] Listen to a talk in an environmental science class.
+
+[00:08.54]####_1_Woman:_#### We now turn to the phenomenon of the urban heat island effect. This occurs when urban areas experience
+higher temperatures than their rural surroundings. The primary causes are, one: buildings, roads, and other human infrastructure that
+absorb and retain heat; and two: reduced vegetation that would otherwise provide cooling through shade and transpiration—transpiration is
+the release of water vapor into the air by plants.
+
+[00:36.69] One contributing factor is the materials we use in urban construction. Materials like asphalt, concrete, and brick have high
+thermal mass, meaning they store heat during the day and release it slowly at night. This results in higher nighttime temperatures in cities
+compared to rural areas. Of course, air-conditioning units and cars also emit heat, and this further exacerbates the temperature difference.
+[01:02.73] There are several consequences to the urban heat island effect. For one thing, it causes residents and businesses to rely more
+heavily on air-conditioning, which increases energy consumption. Higher temperatures can also worsen air quality by increasing the
+formation of ground-level ozone, which is a key component of smog. It also affects human health, vulnerable populations in particular.
+[01:21.26] How do we mitigate the urban heat island effect? Increase green spaces in cities; use reflective materials in construction; and
+implement so-called green roofs, which are just what they sound like—roofs covered with a soil base and vegetation.
+
+Des
+
+What is the main topic of the talk?
+
+A The costs of urban living to the overall environment
+B The phenomenon in which cities experience higher temperatures than rural areas
+C_ The evolution of plant life in urban ecosystems
+
+D_ The risks climate change poses to city energy systems

@@ -1,0 +1,24 @@
+Conversation 2
+
+>» 00:00 00:21
+
+[00:00.03] Listen to a conversation.
+
+[00:02.35]####_1_Man:_#### Have you decided on a venue for the company picnic yet?
+
+[00:05.63]####_2_Woman:_#### Yes, we're going to have it at Lakeside Park. It's perfect for outdoor activities and has plenty of space.
+[00:11.63]####_1_Man:_#### Sounds great! What kind of activities are we planning?
+
+[00:15.09]####_2_Woman:_#### We'll have a barbecue, some team games, and maybe a scavenger hunt.
+
+[00:19.17]####_1_Man:_#### I'm looking forward to it!
+
+(] 2
+
+Where will the company picnic be held?
+
+A Near the beach
+B Onanisland in a river
+C Ata park
+
+D_ In the company parking lot

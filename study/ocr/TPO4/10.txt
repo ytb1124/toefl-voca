@@ -1,0 +1,25 @@
+Conversation 3
+
+>» 00:00 00:29
+
+[00:00.00] Listen to a conversation.
+
+[00:02.40]####_1_Man:_#### I'm thinking of joining the photography club. Do you know much about it? I'm looking for a place to learn
+more and meet other photography enthusiasts.
+
+[00:11.75]####_2_Woman:_#### Yes, I've been a member for two years. It's a great place for that.
+
+[00:16.45]####_1_Man:_#### That sounds perfect. Do they offer workshops?
+
+[00:19.69]####_2_Woman:_#### Yes, they have workshops every month on different topics, like landscape and portrait photography.
+[00:26.30]####_1_Man:_#### I'm definitely interested. I'll sign up right away.
+
+[+] 2
+
+Why does the man want to join a photography club?
+
+A. To sell his photos
+B_ To learn more
+C_ To buy equipment
+
+D_ To travel and take photos
