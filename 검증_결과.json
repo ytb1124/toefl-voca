@@ -13,7 +13,7 @@
     "TPO3-L10"
   ],
   "source_images_sha256_verified": 51,
-  "progress_tests_passed": 54,
+  "progress_tests_passed": 55,
   "browser_checks": [
     "문장 안 C-Test 빈칸 입력·채점",
     "미완성 입력 새로고침 후 복원",

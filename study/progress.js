@@ -38,14 +38,14 @@ function create(storage,onError=()=>{}){
  try{const saved=storage.getItem(KEY),old=storage.getItem(LEGACY);recoveryRaw=saved||old;if(saved)state=normalize(JSON.parse(saved));else if(old)state=normalize(JSON.parse(old));}catch{state.recoveryRaw=recoveryRaw;onError('이전 기록을 읽지 못했습니다. 복구용 원값을 백업에 보존했습니다. 학습 기록에서 백업을 내려받아 주세요.');}
  const persist=()=>{try{storage.setItem(KEY,JSON.stringify(state));return true;}catch{onError('기록을 저장하지 못했습니다. 학습 기록에서 백업 파일을 내려받아 주세요.');return false;}};
  const latest=id=>state.attempts.filter(r=>r.id===id).at(-1);
- const needsReview=id=>{const r=latest(id);return !!r&&(!r.correct||r.hinted||r.uncertain||r.confidence==='guess'||r.confidence!=null&&Number(r.confidence)<=2||r.posCorrect===false);};
+ const needsReview=id=>{const r=latest(id);return !!r&&(!r.correct||r.hinted||r.uncertain||r.confidence==='guess'||r.confidence!=null&&Number(r.confidence)<=2||r.posCorrect===false||r.timeExceeded===true);};
  const status=id=>state.drafts[id]&&!state.drafts[id].checked?'진행 중':!latest(id)?'아직 안 품':needsReview(id)?'다시 확인':'풀이 완료';
  const next=(ids,after)=>{const start=ids.indexOf(after)+1,ordered=[...ids.slice(start),...ids.slice(0,start)];return ordered.find(id=>!latest(id))||null;};
  function touch(id){const course=courseOf(id);state.cursors[course]=id;state.resume={id,course,time:new Date().toISOString()};persist();}
  function draft(id,value){if(!validId(id))return;state.drafts[id]={...value,updatedAt:new Date().toISOString()};touch(id);}
  function add(value){
   if(!validId(value.id))throw Error('문항 식별자가 올바르지 않습니다.');
-  const previous=latest(value.id),weak=!value.correct||value.hinted||value.uncertain||value.confidence!=null&&Number(value.confidence)<=2||value.posCorrect===false;
+  const previous=latest(value.id),weak=!value.correct||value.hinted||value.uncertain||value.confidence!=null&&Number(value.confidence)<=2||value.posCorrect===false||value.timeExceeded===true;
   const streak=weak?0:(previous?.streak||0)+1,days=weak?1:[1,3,7,14][Math.min(streak-1,3)];
   const snapshot=value.analysisSnapshot||state.analyses[value.id]||null;
   const record={...value,analysisSnapshot:snapshot?JSON.parse(JSON.stringify(snapshot)):null,uid:uid(),course:courseOf(value.id),time:new Date().toISOString(),updatedAt:new Date().toISOString(),streak,standardDueAt:new Date(Date.now()+days*86400000).toISOString(),dueAt:new Date(Date.now()+(value.reviewDays??days)*86400000).toISOString()};

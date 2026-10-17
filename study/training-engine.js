@@ -20,7 +20,7 @@ const derived=[...D.drills,...C,...T].map(q=>({...q,targetSkillId:skillFor(q,B),
 function skillForAnalysis(a,q){const c=a.primary;if(c==='D4'||c==='M7')return 'ENTITY_ATTRIBUTE_MAPPING';if(c.startsWith('G')||q.kind==='ctest'&&['V5','V7','V9'].includes(c))return 'CTEST_RECONSTRUCTION';if(c.startsWith('V'))return 'VOCABULARY_DISCRIMINATION';if(c.startsWith('LI')||c==='M6'&&q.section==='Listening')return 'LISTENING_PROCESSING';return 'ANSWER_JUDGMENT';}
 function remap(state,cat){return Object.fromEntries(Object.values(cat).map(q=>[q.id,q.isOriginal?{...q,targetSkillId:state.analyses?.[q.id]?.status==='user_confirmed'?skillForAnalysis(state.analyses[q.id],q):q.initialSkillId||q.targetSkillId}:q]));}
 const firstAttempts=rs=>{const seen=new Set();return rs.slice().sort((a,b)=>Date.parse(a.time)-Date.parse(b.time)).filter(r=>{if(seen.has(r.id))return false;seen.add(r.id);return true;});};
-const independent=r=>r.correct&&!r.hinted&&!r.uncertain&&r.posCorrect!==false&&r.timeExceeded!==true;
+const independent=r=>r.correct&&!r.hinted&&!r.uncertain&&r.posCorrect!==false&&r.timeExceeded!==true&&(r.confidence==null||Number(r.confidence)>=3);
 function status(state,skillId,cat,now=Date.now()){
  const rows=(state.attempts||[]).filter(r=>(r.targetSkillId||cat[r.id]?.targetSkillId)===skillId).slice().sort((a,b)=>Date.parse(a.time)-Date.parse(b.time));
  const fresh=new Set(firstAttempts(rows.filter(r=>cat[r.id].isTransfer)).map(r=>r.uid));let original=null,transfer=null,masteredAt=null,relapsed=false,wasMastered=false;
