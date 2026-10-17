@@ -83,5 +83,6 @@ C-Test를 선택하면 fillintheblank.html?task=번호로 원래 훈련 화면�
 기존 C-Test 화면부터 직접 시작하려면 fillintheblank.html?classic=1을 사용할 수 있습니다.
 index.html, fillintheblank.html, study/를 저장소의 같은 위치에 반영하면 온라인으로 동작합니다.
 다른 어휘·교재 HTML 파일은 변경하지 않았습니다.
-현재 연결 계정에 쓰기 권한이 없어 온라인 사이트에는 반영하지 않았습니다.
+GitHub Desktop의 ytb1124 로그인으로 main 브랜치에 반영합니다.
+웹 배포는 GitHub Pages에서 처리합니다.
 GitHub_반영파일_v3.zip에 반영 파일과 검증 자료를 모았습니다.
